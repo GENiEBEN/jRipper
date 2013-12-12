@@ -231,6 +231,9 @@ loadtxt FilePath
 Case "menu" ' --> Return to castle Wolfenstein SBWL
 loadtxt FilePath
 '--------------------------------------------------------
+Case "bsp" ' --> Return to castle Wolfenstein SBWL
+loadBSP FilePath
+'--------------------------------------------------------
 Case "h" ' --> Return to castle Wolfenstein SBWL
 loadtxt FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -273,6 +276,48 @@ loadtxt FilePath
 '--------------------------------------------------------
 Case "fx" ' --> John Deere - American Builder Deluxe
 loadtxt FilePath
+'--------------------------------------------------------
+Case "gmf" ' --> John Deere - American Builder Deluxe
+    If GMF.GMF_GMA_CheckIfValid(FilePath) = True Then
+        loadtxt FilePath
+        Exit Function
+    Else
+        If GMF.GMF_GMA_CheckIfValidGMI(FilePath) = True Then
+            MsgBox "This is a GMF_GMI file. jRipper supports only GMF_GMA.", vbExclamation, "Wrong .GMF format"
+            Exit Function
+        Else
+            MsgBox "Unknown .GMF format", vbCritical, "Not GMF_GMI/GMF_GMA format"
+            Exit Function
+        End If
+    End If
+'--------------------------------------------------------
+Case "gma" ' --> John Deere - American Builder Deluxe
+    If GMF.GMF_GMA_CheckIfValid(FilePath) = True Then
+        loadtxt FilePath
+        Exit Function
+    Else
+        If GMF.GMF_GMA_CheckIfValidGMI(FilePath) = True Then
+            MsgBox "This is a GMA_GMI file. jRipper supports only GMA_GMA.", vbExclamation, "Wrong .GMA format"
+            Exit Function
+        Else
+            MsgBox "Unknown .GMA format", vbCritical, "Not GMA_GMI/GMA_GMA format"
+            Exit Function
+        End If
+    End If
+'--------------------------------------------------------
+Case "gms" ' --> John Deere - American Builder Deluxe
+    If GMF.GMF_GMA_CheckIfValid(FilePath) = True Then
+        loadtxt FilePath
+        Exit Function
+    Else
+        If GMF.GMF_GMA_CheckIfValidGMI(FilePath) = True Then
+            MsgBox "This is a GMS_GMI file. jRipper supports only GMS_GMA.", vbExclamation, "Wrong .GMS format"
+            Exit Function
+        Else
+            MsgBox "Unknown .GMS format", vbCritical, "Not GMS_GMI/GMS_GMA format"
+            Exit Function
+        End If
+    End If
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -289,6 +334,20 @@ loadtxt FilePath
 '--------------------------------------------------------
 Case "tpg" ' --> NFS Porsche
 loadtxt FilePath
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Case "twt" ' --> Carmageddon II
+loadTWT FilePath
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Case "wad" ' --> Tomb Raider 3 (AOLC/TLA)
+loadWAD FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -414,14 +473,12 @@ ElseIf BIG.BIGF_CheckIfValidBIGC(FilePath) = True Then
 Else
     'put code here!
 End If
+'--------------------------------------------------------
+Case "ast" '--> # Various Games (SChl audio)
+loadSChl FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-
-' twt bsp wad
-' gmf gms gma
-' ast
 End Select
 End Function
 
@@ -548,6 +605,72 @@ Dim TE As Double
     ArchiveMan.addinfo "Root Dir: " & SLF.SLF_get_DirName(FilePath), "FileList Entry Offset: " & SLF.SLF_get_FileTableEntryOffset(FilePath)
     Exit Function
 End Function
+
+Function loadTWT(ByVal FilePath As String)
+Dim TS As Double
+Dim TE As Double
+    loadArchive FilePath
+    TS = Timer
+    TWT.TWT_Decode FilePath, ArchiveMan.Port
+    TE = Timer
+    ArchiveMan.info_LOAD.Caption = "Loaded in: " & FormatNumber(TE - TS, 5, vbUseDefault, vbTrue, vbTrue) & " s"
+    ArchiveMan.x.Enabled = True
+    ArchiveMan.xa.Enabled = True
+    ArchiveMan.Label1.Caption = jrMain.FPath.Caption
+    ArchiveMan.selall.Value = 1
+    ArchiveMan.addinfo "First File Offset: " & TWT.TWT_get_FirstFileOffset(FilePath)
+    Exit Function
+End Function
+
+Function loadSChl(ByVal FilePath As String)
+Dim TS As Double
+Dim TE As Double
+Dim SCHlChuncks As Long
+    loadArchive FilePath
+    TS = Timer
+    SCHlChuncks = SCHl_get_Headers(FilePath, ArchiveMan.pb1, ArchiveMan.Port)
+    TE = Timer
+    ArchiveMan.info_LOAD.Caption = "Loaded in: " & FormatNumber(TE - TS, 5, vbUseDefault, vbTrue, vbTrue) & " s"
+    ArchiveMan.x.Enabled = True
+    ArchiveMan.xa.Enabled = True
+    ArchiveMan.Label1.Caption = jrMain.FPath.Caption
+    ArchiveMan.selall.Value = 1
+    ArchiveMan.addinfo "First Split Header Offset: " & SChl.SCHl_get_SplitHeader(FilePath)
+    Exit Function
+End Function
+
+Function loadBSP(ByVal FilePath As String)
+Dim TS As Double
+Dim TE As Double
+    loadArchive FilePath
+    TS = Timer
+    BSP.BSP_decode FilePath, ArchiveMan.Port, ArchiveMan.pb1
+    TE = Timer
+    ArchiveMan.info_LOAD.Caption = "Loaded in: " & FormatNumber(TE - TS, 5, vbUseDefault, vbTrue, vbTrue) & " s"
+    ArchiveMan.x.Enabled = True
+    ArchiveMan.xa.Enabled = True
+    ArchiveMan.Label1.Caption = jrMain.FPath.Caption
+    ArchiveMan.selall.Value = 1
+    ArchiveMan.addinfo "First File Offset: " & BSP.BSP_get_FirstFileOffset(FilePath), "First File Name Entry: " & BSP.BSP_get_FirstFileNameEntry(FilePath)
+    Exit Function
+End Function
+
+Function loadWAD(ByVal FilePath As String)
+Dim TS As Double
+Dim TE As Double
+    loadArchive FilePath
+    TS = Timer
+    WAD.WAD_Decode FilePath, ArchiveMan.Port
+    TE = Timer
+    ArchiveMan.info_LOAD.Caption = "Loaded in: " & FormatNumber(TE - TS, 5, vbUseDefault, vbTrue, vbTrue) & " s"
+    ArchiveMan.x.Enabled = True
+    ArchiveMan.xa.Enabled = True
+    ArchiveMan.Label1.Caption = jrMain.FPath.Caption
+    ArchiveMan.selall.Value = 1
+    ArchiveMan.addinfo "First File Offset: " & WAD.WAD_get_FirstFileOffset(FilePath)
+    Exit Function
+End Function
+
 '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "VP6"
 '=>  version 2.0
 '===============================
 ' Need For Speed Most Wanted
@@ -48,7 +48,7 @@ End Function
 '=> Count Files (not fastest way, but is good enough)
 Function MVhd_get_Headers(MVhdFilePath As String, ProgressBar As ProgressBar, ListV As ListView)
 Dim x As Long
-Dim C As Long
+Dim c As Long
 Dim l As ListItem
 Dim speed As Long
 '
@@ -63,8 +63,8 @@ speed = 4
 For x = 1 To FileLen(MVhdFilePath) Step speed
 MVhd_get_Headers = get_4chars(MVhdFilePath, x)
     If MVhd_get_Headers = "SCHl" Then
-        C = C + 1
-        Set l = ListV.ListItems.add(, , "File " & C) ' Add filenames
+        c = c + 1
+        Set l = ListV.ListItems.add(, , "File " & c) ' Add filenames
         l.SubItems(2) = x ' Add Start Offset
         l.SubItems(3) = "MVHD" ' Add Extension
         l.SmallIcon = "unknown"
@@ -75,14 +75,14 @@ MVhd_get_Headers = get_4chars(MVhdFilePath, x)
 ProgressBar.Value = x
 Next x
 '
-MVhd_get_Headers = C
+MVhd_get_Headers = c
 ProgressBar.Visible = False
 End Function
 
-Function MVhd_extractOne(MVhdFilePath As String, DestFolder As String, FileNumber, ListV As ListView)
+Function MVhd_extractOne(MVhdFilePath As String, DestFolder As String, Filenumber, ListV As ListView)
 ' Dims
 Dim l As ListItem
-Set l = ListV.ListItems(FileNumber)
+Set l = ListV.ListItems(Filenumber)
 Dim strFFO As String: strFFO = (Split(l.SubItems(2), "-")(0)) - 1
 Dim strLFO As String: strLFO = (Split(l.SubItems(2), "-")(1)) - 1
 Dim strFOP As String: strFOP = DestFolder & "\" & l.Text & ".MVhd"
@@ -101,12 +101,12 @@ ReDim byteSTORE(filesize - 1)
     'DoEvents
 End Function
 
-Function get_4chars(FilePath As String, pos)
+Function get_4chars(FilePath As String, Pos)
 ' Dims
 Dim strHEADER As String * 4
 ' Open file and get 4chars
 Open FilePath For Binary As #1
-Get #1, pos, strHEADER
+Get #1, Pos, strHEADER
 Close #1
 ' Print result
 get_4chars = strHEADER

@@ -2,7 +2,7 @@ VERSION 5.00
 Begin VB.Form wndGDP 
    BackColor       =   &H004D483F&
    BorderStyle     =   3  'Fixed Dialog
-   Caption         =   "GDP Manager"
+   Caption         =   "GDP Manager 1.00"
    ClientHeight    =   1920
    ClientLeft      =   45
    ClientTop       =   435

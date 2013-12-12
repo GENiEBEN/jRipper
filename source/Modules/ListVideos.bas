@@ -1,12 +1,8 @@
 Attribute VB_Name = "ListVideos"
-'TODO :
-' Check_FEAR nu merge ... nu returneaza valoarea care vreau sa o citesc in mod hex
-
 Option Explicit
 Dim fso As New FileSystemObject
 Global outLong(1 To 2) As Byte
 
-'==========================================================================================
 Public Function GetIcon(fileEXT)
 fileEXT = StrConv(fileEXT, vbLowerCase)
 Select Case fileEXT
@@ -14,199 +10,239 @@ Select Case fileEXT
     Case "xmv": GetIcon = "bik"
     Case "rmv": GetIcon = "bik"
     Case "arc": GetIcon = "bik"
-    Case "bmp": GetIcon = "bmp"
-    Case "ogg": GetIcon = "ogg"
-    Case "wmv": GetIcon = "wmv"
+    Case "bmp": GetIcon = "image"
+    Case "ogg": GetIcon = "video"
+    Case "aud": GetIcon = "video"
+    Case "wmv": GetIcon = "video"
+    Case "asf": GetIcon = "video"
+    Case "mpg": GetIcon = "video"
+    Case "mad": GetIcon = "video"
+    Case "dat": GetIcon = "video"
+    Case "pop": GetIcon = "video"
+    Case "avi": GetIcon = "video"
+    Case "vp6": GetIcon = "video"
     Case "exe": GetIcon = "exe"
-    Case "ini": GetIcon = "ini_txt"
-    Case "txt": GetIcon = "ini_txt"
-    Case Else: GetIcon = "unknown"
+    Case "ini": GetIcon = "text"
+    Case "txt": GetIcon = "text"
+    Case Else: GetIcon = "exe"
 End Select
 End Function
 
-Public Function add(VideoName, FileName)
+Public Function add(VideoName, FileName) ' Add VIDEO into listview
 On Error Resume Next
 Dim strEXT As String * 3
 Dim l As ListItem
-    Set l = NIMP.list.ListItems.add(, , VideoName)
-        l.SubItems(1) = FileName
+'
+Set l = NIMP.list.ListItems.add(, , VideoName)
+l.SubItems(1) = FileName
 strEXT = Strings.Split(l.SubItems(1), ".")(1)
-        l.SmallIcon = GetIcon(strEXT)
+l.SmallIcon = GetIcon(strEXT)
 End Function
 
 Public Function dir(regPATH As String, regKEY As String, VideoFolder As String) ' Get video folder path
-Dim tmp As String
+Dim tmp As String: tmp = GetStringValue(regPATH, regKEY)
 With NIMP.ret
-          tmp = GetStringValue(regPATH, regKEY)
-         .Caption = tmp
-         .Caption = .Caption & VideoFolder
+.Caption = tmp
+.Caption = .Caption & VideoFolder
 dir = .Caption
 End With
 End Function
+
 Public Function dir2(regPATH As String, regKEY As String, VideoFolder As String) ' Get video folder path (2)
-Dim tmp As String
+Dim tmp As String: tmp = GetStringValue(regPATH, regKEY)
 With NIMP.ret2
-          tmp = GetStringValue(regPATH, regKEY)
-         .Caption = tmp
-         .Caption = .Caption & VideoFolder
+.Caption = tmp
+.Caption = .Caption & VideoFolder
 dir2 = .Caption
 End With
 End Function
+
 Public Function del(ListViewINDEX) ' delete a file
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
 fso.CopyFile vidName, vidName & ".NIMP" ' Backup file
 fso.DeleteFile vidName, True ' Delete original file
 End Function
+
 Public Function del2(ListViewINDEX) ' delete a file(2)
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret2.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
 fso.CopyFile vidName, vidName & ".NIMP" ' Backup file
 fso.DeleteFile vidName, True ' Delete original file
 End Function
+
 Public Function del_CondemnedCO(ListViewINDEX, Offset) ' noop video entry in a archive
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
-' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
-Open vidName For Binary As #1
-'NumberToByte 0
-Put #1, Offset, "X" ' outLong
+
+Open vidName For Binary As #1 ' Open file in bynary mode and fill Offset with 0 (this way u can nop file entry instead wasting time deleting it from archive)
+Put #1, Offset, "X"
 Close #1
+
 End Function
+
+
 Public Function del_FEAR(ListViewINDEX, Offset) ' noop video entry in a archive
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
-' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
-Open vidName For Binary As #1
-'NumberToByte 0
-Put #1, Offset, "X" ' outLong
+
+Open vidName For Binary As #1 ' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
+Put #1, Offset, "X"
 Close #1
+
 End Function
+
 Public Function restore(ListViewINDEX) ' restore a backup
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
 fso.CopyFile vidName & ".NIMP", vidName ' Restore File
 End Function
+
 Public Function restore2(ListViewINDEX) ' restore a backup(2)
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret2.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
 fso.CopyFile vidName & ".NIMP", vidName ' Restore File
 End Function
+
 Public Function restore_CondemnedCO(ListViewINDEX, Offset, OriginalLetter As String) ' noop video entry in a archive
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
-' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
-Open vidName For Binary As #1
-'NumberToByte 0
-Put #1, Offset, OriginalLetter ' outLong
+
+Open vidName For Binary As #1 ' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
+Put #1, Offset, OriginalLetter
 Close #1
+
 End Function
+
 Public Function restore_FEAR(ListViewINDEX, Offset, OriginalLetter As String) ' noop video entry in a archive
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SetAttr vidName, vbNormal ' Remove Read-Only attribute
-' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
-Open vidName For Binary As #1
-'NumberToByte 0
-Put #1, Offset, OriginalLetter ' outLong
+
+Open vidName For Binary As #1 ' Open file in bynary mode and fill Offset with 0 (this way u can noop file entry instead wasting time deleting it from archive)
+Put #1, Offset, OriginalLetter
 Close #1
+
 End Function
+
 Public Function check(ListViewINDEX) ' file or backup exists?
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 Dim errorAhh As String: errorAhh = Left(NIMP.ret.Caption, 5)
+
 If errorAhh = "Error" Then
-NIMP.selall.Enabled = False
+    NIMP.selall.Enabled = False
 Else
-NIMP.selall.Enabled = True
-If fso.FileExists(vidName) = True Then ' if original file exists then ...
-    If FileLen(vidName) <> 3984 Then 'is empty BIK?
-        If FileLen(vidName) <> 13572 Then 'is empty WMV?
-            If FileLen(vidName) <> 16388 Then ' is empty MPG?
-                If FileLen(vidName) <> 925696 Then   'is this a ChampionSheep Rally file?
-                    NIMP.list.ListItems(ListViewINDEX).Checked = True ' enable checkbox so user knows he should remove them
+    NIMP.selall.Enabled = True
+    If fso.FileExists(vidName) = True Then ' if original file exists then ...
+        If FileLen(vidName) <> 3984 Then 'is empty BIK?
+            If FileLen(vidName) <> 13572 Then 'is empty WMV?
+                If FileLen(vidName) <> 16388 Then ' is empty MPG?
+                    If FileLen(vidName) <> 925696 Then   'is this a ChampionSheep Rally file?
+                        If FileLen(vidName) <> 88064 Then   'is this empty Indeo IV50 movie?
+                        NIMP.list.ListItems(ListViewINDEX).Checked = True ' enable checkbox so user knows he should remove them
+                        End If
+                    End If
                 End If
             End If
         End If
+    Else
+        If fso.FileExists(vidName & ".NIMP") = True Then ' if backup exists then ..
+        NIMP.list.ListItems(ListViewINDEX).Checked = False ' .. disable checkbox in listview
+        End If
     End If
-Else
-    If fso.FileExists(vidName & ".NIMP") = True Then ' if backup exists then ..
-    NIMP.list.ListItems(ListViewINDEX).Checked = False ' .. disable checkbox in listview
-    End If
-End If
 End If
 End Function
-Public Function check2(ListViewINDEX) ' file or backup exists? (2)
+
+Public Function check2(ListViewINDEX) ' file or backup exists? (2) TODO: update same as check1
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
@@ -243,48 +279,58 @@ Public Function check_CondemnedCO(ListViewINDEX, Offset) ' file or backup exists
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
-' Open file in bynary mode and check if we made changes 2 it
+
 Dim tmp As String
-Open vidName For Binary As #1
+Open vidName For Binary As #1 ' Open file in bynary mode and check if we made changes 2 it
 Get #1, Offset, tmp
 Close #1
+
 If tmp = "X" Then
 NIMP.list.ListItems(1).Checked = False
 Else
 NIMP.list.ListItems(1).Checked = True
 End If
+
 End Function
+
 Public Function check_FEAR(ListViewINDEX, Offset) ' file or backup exists? (for F.E.A.R.)
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
-' Open file in bynary mode and check if we made changes 2 it
+
 Dim tmp As String
-Open vidName For Binary As #1
+Open vidName For Binary As #1 ' Open file in bynary mode and check if we made changes 2 it
 Get #1, Offset, tmp
 Close #1
+
 If tmp = "X" Then
 NIMP.list.ListItems(1).Checked = False
 Else
 NIMP.list.ListItems(1).Checked = True
 End If
+
 End Function
+
 Public Function SaveResItemToDisk(ByVal iResourceNum As Integer, ByVal sResourceType As String, ByVal sDestFileName As String) As Long
-    Dim bytResourceData()   As Byte
-    Dim iFileNumOut         As Integer
-    On Error GoTo SaveResItemToDisk_err
+Dim bytResourceData()   As Byte
+Dim iFileNumOut         As Integer
+On Error GoTo SaveResItemToDisk_err
     bytResourceData = LoadResData(iResourceNum, sResourceType)
     iFileNumOut = FreeFile
     Open sDestFileName For Binary Access Write As #iFileNumOut
@@ -300,10 +346,12 @@ Public Function Ovr(ListViewINDEX, resindex, resname) ' replace a file
 On Error Resume Next
 Dim vidName As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 SaveResItemToDisk resindex, resname, vidName
@@ -314,18 +362,17 @@ On Error Resume Next
 Dim vidName As String
 Dim vidName2 As String
 Dim l As ListItem
+
 If ListViewINDEX > NIMP.list.ListItems.Count Then
 MsgBox "Index not existent"
 Exit Function
 End If
+
 vidName = NIMP.list.ListItems(ListViewINDEX).SubItems(1) ' Get video file name from ListView
 vidName = NIMP.ret.Caption & vidName ' Return full path of video file
 vidName2 = NIMP.ret.Caption & "TITLE.DBC" ' Return full path of video file
-
 fso.CopyFile vidName2, vidName, True
 End Function
-'================================================================================
-'================================================================================
 
 Function Apply() ' APPLY FILE CHANGES
 Dim X
@@ -382,6 +429,19 @@ Else
     restore_CondemnedCO 1, 247373, "M"
 End If
 End Function
+
+Function Apply_FALLOUT() ' APPLY FILE CHANGES (for FALLOUT)
+If NIMP.list.ListItems(1).Checked = True Then
+    del_CondemnedCO 1, 1969
+    del_CondemnedCO 1, 1995
+Else
+    restore_CondemnedCO 1, 1969, "I"
+    restore_CondemnedCO 1, 1995, "I"
+End If
+End Function
+
+
+
 Function Apply_FEAR() ' APPLY FILE CHANGES (for F.E.A.R.)
 If NIMP.list.ListItems(1).Checked = True Then
     del_FEAR 1, 213597
@@ -400,6 +460,14 @@ Else
     restore_FEAR 1, 213597, "B"
 End If
 End Function
+
+Function Apply_JA2() ' APPLY FILE CHANGES (for Jagged Alliance 2)
+If NIMP.list.ListItems(1).Checked = True Then
+    del_FEAR 1, 51618213
+Else
+    restore_FEAR 1, 51618213, "S"
+End If
+End Function
 Function CheckFiles() ' CHECK IF THERE IS A BACKUP OR WE DIDN'T TOUCHED THE ORIGINAL FILES
 Dim X
 For X = 1 To NIMP.list.ListItems.Count
@@ -414,10 +482,13 @@ For X = 1 To NIMP.list.ListItems.Count
     If NIMP.Combo1.Text = "Lord of the Rings: War of the Ring" Then
     check_FEAR X, 39605175
     End If
-    Next X
+    If NIMP.Combo1.Text = "Jagged Alliance 2" Then
+    check_FEAR X, 51618213
+    End If
+
+Next X
 End Function
 
-''''''
 Public Function NumberToByte(newnum)
 Dim byloop As Long
 Dim newstr As String
@@ -439,6 +510,7 @@ End If
 myNum = ConvertIntelToMotorola(myNum)
 outLong(1) = Val("&H" & Mid(myNum, 1, 2) & "&")
 End Function
+
 Public Function ConvertIntelToMotorola(IntelHex As String)
 ConvertIntelToMotorola = Mid(IntelHex, 7, 2) & Mid(IntelHex, 5, 2) & Mid(IntelHex, 3, 2) & Mid(IntelHex, 1, 2)
 End Function

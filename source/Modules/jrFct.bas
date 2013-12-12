@@ -6,9 +6,13 @@ Public Const SWP_NOMOVE = &H2
 Public Const SWP_NOSIZE = &H1
 Public Const HWND_NOTOPMOST = -2
 Public Const LB_ITEMFROMPOINT = &H1A9
+Const SW_SHOWNORMAL = 1
+Const STARTF_USESHOWWINDOW = &H1&
 
-Public Declare Function Setwindowpos Lib "user32" Alias "SetWindowPos" (ByVal hwnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
+Public Declare Function Setwindowpos Lib "user32" Alias "SetWindowPos" (ByVal HWND As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
 Public Declare Function ReleaseCapture Lib "user32" () As Long
+Private Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal HWND As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
+
 
 
 '=> Intelligent Application Version
@@ -83,4 +87,13 @@ Public Function SetWinPos(iPos As Integer, lHWnd As Long) As Boolean
     If Setwindowpos(lHWnd, lwinpos, 0, 0, 0, 0, SWP_NOMOVE + SWP_NOSIZE) Then
         SetWinPos = True
     End If
+End Function
+
+Function StartDoc(DocName As String, Form As Form) As Long
+    StartDoc = ShellExecute(Form.HWND, "Open", DocName, _
+    "", App.Path, STARTF_USESHOWWINDOW)
+End Function
+
+Function OpenWWW(webadress, Form As Form)
+ShellExecute Form.HWND, vbNullString, webadress, vbNullString, "C:\", SW_SHOWNORMAL
 End Function

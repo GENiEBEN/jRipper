@@ -7,7 +7,7 @@ Begin VB.Form VP6_Playa
    ClientHeight    =   2505
    ClientLeft      =   45
    ClientTop       =   720
-   ClientWidth     =   5175
+   ClientWidth     =   7530
    BeginProperty Font 
       Name            =   "Tahoma"
       Size            =   8.25
@@ -23,17 +23,25 @@ Begin VB.Form VP6_Playa
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   2505
-   ScaleWidth      =   5175
+   ScaleWidth      =   7530
    ShowInTaskbar   =   0   'False
    Begin VB.Frame Frame2 
       BackColor       =   &H004D483F&
       Height          =   1260
       Left            =   75
-      TabIndex        =   1
+      TabIndex        =   5
       Top             =   30
-      Width           =   5010
+      Width           =   7365
+      Begin VB.Image Image2 
+         Height          =   1095
+         Left            =   45
+         Picture         =   "VP6_Player.frx":F4D6
+         Stretch         =   -1  'True
+         Top             =   135
+         Width           =   1110
+      End
       Begin VB.Label About 
-         BackColor       =   &H00FFFFFF&
+         BackStyle       =   0  'Transparent
          Caption         =   "About"
          BeginProperty Font 
             Name            =   "Tahoma"
@@ -44,27 +52,19 @@ Begin VB.Form VP6_Playa
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H00000000&
-         Height          =   1125
-         Left            =   1560
-         TabIndex        =   2
-         Top             =   120
-         Width           =   3435
-      End
-      Begin VB.Image Image2 
-         Height          =   1125
-         Left            =   30
-         Picture         =   "VP6_Player.frx":F4D6
-         Stretch         =   -1  'True
-         Top             =   120
-         Width           =   1530
+         ForeColor       =   &H00BDB8AF&
+         Height          =   1005
+         Left            =   1245
+         TabIndex        =   6
+         Top             =   180
+         Width           =   6030
       End
    End
    Begin jR_RC2.Butt WatchVP6 
       Height          =   390
-      Left            =   3720
-      TabIndex        =   4
-      Top             =   1965
+      Left            =   6090
+      TabIndex        =   2
+      Top             =   1995
       Width           =   1350
       _ExtentX        =   2381
       _ExtentY        =   688
@@ -89,9 +89,9 @@ Begin VB.Form VP6_Playa
    End
    Begin jR_RC2.Butt Convert 
       Height          =   390
-      Left            =   2325
-      TabIndex        =   5
-      Top             =   1965
+      Left            =   4695
+      TabIndex        =   3
+      Top             =   1995
       Width           =   1350
       _ExtentX        =   2381
       _ExtentY        =   688
@@ -114,42 +114,42 @@ Begin VB.Form VP6_Playa
       cBack           =   -2147483633
    End
    Begin HookMenu.ctxHookMenu ctxHookMenu1 
-      Left            =   180
-      Top             =   2010
+      Left            =   375
+      Top             =   570
       _ExtentX        =   900
       _ExtentY        =   900
       BmpCount        =   12
-      Bmp:1           =   "VP6_Player.frx":1DF3C
+      Bmp:1           =   "VP6_Player.frx":19F88
       Mask:1          =   16777215
       Key:1           =   "#mnu_FileOpen"
-      Bmp:2           =   "VP6_Player.frx":1E036
+      Bmp:2           =   "VP6_Player.frx":1A082
       Mask:2          =   12632256
       Key:2           =   "#mnu_FileSave"
-      Bmp:3           =   "VP6_Player.frx":1E578
+      Bmp:3           =   "VP6_Player.frx":1A5C4
       Key:3           =   "#mnu_File_Exit"
-      Bmp:4           =   "VP6_Player.frx":1F2E0
+      Bmp:4           =   "VP6_Player.frx":1B32C
       Mask:4          =   526344
       Key:4           =   "#mnu_Tools_NiMP"
-      Bmp:5           =   "VP6_Player.frx":1F708
+      Bmp:5           =   "VP6_Player.frx":1B754
       Key:5           =   "#mnu_Help_HelpContents"
-      Bmp:6           =   "VP6_Player.frx":1FB30
+      Bmp:6           =   "VP6_Player.frx":1BB7C
       Mask:6          =   16711935
       Key:6           =   "#mnu_File_Preferences"
-      Bmp:7           =   "VP6_Player.frx":1FC42
+      Bmp:7           =   "VP6_Player.frx":1BC8E
       Mask:7          =   16711935
       Key:7           =   "#mnu_Help_About"
-      Bmp:8           =   "VP6_Player.frx":1FF94
+      Bmp:8           =   "VP6_Player.frx":1BFE0
       Mask:8          =   16711935
       Key:8           =   "#mnu_Help_UsedDll"
-      Bmp:9           =   "VP6_Player.frx":202E6
+      Bmp:9           =   "VP6_Player.frx":1C332
       Mask:9          =   16711935
       Key:9           =   "#mnu_Tools_MSNotepad"
-      Bmp:10          =   "VP6_Player.frx":20638
+      Bmp:10          =   "VP6_Player.frx":1C684
       Mask:10         =   16711935
       Key:10          =   "#mnu_Tools_MSPaint"
-      Bmp:11          =   "VP6_Player.frx":2098A
+      Bmp:11          =   "VP6_Player.frx":1C9D6
       Key:11          =   "#mnu_Tools_MSRegistry"
-      Bmp:12          =   "VP6_Player.frx":20CDC
+      Bmp:12          =   "VP6_Player.frx":1CD28
       Mask:12         =   15065571
       Key:12          =   "#mnu_Tools_MSCalculator"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -177,7 +177,7 @@ Begin VB.Form VP6_Playa
       ForeColor       =   &H00BDB8AF&
       Height          =   270
       Left            =   390
-      TabIndex        =   6
+      TabIndex        =   4
       Top             =   2490
       Visible         =   0   'False
       Width           =   810
@@ -185,17 +185,17 @@ Begin VB.Form VP6_Playa
    Begin VB.Label switches 
       Height          =   1245
       Left            =   270
-      TabIndex        =   3
+      TabIndex        =   1
       Top             =   2610
       Width           =   4155
    End
    Begin VB.Image Image1 
       Height          =   45
       Left            =   -60
-      Picture         =   "VP6_Player.frx":2102E
+      Picture         =   "VP6_Player.frx":1D07A
       Stretch         =   -1  'True
       Top             =   1845
-      Width           =   5235
+      Width           =   7605
    End
    Begin VB.Label Path 
       BackStyle       =   0  'Transparent
@@ -213,7 +213,7 @@ Begin VB.Form VP6_Playa
       Left            =   75
       TabIndex        =   0
       Top             =   1365
-      Width           =   5025
+      Width           =   7365
    End
    Begin VB.Menu mnu_File 
       Caption         =   "File"
@@ -251,13 +251,13 @@ switches.Caption = _
 "del eaconv.cmd" & vbNewLine & _
 ")"
 ' Paths
-Dim export As String: export = Replace(path.Caption, fname.Caption, "eaconv.cmd")
-Dim expor2 As String: expor2 = Replace(path.Caption, fname.Caption, "eaconv.exe")
+Dim export As String: export = Replace(Path.Caption, fname.Caption, "eaconv.cmd")
+Dim expor2 As String: expor2 = Replace(Path.Caption, fname.Caption, "eaconv.exe")
 ' Create script
 fso.CreateTextFile export, True
 TXT.WriteTextFile export, switches.Caption
 ' Copy convertor
-fso.CopyFile App.path & "\bin\eaconv.exe", expor2, True
+fso.CopyFile App.Path & "\bin\eaconv.exe", expor2, True
 ' Launch Script
 Shell (export), vbNormalFocus
 ' Enable WATCH button
@@ -279,13 +279,13 @@ switches.Caption = _
 "start /wait eaconv.exe %%f" & vbNewLine & _
 ")"
 ' Paths
-Dim export As String: export = Replace(path.Caption, fname.Caption, "eaconv.cmd")
-Dim expor2 As String: expor2 = Replace(path.Caption, fname.Caption, "eaconv.exe")
+Dim export As String: export = Replace(Path.Caption, fname.Caption, "eaconv.cmd")
+Dim expor2 As String: expor2 = Replace(Path.Caption, fname.Caption, "eaconv.exe")
 ' Create script
 fso.CreateTextFile export, True
 TXT.WriteTextFile export, switches.Caption
 ' Copy convertor
-fso.CopyFile App.path & "\bin\eaconv.exe", expor2, True
+fso.CopyFile App.Path & "\bin\eaconv.exe", expor2, True
 ' Launch Script
 Shell (export), vbNormalFocus
 ' Enable WATCH button
@@ -300,8 +300,8 @@ Dim myFilters As String
 Dim buff As String
 Dim bpath As String
 Dim f
-Dim NOFilters As String: NOFilters = ReadINI(App.path & "\bin\jr.ini", "VP6Player", "NumberOfFilters")
-Dim filterformat As String: filterformat = ReadINI(App.path & "\bin\jr.ini", "VP6Player", "ShowExtension")
+Dim NOFilters As String: NOFilters = ReadINI(App.Path & "\bin\jr.ini", "VP6Player", "NumberOfFilters")
+Dim filterformat As String: filterformat = ReadINI(App.Path & "\bin\jr.ini", "VP6Player", "ShowExtension")
 filterformat = LCase(filterformat)
 Dim fStore As String
 Dim fname As String
@@ -310,7 +310,7 @@ Dim tmp1 As String
 Dim tmp2 As String
 ' Load Filters
 For f = 1 To NOFilters
-fStore = ReadINI(App.path & "\bin\jr.ini", "VP6Player", f)
+fStore = ReadINI(App.Path & "\bin\jr.ini", "VP6Player", f)
 fname = Split(fStore, "$")(0)
 fExt = Split(fStore, "$")(1)
 If filterformat = "true" Then
@@ -339,7 +339,7 @@ With OFN
     buff = Trim(buff)
     End If
 ' LoadFile
-Me.path.Caption = OFN.sFile
+Me.Path.Caption = OFN.sFile
 Me.fname.Caption = buff
 End With
 errx:
@@ -358,17 +358,17 @@ End Sub
 Private Sub mnu_FileConvert_Click()
 OpenFN
 convertFile
-Shell ("C:\Program Files\Windows Media Player\wmplayer.exe " & Chr(34) & Replace(Me.path.Caption, ".vp6", ".avi") & Chr(34)), vbMaximizedFocus
+Shell ("C:\Program Files\Windows Media Player\wmplayer.exe " & Chr(34) & Replace(Me.Path.Caption, ".vp6", ".avi") & Chr(34)), vbMaximizedFocus
 Unload Me
 End Sub
 
 Private Sub mnu_FileConvertAll_Click()
 OpenFN
 convertFolder
-Shell (Environ("windir") & "\explorer.exe " & Chr(34) & Replace(path.Caption, "\" & fname.Caption, "") & Chr(34)), vbNormalFocus
+Shell (Environ("windir") & "\explorer.exe " & Chr(34) & Replace(Path.Caption, "\" & fname.Caption, "") & Chr(34)), vbNormalFocus
 End Sub
 
 Private Sub WatchVP6_Click()
-Shell ("C:\Program Files\Windows Media Player\wmplayer.exe " & Chr(34) & Replace(Me.path.Caption, ".vp6", ".avi") & Chr(34)), vbMaximizedFocus
+Shell ("C:\Program Files\Windows Media Player\wmplayer.exe " & Chr(34) & Replace(Me.Path.Caption, ".vp6", ".avi") & Chr(34)), vbMaximizedFocus
 Unload Me
 End Sub

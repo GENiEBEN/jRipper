@@ -74,18 +74,30 @@ With ComboBox
 .AddItem "Adrenaline Extreme Show"
 .AddItem "Reservoir Dogs"
 .AddItem "Bad Day L.A."
-
-
+.AddItem "Ducati World Championship"
+.AddItem "El Matador"
+.AddItem "GTR 2 : FIA GT Racing"
+.AddItem "Lego Star Wars II [NTSC]"
+.AddItem "Just Cause"
+.AddItem "NHL 07"
+.AddItem "Jagged Alliance 2"
+.AddItem "Brigade E5 - New Jagged Union"
+.AddItem "Battlefield 2142"
+.AddItem "Need for Speed - Carbon EURO DEMO [PAL]"
+.AddItem "Need for Speed - Carbon [PAL]"
+.AddItem "Need for Speed - Carbon [NTSC]"
+.AddItem "FallOut"
+.AddItem "Trackmania Sunrise - Extreme"
+.AddItem "Ed Edd n Eddy - Mis Ed-ventures"
 
 End With
-NIMP.Combo1.Text = "Bad Day L.A."
+NIMP.Combo1.Text = "Ed Edd n Eddy - Mis Ed-ventures"
+Exit Function
 End Function
 
 Function LoadVideos(GameName)
-Dim strEXT As String * 3
-'
-With NIMP.ret
 NIMP.list.ListItems.Clear
+
 Select Case GameName ' GameName is case-sensitive!
     
 Case "Tomb Raider - Legend"
@@ -105,7 +117,7 @@ add "Josie Maran speech", "psa_english_pal.vp6"
 add "E3 Trailer", "attract_movie_english_pal.vp6"
 dir "HKEY_LOCAL_MACHINE\SOFTWARE\EA GAMES\Need for Speed Most Wanted", "Install Dir", "MOVIES\"
 
-Case "Age of Empires III" 'not tested
+Case "Age of Empires III"
 add "Logos", "logos.bik"
 add "Trailer", "age3.bik"
 dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Games\Age of Empires 3\1.0", "SetupPath", "avi\"
@@ -341,7 +353,7 @@ dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A8D
 
 Case "Richard Burns Rally"
 add "All intros", "RBR.wmv"
-NIMP.ret.Caption = Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\SCi Games\Richard Burns Rally\InstallPath", "C:\Program Files\Richard Burns Rally") & "\Video\"
+NIMP.ret.Caption = jrRegistry.Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\SCi Games\Richard Burns Rally\InstallPath", "C:\Program Files\Richard Burns Rally") & "\Video\"
 
 Case "Splinter Cell - Pandora Tomorrow [PAL]"
 add "UBISOFT", "UbiLogoPAL.bik"
@@ -431,16 +443,16 @@ add "eutechnyx", "050.dat" 'renamed .avi
 add "Trailer", "021.dat" 'renamed .avi
 
 Case "Sin - Episode 1 Emergence"
-Dim X: X = InputBox("Please enter complete path of SinEpisodes.exe (only folder, without SinEpisodes.exe)", "Sin - Episode 1 Emergence", "C:\SinEpisodes")
-If fso.FolderExists(X) = False Then
+Dim x: x = InputBox("Please enter complete path of SinEpisodes.exe (only folder, without SinEpisodes.exe)", "Sin - Episode 1 Emergence", "C:\SinEpisodes")
+If fso.FolderExists(x) = False Then
     MsgBox "Incorrect folder! Restart NiMP and try again.", vbCritical, "Sin - Episode 1 Emergence"
     End
 Else
-Dim Y As String: Y = X
-    If Not Right(X, 1) = "\" Then
-        Y = X & "\"
+Dim y As String: y = x
+    If Not Right(x, 1) = "\" Then
+        y = x & "\"
     End If
-NIMP.ret.Caption = Y & "SE1\media\"
+NIMP.ret.Caption = y & "SE1\media\"
 add "nVidia", "Nvidia.avi"
 add "Ritual", "RitualSin.avi"
 End If
@@ -486,7 +498,7 @@ add "nVidia", "nVid.bik"
 dir "HKEY_LOCAL_MACHINE\SOFTWARE\Codemasters\Race Driver 2", "PATH_MAIN", "\video\"
 
 Case "Stalin Subway, The"
-NIMP.ret.Caption = Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\Buka\TSS", "C:\Program Files\The Stalin Subway")
+NIMP.ret.Caption = jrRegistry.Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\Buka\TSS", "C:\Program Files\The Stalin Subway")
 NIMP.ret.Caption = Replace(NIMP.ret.Caption, "metro2.exe", "VIDEO\")
 add "All logos", "Logo.avi"
 
@@ -516,7 +528,7 @@ add "CDV", "logocdv.wmv"
 add "BUKA", "logobuka.wmv"
 add "Targem", "logotargem.wmv"
 add "Trailer", "INTRO_RUS_FIELD.wmv"
-NIMP.ret.Caption = Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\Buka\ExMachina", "C:\Hard Truck Apocalypse\")
+NIMP.ret.Caption = jrRegistry.Get_DefaultValue(vHKEY_LOCAL_MACHINE, "SOFTWARE\Buka\ExMachina", "C:\Hard Truck Apocalypse\")
 NIMP.ret.Caption = Replace(NIMP.ret.Caption, "hta.exe", "data\video\")
 
 Case "Temple of Elemental Evil"
@@ -558,12 +570,174 @@ add "Mauretania", "MAURETANIA.wmv"
 add "Trailer", "intro.avi"
 dir "HKEY_LOCAL_MACHINE\SOFTWARE\Enlight Software\Bad Day LA", "Path", "\movie\"
 
+Case "Ducati World Championship"
+add "Logos", "Logo.avi"
+add "Trailer", "Intro.avi"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Ducati World Championship Ubisoft_is1", "InstallLocation", "Modelli\PC\Film\"
 
+Case "El Matador"
+add "All logos", "movie.exe"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{1C507D78-9D78-4169-8555-A2D87BD2B81C}", "InstallLocation", "\"
+
+Case "GTR 2 : FIA GT Racing"
+add "10T Studios", "Intro.bik"
+add "Trailer", "GameIntro.bik"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\10tacle Studios\GTR2", "InstallDir", "\MovieFiles\"
+
+Case "Lego Star Wars II [NTSC]"
+add "All Logos", "demointro.bik"
+dir "HKEY_CLASSES_ROOT\LEGOSTARWARS2", "PathVal", "lego_data\movies\NTSC\"
+
+Case "Just Cause"
+add "EiDOS", "EidosVideo.bik"
+add "Avalanche Studios", "AvalancheVideo.bik"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Eidos\Just Cause", "InstallPath", "\PC\FMV\"
+
+Case "NHL 07"
+add "EA Sports [czech]", "EAcze.vp6"
+add "EA Sports [english]", "EAeng.vp6"
+add "EA Sports [finland]", "EAfin.vp6"
+add "EA Sports [french]", "EAfre.vp6"
+add "EA Sports [swedish]", "EAswe.vp6"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\EA SPORTS\NHL07", "Install Dir", "movies\"
+
+Case "Jagged Alliance 2"
+add "Sir-Tech/Talonsoft", "Intro.slf"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Sir-tech Canada Ltd.\Jagged Alliance 2", "Path", "\Data\"
+
+Case "Brigade E5 - New Jagged Union"
+add "Strategy First", "Logo1.bik"
+add "1C Company", "Logo2.bik"
+add "APEIRON", "Logo3.bik"
+add "Trailer", "promo.bik"
+dir "HKEY_CURRENT_USER\Software\Apeiron\Brigade E5", "InstallDir", "Media\Video\"
+
+Case "Battlefield 2142"
+add "EA Games", "EA.bik"
+add "Dice", "Dice.bik"
+add "Legals", "Legal.bik"
+add "Legals (with ESRB)", "Legal_na.bik"
+add "Trailer", "Intro.bik"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\EA GAMES\Battlefield 2142", "InstallDir", "\mods\bf2142\Movies\"
+
+Case "Need for Speed - Carbon EURO DEMO [PAL]"
+add "EA logo (Default)", "ea_bumper_english_pal.vp6"
+add "EA logo (WideScreen)", "ea_bumper_ws_english_pal.vp6"
+add "EA logo (HighDefinition)", "eahd_bumper_english_pal.vp6"
+add "Nikki speaks", "psa_nikki_english_pal.vp6"
+add "Trailer", "attract_english_pal.vp6"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Need for Speed Carbon Demo", "Install Dir", "MOVIES\"
+
+Case "Need for Speed - Carbon [PAL]"
+add "EA logo *ENGLISH* (Default)", "ea_bumper_english_pal.vp6"
+add "EA logo *BRAZIL* (Default)", "ea_bumper_brazil_pal.vp6"
+add "EA logo *CZECH* (Default)", "ea_bumper_czech_pal.vp6"
+add "EA logo *DANISH* (Default)", "ea_bumper_danish_pal.vp6"
+add "EA logo *DUTCH* (Default)", "ea_bumper_dutch_pal.vp6"
+add "EA logo *FINNISH* (Default)", "ea_bumper_finnish_pal.vp6"
+add "EA logo *FRENCH* (Default)", "ea_bumper_french_pal.vp6"
+add "EA logo *GERMAN* (Default)", "ea_bumper_german_pal.vp6"
+add "EA logo *GREEK* (Default)", "ea_bumper_greek_pal.vp6"
+add "EA logo *HUNGARIAN* (Default)", "ea_bumper_hungarian_pal.vp6"
+add "EA logo *HUNGARY* (Default)", "ea_bumper_hungary_pal.vp6"
+add "EA logo *ITALIAN* (Default)", "ea_bumper_italian_pal.vp6"
+add "EA logo *NORWAY* (Default)", "ea_bumper_norway_pal.vp6"
+add "EA logo *POLISH* (Default)", "ea_bumper_polish_pal.vp6"
+add "EA logo *SPANISH* (Default)", "ea_bumper_spanish_pal.vp6"
+add "EA logo *SWEDEN* (Default)", "ea_bumper_sweden_pal.vp6"
+add "EA logo *SWEDISH* (Default)", "ea_bumper_swedish_pal.vp6"
+add "EA logo *ENGLISH* (WideScreen)", "ea_bumper_ws_english_pal.vp6"
+add "EA logo *BRAZIL* (WideScreen)", "ea_bumper_ws_brazil_pal.vp6"
+add "EA logo *CZECH* (WideScreen)", "ea_bumper_ws_czech_pal.vp6"
+add "EA logo *DANISH* (WideScreen)", "ea_bumper_ws_danish_pal.vp6"
+add "EA logo *DUTCH* (WideScreen)", "ea_bumper_ws_dutch_pal.vp6"
+add "EA logo *FINNISH* (WideScreen)", "ea_bumper_ws_finnish_pal.vp6"
+add "EA logo *FRENCH* (WideScreen)", "ea_bumper_ws_french_pal.vp6"
+add "EA logo *GERMAN* (WideScreen)", "ea_bumper_ws_german_pal.vp6"
+add "EA logo *GREEK* (WideScreen)", "ea_bumper_ws_greek_pal.vp6"
+add "EA logo *HUNGARIAN* (WideScreen)", "ea_bumper_ws_hungarian_pal.vp6"
+add "EA logo *HUNGARY* (WideScreen)", "ea_bumper_ws_hungary_pal.vp6"
+add "EA logo *ITALIAN* (WideScreen)", "ea_bumper_ws_italian_pal.vp6"
+add "EA logo *NORWAY* (WideScreen)", "ea_bumper_ws_norway_pal.vp6"
+add "EA logo *POLISH* (WideScreen)", "ea_bumper_ws_polish_pal.vp6"
+add "EA logo *SPANISH* (WideScreen)", "ea_bumper_ws_spanish_pal.vp6"
+add "EA logo *SWEDEN* (WideScreen)", "ea_bumper_ws_sweden_pal.vp6"
+add "EA logo *SWEDISH* (WideScreen)", "ea_bumper_ws_swedish_pal.vp6"
+add "EA logo *ENGLISH* (HighDefinition)", "eahd_bumper_english_pal.vp6"
+add "EA logo *FRENCH* (HighDefinition)", "eahd_bumper_french_pal.vp6"
+add "EA logo *SPANISH* (HighDefinition)", "eahd_bumper_spanish_pal.vp6"
+add "Nikki speaks", "psa_nikki_english_pal.vp6"
+add "Trailer", "attract_english_pal.vp6"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Need for Speed Carbon", "Install Dir", "MOVIES\"
+
+Case "Need for Speed - Carbon [NTSC]"
+add "EA logo *ENGLISH* (Default)", "ea_bumper_english_ntsc.vp6"
+add "EA logo *BRAZIL* (Default)", "ea_bumper_brazil_ntsc.vp6"
+add "EA logo *CZECH* (Default)", "ea_bumper_czech_ntsc.vp6"
+add "EA logo *DANISH* (Default)", "ea_bumper_danish_ntsc.vp6"
+add "EA logo *DUTCH* (Default)", "ea_bumper_dutch_ntsc.vp6"
+add "EA logo *FINNISH* (Default)", "ea_bumper_finnish_ntsc.vp6"
+add "EA logo *FRENCH* (Default)", "ea_bumper_french_ntsc.vp6"
+add "EA logo *GERMAN* (Default)", "ea_bumper_german_ntsc.vp6"
+add "EA logo *GREEK* (Default)", "ea_bumper_greek_ntsc.vp6"
+add "EA logo *HUNGARIAN* (Default)", "ea_bumper_hungarian_ntsc.vp6"
+add "EA logo *HUNGARY* (Default)", "ea_bumper_hungary_ntsc.vp6"
+add "EA logo *ITALIAN* (Default)", "ea_bumper_italian_ntsc.vp6"
+add "EA logo *NORWAY* (Default)", "ea_bumper_norway_ntsc.vp6"
+add "EA logo *POLISH* (Default)", "ea_bumper_polish_ntsc.vp6"
+add "EA logo *SPANISH* (Default)", "ea_bumper_spanish_ntsc.vp6"
+add "EA logo *SWEDEN* (Default)", "ea_bumper_sweden_ntsc.vp6"
+add "EA logo *SWEDISH* (Default)", "ea_bumper_swedish_ntsc.vp6"
+add "EA logo *ENGLISH* (WideScreen)", "ea_bumper_ws_english_ntsc.vp6"
+add "EA logo *BRAZIL* (WideScreen)", "ea_bumper_ws_brazil_ntsc.vp6"
+add "EA logo *CZECH* (WideScreen)", "ea_bumper_ws_czech_ntsc.vp6"
+add "EA logo *DANISH* (WideScreen)", "ea_bumper_ws_danish_ntsc.vp6"
+add "EA logo *DUTCH* (WideScreen)", "ea_bumper_ws_dutch_ntsc.vp6"
+add "EA logo *FINNISH* (WideScreen)", "ea_bumper_ws_finnish_ntsc.vp6"
+add "EA logo *FRENCH* (WideScreen)", "ea_bumper_ws_french_ntsc.vp6"
+add "EA logo *GERMAN* (WideScreen)", "ea_bumper_ws_german_ntsc.vp6"
+add "EA logo *GREEK* (WideScreen)", "ea_bumper_ws_greek_ntsc.vp6"
+add "EA logo *HUNGARIAN* (WideScreen)", "ea_bumper_ws_hungarian_ntsc.vp6"
+add "EA logo *HUNGARY* (WideScreen)", "ea_bumper_ws_hungary_ntsc.vp6"
+add "EA logo *ITALIAN* (WideScreen)", "ea_bumper_ws_italian_ntsc.vp6"
+add "EA logo *NORWAY* (WideScreen)", "ea_bumper_ws_norway_ntsc.vp6"
+add "EA logo *POLISH* (WideScreen)", "ea_bumper_ws_polish_ntsc.vp6"
+add "EA logo *SPANISH* (WideScreen)", "ea_bumper_ws_spanish_ntsc.vp6"
+add "EA logo *SWEDEN* (WideScreen)", "ea_bumper_ws_sweden_ntsc.vp6"
+add "EA logo *SWEDISH* (WideScreen)", "ea_bumper_ws_swedish_ntsc.vp6"
+add "EA logo *ENGLISH* (HighDefinition)", "eahd_bumper_english_ntsc.vp6"
+add "EA logo *FRENCH* (HighDefinition)", "eahd_bumper_french_ntsc.vp6"
+add "EA logo *SPANISH* (HighDefinition)", "eahd_bumper_spanish_ntsc.vp6"
+add "Nikki speaks", "psa_nikki_english_ntsc.vp6"
+add "Trailer", "attract_english_ntsc.vp6"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Need for Speed Carbon", "Install Dir", "MOVIES\"
+
+Case "FallOut"
+add "InterPlay + Trailer", "master.dat"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fallout", "UninstallString", ""
+NIMP.ret.Caption = Replace(NIMP.ret.Caption, "C:\WINDOWS\ipuninst.exe -f", "")
+NIMP.ret.Caption = Replace(NIMP.ret.Caption, "\uninst.log", "\")
+
+Case "Trackmania Sunrise - Extreme"
+add "Trailer (TMSX)", "00_eXtreme.bik"
+add "Enlight Software", "ES_logo.bik"
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TmSunrise_is1", "InstallLocation", "GameData\IntroSlides\"
+
+Case "Ed Edd n Eddy - Mis Ed-ventures"
+add "Cartoon Network Interactive", "CN.bik"
+add "Midway", "Midway.bik"
+add "BINK Video", "Bink.bik"
+add "HAVOK", "Havok.bik"
+add "A2M", "A2M.bik"
+add "Legals", "Legal.bik"
+add "BACKUP MOVIES (ENABLE IT!!!)", "LOGOS.bik"
+NIMP.list.ListItems(7).Checked = True
+dir "HKEY_LOCAL_MACHINE\SOFTWARE\A2M\EEE", "InstallDir", "\PC\MOVIES\"
 
 Case Else
 NIMP.list.ListItems.Clear
 NIMP.ret.Caption = ""
-End Select
-End With
-End Function
+NIMP.list.SetFocus
 
+End Select
+End Function

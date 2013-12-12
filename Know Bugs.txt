@@ -1,0 +1,3 @@
+Know bugs list
+---------------
+1. BSP - some archives returns bad getTotalFiles

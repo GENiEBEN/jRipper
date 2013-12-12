@@ -1,10 +1,10 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "Mscomctl.ocx"
 Begin VB.Form NIMP 
    BackColor       =   &H00C0C0C0&
    BorderStyle     =   0  'None
    Caption         =   "NiMP"
-   ClientHeight    =   5655
+   ClientHeight    =   6765
    ClientLeft      =   0
    ClientTop       =   0
    ClientWidth     =   7770
@@ -22,7 +22,7 @@ Begin VB.Form NIMP
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   5655
+   ScaleHeight     =   6765
    ScaleWidth      =   7770
    Begin VB.CheckBox selall 
       Appearance      =   0  'Flat
@@ -65,8 +65,7 @@ Begin VB.Form NIMP
    End
    Begin VB.PictureBox Picture1 
       Appearance      =   0  'Flat
-      AutoSize        =   -1  'True
-      BackColor       =   &H80000005&
+      BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       BeginProperty Font 
          Name            =   "Tahoma"
@@ -78,10 +77,10 @@ Begin VB.Form NIMP
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H80000008&
-      Height          =   5655
+      Height          =   6765
       Left            =   0
       Picture         =   "wndMain.frx":199A
-      ScaleHeight     =   5655
+      ScaleHeight     =   6765
       ScaleWidth      =   7770
       TabIndex        =   2
       TabStop         =   0   'False
@@ -107,7 +106,7 @@ Begin VB.Form NIMP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         cBhover         =   14737632
+         cBhover         =   16777215
          Focus           =   0   'False
          LockHover       =   3
          cGradient       =   16777215
@@ -116,14 +115,48 @@ Begin VB.Form NIMP
          Value           =   0   'False
          cBack           =   12632256
       End
+      Begin MSComctlLib.ImageList typelist 
+         Left            =   3135
+         Top             =   -90
+         _ExtentX        =   1005
+         _ExtentY        =   1005
+         BackColor       =   -2147483643
+         ImageWidth      =   16
+         ImageHeight     =   16
+         MaskColor       =   12632256
+         _Version        =   393216
+         BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+            NumListImages   =   5
+            BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "wndMain.frx":BE54
+               Key             =   "bik"
+            EndProperty
+            BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "wndMain.frx":DA16
+               Key             =   "exe"
+            EndProperty
+            BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "wndMain.frx":DDB0
+               Key             =   "video"
+            EndProperty
+            BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "wndMain.frx":E3BA
+               Key             =   "text"
+            EndProperty
+            BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "wndMain.frx":E754
+               Key             =   "image"
+            EndProperty
+         EndProperty
+      End
       Begin MSComctlLib.ListView list 
-         Height          =   4350
+         Height          =   5430
          Left            =   105
          TabIndex        =   1
          Top             =   1200
          Width           =   7560
          _ExtentX        =   13335
-         _ExtentY        =   7673
+         _ExtentY        =   9578
          View            =   3
          LabelEdit       =   1
          MultiSelect     =   -1  'True
@@ -150,7 +183,6 @@ Begin VB.Form NIMP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         MouseIcon       =   "wndMain.frx":51EC
          OLEDragMode     =   1
          OLEDropMode     =   1
          NumItems        =   2
@@ -165,7 +197,6 @@ Begin VB.Form NIMP
             Text            =   "File Name"
             Object.Width           =   7144
          EndProperty
-         Picture         =   "wndMain.frx":534E
       End
       Begin VB.PictureBox picMain 
          Appearance      =   0  'Flat
@@ -181,12 +212,12 @@ Begin VB.Form NIMP
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H80000008&
-         Height          =   4320
-         Left            =   1215
-         ScaleHeight     =   4320
+         Height          =   5445
+         Left            =   1170
+         ScaleHeight     =   5445
          ScaleWidth      =   5430
          TabIndex        =   7
-         Top             =   1200
+         Top             =   1185
          Visible         =   0   'False
          Width           =   5430
          Begin VB.PictureBox picPar 
@@ -203,12 +234,12 @@ Begin VB.Form NIMP
             EndProperty
             ForeColor       =   &H80000008&
             Height          =   3435
-            Left            =   90
-            Picture         =   "wndMain.frx":C5C1
+            Left            =   450
+            Picture         =   "wndMain.frx":EAEE
             ScaleHeight     =   3405
             ScaleWidth      =   5445
             TabIndex        =   8
-            Top             =   3585
+            Top             =   5160
             Visible         =   0   'False
             Width           =   5475
             Begin VB.Label lblFull 
@@ -261,55 +292,13 @@ Begin VB.Form NIMP
       Begin VB.Timer Timer2 
          Enabled         =   0   'False
          Interval        =   1
-         Left            =   6705
-         Top             =   5040
+         Left            =   330
+         Top             =   495
       End
       Begin VB.Timer Timer1 
          Interval        =   1
-         Left            =   7170
-         Top             =   5055
-      End
-      Begin MSComctlLib.ImageList typelist 
-         Left            =   7005
-         Top             =   1440
-         _ExtentX        =   1005
-         _ExtentY        =   1005
-         BackColor       =   -2147483643
-         ImageWidth      =   16
-         ImageHeight     =   16
-         MaskColor       =   12632256
-         _Version        =   393216
-         BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
-            NumListImages   =   7
-            BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":132F7
-               Key             =   "bik"
-            EndProperty
-            BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":14EB9
-               Key             =   "unknown"
-            EndProperty
-            BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":18113
-               Key             =   "bmp"
-            EndProperty
-            BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":1888D
-               Key             =   "ogg"
-            EndProperty
-            BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":19007
-               Key             =   "wmv"
-            EndProperty
-            BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":19781
-               Key             =   "exe"
-            EndProperty
-            BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-               Picture         =   "wndMain.frx":19B1B
-               Key             =   "ini_txt"
-            EndProperty
-         EndProperty
+         Left            =   1725
+         Top             =   570
       End
       Begin jR_RC2.Butt Butt2 
          Height          =   525
@@ -331,7 +320,7 @@ Begin VB.Form NIMP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         cBhover         =   14737632
+         cBhover         =   16777215
          Focus           =   0   'False
          LockHover       =   3
          cGradient       =   16777215
@@ -360,7 +349,7 @@ Begin VB.Form NIMP
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         cBhover         =   14737632
+         cBhover         =   16777215
          Focus           =   0   'False
          LockHover       =   3
          cGradient       =   16777215
@@ -368,6 +357,30 @@ Begin VB.Form NIMP
          Mode            =   0
          Value           =   0   'False
          cBack           =   12632256
+      End
+      Begin VB.Image Image3 
+         Height          =   135
+         Left            =   0
+         Picture         =   "wndMain.frx":14518
+         Stretch         =   -1  'True
+         Top             =   6630
+         Width           =   7770
+      End
+      Begin VB.Image Image2 
+         Height          =   5565
+         Left            =   7665
+         Picture         =   "wndMain.frx":16FE6
+         Stretch         =   -1  'True
+         Top             =   1185
+         Width           =   105
+      End
+      Begin VB.Image Image1 
+         Height          =   5565
+         Left            =   0
+         Picture         =   "wndMain.frx":18C18
+         Stretch         =   -1  'True
+         Top             =   1185
+         Width           =   105
       End
       Begin VB.Label ret 
          Caption         =   "return"
@@ -381,15 +394,15 @@ Begin VB.Form NIMP
             Strikethrough   =   0   'False
          EndProperty
          Height          =   225
-         Left            =   7110
+         Left            =   1635
          TabIndex        =   6
          Top             =   90
          Visible         =   0   'False
-         Width           =   540
+         Width           =   615
       End
       Begin VB.Label Label1 
          BackStyle       =   0  'Transparent
-         Caption         =   "NiMP 2.7.7 [jRipper Edition]"
+         Caption         =   "Label1"
          Height          =   240
          Left            =   120
          TabIndex        =   5
@@ -421,29 +434,43 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
 Option Explicit
 Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Long) As Integer
-
-'L 105
-'T 1200
 
 Private Sub Butt1_Click()
 ' is list empty?
 If list.ListItems.Count = 0 Then
-MsgBox "No videos to process. Select a game first", vbCritical, Label1.Caption
+MsgBox "No videos to process. Select a game first", vbCritical, "NiMP 2.8.11"
 Me.Combo1.Text = Combo1.list(1)
 Me.Combo1.SetFocus
 Exit Sub
 End If
 ' is this game installed?
 If Strings.Left(ret.Caption, 5) = "Error" Then
-MsgBox "This game is not installed!", vbCritical, Label1.Caption
+MsgBox "This game is not installed!", vbCritical, "NiMP 2.8.11"
 Combo1.SetFocus
 Exit Sub
 Else
 ' select game and do it
 Select Case Combo1.Text
+
+    Case "Ed Edd n Eddy - Mis Ed-ventures"
+    Apply2 1, "BIK"
+    
+    Case "FallOut"
+    Apply_FALLOUT
+    
+    Case "Brigade E5 - New Jagged Union"
+    Apply2 1, "BIK"
+    
+    Case "Jagged Alliance 2"
+    Apply_JA2
+    
+    Case "Just Cause"
+    Apply2 1, "BIK"
+    
+    Case "Ducati World Championship"
+    Apply2 7, "AVI_IV50"
 
     Case "Reservoir Dogs"
     Apply2 1, "BIK"
@@ -530,32 +557,33 @@ Select Case Combo1.Text
     
     Case Else 'this one is for all the games not listed above (generic function)
     Apply
-    MsgBox "Done!", vbInformation, Label1.Caption
+    MsgBox "Done!", vbInformation, "NiMP 2.8.11"
     End
 End Select
 ' refresh list content
 CheckFiles
 End If
 ' end
-    MsgBox "Done!", vbInformation, Label1.Caption
-FadeOut Me, , 4
+    MsgBox "Done!", vbInformation, "NiMP 2.8.11"
+FadeOut Me, , 15
 End
 End Sub
 
 Private Sub Butt2_Click()
-FadeOut Me, , 4
+FadeOut Me, , 15
 Unload Me
 End Sub
 
 Private Sub Butt3_Click()
+'
 If Butt3.Caption = "ABOUT" Then
 list.Visible = False
 selall.Visible = False
 picMain.Visible = True
 Butt1.Enabled = False
-lblFull.Caption = "code:// codin" & vbNewLine & "gfx://murdo" & vbNewLine & "genieben.t35.com"
+lblFull.Caption = "code:> codin" & vbNewLine & "gfx:> codin && murdo"
 Butt3.Caption = "Hide ABOUT"
-
+Combo1.Enabled = False
 
     On Error Resume Next
     If GL.bClick = False Then Exit Sub
@@ -564,13 +592,15 @@ Butt3.Caption = "Hide ABOUT"
     GL.bClick = False
 
 
-
 ElseIf Butt3.Caption = "Hide ABOUT" Then
 list.Visible = True
 selall.Visible = True
 picMain.Visible = False
 Butt1.Enabled = True
 Butt3.Caption = "ABOUT"
+Combo1.Enabled = True
+Combo1.SetFocus
+
 
     On Error Resume Next
     If GL.bClick = False Then Exit Sub
@@ -579,7 +609,7 @@ Butt3.Caption = "ABOUT"
 End If
 End Sub
 
-Private Sub Butt3_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub Butt3_MouseDown(Button As Integer, Shift As Integer, x As Single, Y As Single)
 GL.bClick = True
 End Sub
 
@@ -588,12 +618,12 @@ LoadVideos Me.Combo1.Text
 CheckFiles
 ' If there's any file checked, then check the 'Check/Uncheck all'
 selall.Value = 0
-Dim X
-    For X = 1 To Me.list.ListItems.Count
-        If list.ListItems(X).Checked = True Then
+Dim x
+    For x = 1 To Me.list.ListItems.Count
+        If list.ListItems(x).Checked = True Then
         Me.selall.Value = 1
         End If
-    Next X
+    Next x
 ' refresh list (to solve a gfx bug when showing scroolbar)
 list.Refresh
 End Sub
@@ -603,12 +633,12 @@ LoadVideos Me.Combo1.Text
 CheckFiles
 ' If there's any file checked, then check the 'Check/Uncheck all'
 selall.Value = 0
-Dim X
-    For X = 1 To Me.list.ListItems.Count
-        If list.ListItems(X).Checked = True Then
+Dim x
+    For x = 1 To Me.list.ListItems.Count
+        If list.ListItems(x).Checked = True Then
         Me.selall.Value = 1
         End If
-    Next X
+    Next x
 ' refresh list (to solve a gfx bug when showing scroolbar)
 list.Refresh
 End Sub
@@ -616,26 +646,32 @@ End Sub
 Private Sub Form_Load()
 ' Fill combobox with games
 LoadGames Me.Combo1
+' smart version set TODO
+''''''Dim it As String: it = Me.Combo1.ListCount
+''''''Dim v1 As String: v1 = Strings.Left(it, 1)
+''''''Dim v2 As String: v2 = Strings.Mid(it, 2, 1)
+
 ' Check if files are backuped or not
 CheckFiles
 ' Set Form Caption
-Me.Caption = Label1.Caption
+Label1.Caption = "NiMP 2.8.11"
+Me.Caption = "NiMP 2.8.11"
 ' If there's any file checked, then check the 'Check/Uncheck all'
-Dim X
-    For X = 1 To Me.list.ListItems.Count
-        If list.ListItems(X).Checked = True Then
+Dim x
+    For x = 1 To Me.list.ListItems.Count
+        If list.ListItems(x).Checked = True Then
         Me.selall.Value = 1
         End If
-    Next X
+    Next x
 ' Do animation effect
-FadeIn Me, , 4
+FadeIn Me, 250, 15
 ' set focus
 Me.Combo1.SetFocus
 ' Set tooltip for games combobox
 Combo1.ToolTipText = "There are " & Combo1.ListCount & " games in NiMP database"
 End Sub
 
-Private Sub Label1_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub Label1_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
 FormDrag Me
 End Sub
 
@@ -662,19 +698,19 @@ Me.Timer2.Enabled = False
 End If
 End Sub
 
-Private Sub list_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub list_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
 FormDrag Me
 End Sub
 
-Private Sub picMain_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub picMain_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
 FormDrag Me
 End Sub
 
-Private Sub picPar_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub picPar_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
 FormDrag Me
 End Sub
 
-Private Sub Picture1_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub Picture1_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
 FormDrag Me
 End Sub
 
@@ -685,14 +721,14 @@ End Sub
 Private Sub Timer1_Timer()
 On Error Resume Next
     If GetAsyncKeyState(vbKeyF1) Then
-        Shell "C:\Windows\Notepad.exe " & App.path & "\GENiEBEN.nfo", vbNormalFocus
+        Shell "C:\Windows\Notepad.exe " & App.Path & "\GENiEBEN.nfo", vbNormalFocus
     End If
     If GetAsyncKeyState(vbKeyEscape) Then
-        FadeOut Me, 0, 4
+        FadeOut Me, 0, 15
         End
     End If
     If GetAsyncKeyState(vbKeyF2) Then
-
+    
     End If
     If GetAsyncKeyState(vbKeyF3) Then
     Butt1_Click
@@ -700,19 +736,19 @@ On Error Resume Next
 End Sub
 
 Private Sub Timer2_Timer()
-Dim X
+Dim x
 If Me.selall.Value = 1 Then
-    For X = 1 To Me.list.ListItems.Count
-        If list.ListItems(X).Checked = False Then
-        list.ListItems(X).Checked = True
+    For x = 1 To Me.list.ListItems.Count
+        If list.ListItems(x).Checked = False Then
+        list.ListItems(x).Checked = True
         End If
-    Next X
+    Next x
 ElseIf Me.selall.Value = 0 Then
-    For X = 1 To Me.list.ListItems.Count
-        If list.ListItems(X).Checked = True Then
-        list.ListItems(X).Checked = False
+    For x = 1 To Me.list.ListItems.Count
+        If list.ListItems(x).Checked = True Then
+        list.ListItems(x).Checked = False
         End If
-    Next X
+    Next x
 End If
 Timer2.Enabled = False
 End Sub

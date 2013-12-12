@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{F924C9A7-D9B7-4808-8A32-108A70944450}#1.0#0"; "HookMenu.ocx"
 Begin VB.MDIForm jrMain 
    BackColor       =   &H004D483F&
-   ClientHeight    =   7530
+   ClientHeight    =   9315
    ClientLeft      =   60
    ClientTop       =   750
    ClientWidth     =   11025
@@ -21,7 +21,7 @@ Begin VB.MDIForm jrMain
       ScaleHeight     =   720
       ScaleWidth      =   11025
       TabIndex        =   0
-      Top             =   6810
+      Top             =   8595
       Visible         =   0   'False
       Width           =   11025
       Begin VB.Label FPath 
@@ -46,7 +46,7 @@ Begin VB.MDIForm jrMain
       Top             =   225
       _ExtentX        =   900
       _ExtentY        =   900
-      BmpCount        =   14
+      BmpCount        =   16
       Bmp:1           =   "jrMain.frx":1CCA
       Mask:1          =   16777215
       Key:1           =   "#mnu_FileOpen"
@@ -55,35 +55,41 @@ Begin VB.MDIForm jrMain
       Key:2           =   "#mnu_FileSave"
       Bmp:3           =   "jrMain.frx":2306
       Key:3           =   "#mnu_File_Exit"
-      Bmp:4           =   "jrMain.frx":306E
+      Bmp:4           =   "jrMain.frx":272E
       Mask:4          =   526344
       Key:4           =   "#mnu_Tools_NiMP"
-      Bmp:5           =   "jrMain.frx":3496
+      Bmp:5           =   "jrMain.frx":2B56
       Key:5           =   "#mnu_Help_HelpContents"
-      Bmp:6           =   "jrMain.frx":38BE
+      Bmp:6           =   "jrMain.frx":2F7E
       Mask:6          =   16711935
       Key:6           =   "#mnu_File_Preferences"
-      Bmp:7           =   "jrMain.frx":39D0
+      Bmp:7           =   "jrMain.frx":3090
       Mask:7          =   16711935
       Key:7           =   "#mnu_Help_About"
-      Bmp:8           =   "jrMain.frx":3D22
+      Bmp:8           =   "jrMain.frx":33E2
       Mask:8          =   16711935
       Key:8           =   "#mnu_Help_UsedDll"
-      Bmp:9           =   "jrMain.frx":4074
+      Bmp:9           =   "jrMain.frx":3734
       Mask:9          =   16711935
       Key:9           =   "#mnu_Tools_MSNotepad"
-      Bmp:10          =   "jrMain.frx":43C6
+      Bmp:10          =   "jrMain.frx":3A86
       Mask:10         =   16711935
       Key:10          =   "#mnu_Tools_MSPaint"
-      Bmp:11          =   "jrMain.frx":4718
+      Bmp:11          =   "jrMain.frx":3DD8
       Key:11          =   "#mnu_Tools_MSRegistry"
-      Bmp:12          =   "jrMain.frx":4A6A
+      Bmp:12          =   "jrMain.frx":412A
       Mask:12         =   15065571
       Key:12          =   "#mnu_Tools_MSCalculator"
-      Bmp:13          =   "jrMain.frx":4DBC
+      Bmp:13          =   "jrMain.frx":447C
       Key:13          =   "#mnu_Tools_BIK"
-      Bmp:14          =   "jrMain.frx":51E4
+      Bmp:14          =   "jrMain.frx":48A4
       Key:14          =   "#mnu_Tools_VP6"
+      Bmp:15          =   "jrMain.frx":4CCC
+      Mask:15         =   4210752
+      Key:15          =   "#mnu_modding_blackmirror"
+      Bmp:16          =   "jrMain.frx":50F4
+      Mask:16         =   16711935
+      Key:16          =   "#mnu_modding_blackmirror_config"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Tahoma"
          Size            =   8.25
@@ -95,92 +101,98 @@ Begin VB.MDIForm jrMain
       EndProperty
    End
    Begin VB.Menu mnu_File 
-      Caption         =   "File"
+      Caption         =   "&File"
       Begin VB.Menu mnu_FileOpen 
-         Caption         =   "Open"
+         Caption         =   "&Open"
          Shortcut        =   ^O
-      End
-      Begin VB.Menu mnu_FileSave 
-         Caption         =   "Save"
-         Shortcut        =   ^S
       End
       Begin VB.Menu mnu_File_Sep1 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_File_Preferences 
-         Caption         =   "Preferences"
+         Caption         =   "&Preferences"
          Shortcut        =   ^P
       End
       Begin VB.Menu mnu_File_Sep2 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_File_Exit 
-         Caption         =   "Exit"
+         Caption         =   "E&xit"
          Shortcut        =   ^Q
       End
    End
    Begin VB.Menu mnu_Tools 
-      Caption         =   "Tools"
+      Caption         =   "&Tools"
       Begin VB.Menu mnu_Tools_Add 
-         Caption         =   "Add New"
+         Caption         =   "&Add New"
       End
       Begin VB.Menu mnu_Tools_Sep1 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Tools_VP6 
-         Caption         =   "VP6 Player 1.00"
+         Caption         =   "&VP6 Player 1.00"
       End
       Begin VB.Menu mnu_Tools_Sep3 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Tools_MSNotepad 
-         Caption         =   "Microsoft Notepad"
+         Caption         =   "Microsoft &Notepad"
       End
       Begin VB.Menu mnu_Tools_MSPaint 
-         Caption         =   "Microsoft Paint"
+         Caption         =   "Microsoft &Paint"
       End
       Begin VB.Menu mnu_Tools_MSRegistry 
-         Caption         =   "Microsoft Registry"
+         Caption         =   "Microsoft &Registry"
       End
       Begin VB.Menu mnu_Tools_MSCalculator 
-         Caption         =   "Microsoft Calculator"
+         Caption         =   "Microsoft &Calculator"
       End
       Begin VB.Menu mnu_Tools_Sep2 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Tools_NiMP 
-         Caption         =   "NiMP 2.7.7"
+         Caption         =   "N&iMP 2.8.11"
       End
    End
-   Begin VB.Menu mnu_Modding 
+   Begin VB.Menu mnu_modding 
       Caption         =   "Modding Tools"
+      Begin VB.Menu mnu_modding_blackmirror 
+         Caption         =   "&Black Mirror"
+         Begin VB.Menu mnu_modding_blackmirror_config 
+            Caption         =   "&Configurator 1.00"
+         End
+      End
       Begin VB.Menu mnu_Modding_NFSMW 
-         Caption         =   "NFS Most Wanted"
+         Caption         =   "NFS Most &Wanted"
          Begin VB.Menu mnu_Modding_NFSMW_MenuTweak 
-            Caption         =   "Menus Tweak 3.00"
+            Caption         =   "Menus &Tweak 3.00"
          End
       End
    End
+   Begin VB.Menu mnu_ 
+      Caption         =   "&Window"
+      WindowList      =   -1  'True
+   End
    Begin VB.Menu mnu_Help 
-      Caption         =   "Help"
+      Caption         =   "&Help"
       Begin VB.Menu mnu_Help_HelpContents 
-         Caption         =   "Help Contents"
+         Caption         =   "&Help Contents"
          Shortcut        =   {F1}
       End
       Begin VB.Menu mnu_Help_Sep1 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Help_VersionHistory 
-         Caption         =   "Version History"
+         Caption         =   "&Version History"
       End
       Begin VB.Menu mnu_Help_UsedDll 
-         Caption         =   "Used DLL/OCX"
+         Caption         =   "&Used DLL/OCX"
       End
       Begin VB.Menu mnu_Help_Sep2 
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Help_About 
-         Caption         =   "About"
+         Caption         =   "&About"
          Shortcut        =   {F2}
       End
    End
@@ -246,7 +258,7 @@ With OFN
     End If
 ' LoadFile
 path.Caption = OFN.sFile
-FPath.Caption = buff
+fpath.Caption = buff
 a.LOADFILE (buff)
 End With
 End Function
@@ -261,6 +273,10 @@ End Sub
 
 Private Sub mnu_Help_HelpContents_Click()
 MsgBox "No Help Contents yet :(", vbInformation, "Sorry"
+End Sub
+
+Private Sub mnu_modding_blackmirror_config_Click()
+BlackMirrorConfig.Show
 End Sub
 
 Private Sub mnu_Modding_NFSMW_MenuTweak_Click()

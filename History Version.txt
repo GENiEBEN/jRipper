@@ -1,17 +1,23 @@
 ---------------------
 1.02.036+ (WORKING)
 ---------------------
-NEW: Changed from SDI to MDI Interface
-NEW: Add users extensions on OpenFileDialog
+Main core:
+NEW: Changed from SDI to MDI Interface (Multiple windows)
+NEW: Option to add users extensions on OpenFileDialog
 UPD: Upgraded NFSMW Menus Tweak 3.00 to 3.01
-UPD: Upgraded NiMP 2.7.6 to 2.7.7 [jR Edition]
-NEW: More Tools
+UPD: Upgraded NiMP 2.7.6 to 2.8.11
+NEW: More Tools (including OS integrated)
 UPD: Nicer menus, with icons
-UPD: GDP Manager upgraded
++
+Archive Manager 1.00:
 NEW: Load/Extract .SLF files (Jagged Alliance 2)
++
+BINK Player 1.00:
 UPD: Updated BIK Plugin (1.8.6k to 1.8.18r)
 NEW: BINK Video playback options can be saved
-
++
+GDP Manager 1.00:
+UPD: Interface changes
 
 ---------------------
 v1.02.035 (PUBLIC)
