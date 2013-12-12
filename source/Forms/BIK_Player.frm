@@ -3,7 +3,7 @@ Begin VB.Form BIK_Playa
    BackColor       =   &H004D483F&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "BIK Player 1.00"
-   ClientHeight    =   5550
+   ClientHeight    =   5880
    ClientLeft      =   45
    ClientTop       =   435
    ClientWidth     =   5175
@@ -21,7 +21,7 @@ Begin VB.Form BIK_Playa
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   5550
+   ScaleHeight     =   5880
    ScaleWidth      =   5175
    ShowInTaskbar   =   0   'False
    Begin VB.Frame Frame2 
@@ -163,17 +163,17 @@ Begin VB.Form BIK_Playa
       Height          =   255
       Left            =   120
       TabIndex        =   1
-      Top             =   5100
+      Top             =   5400
       Width           =   2415
    End
    Begin jR_RC2.Butt WatchBIK 
-      Height          =   390
-      Left            =   3675
+      Height          =   375
+      Left            =   3720
       TabIndex        =   2
-      Top             =   5025
+      Top             =   5400
       Width           =   1350
       _ExtentX        =   2381
-      _ExtentY        =   688
+      _ExtentY        =   661
       Caption         =   "Watch Movie"
       CapAlign        =   2
       BackStyle       =   2
@@ -193,10 +193,12 @@ Begin VB.Form BIK_Playa
       cBack           =   -2147483633
    End
    Begin VB.Label switches 
-      Height          =   300
-      Left            =   270
+      BackStyle       =   0  'Transparent
+      ForeColor       =   &H00BDB8AF&
+      Height          =   225
+      Left            =   120
       TabIndex        =   15
-      Top             =   5670
+      Top             =   5040
       Width           =   4155
    End
    Begin VB.Image Image1 
@@ -204,7 +206,7 @@ Begin VB.Form BIK_Playa
       Left            =   -15
       Picture         =   "BIK_Player.frx":5BD4
       Stretch         =   -1  'True
-      Top             =   4875
+      Top             =   5280
       Width           =   5235
    End
    Begin VB.Label Path 
@@ -220,7 +222,7 @@ Begin VB.Form BIK_Playa
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00BDB8AF&
-      Height          =   270
+      Height          =   495
       Left            =   90
       TabIndex        =   0
       Top             =   4560
@@ -235,7 +237,7 @@ Attribute VB_Exposed = False
 Option Explicit
 
 Private Sub always_Click()
-Dim pathx As String: pathx = App.path & "\bin\jr.ini"
+Dim pathx As String: pathx = App.Path & "\bin\jr.ini"
 If always.Value = 1 Then
 INI.AddINI pathx, "BIKPlayer", "SFilter", bik_minimizeJR.Value
 INI.AddINI pathx, "BIKPlayer", "Filterx", Me.switches.Caption
@@ -264,14 +266,14 @@ End Sub
 
 Private Sub Form_Load()
 About.Caption = "Handling .BIK files requires 3rd Party Tools" & vbNewLine & "RAD Tools binkplay.dll 1.8r" & vbNewLine & "(c) 1997-2006 BINK Technologies"
-    BIK_Playa.bik_preload.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "preload")
-    BIK_Playa.bik_runtimestats.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "runtimestats")
-    BIK_Playa.bik_dontskip.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "dontskip")
-    BIK_Playa.bik_hidecursor.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "hidecursor")
-    BIK_Playa.bik_blackbg.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "blackbg")
-    BIK_Playa.bik_focuslost.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "focuslost")
-    BIK_Playa.bik_noMT.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "noMT")
-    BIK_Playa.bik_showstats2.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "showstats2")
+    BIK_Playa.bik_preload.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "preload")
+    BIK_Playa.bik_runtimestats.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "runtimestats")
+    BIK_Playa.bik_dontskip.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "dontskip")
+    BIK_Playa.bik_hidecursor.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "hidecursor")
+    BIK_Playa.bik_blackbg.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "blackbg")
+    BIK_Playa.bik_focuslost.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "focuslost")
+    BIK_Playa.bik_noMT.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "noMT")
+    BIK_Playa.bik_showstats2.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "showstats2")
 End Sub
 
 Private Function addS(ByVal switch As String)
@@ -346,8 +348,12 @@ remS "c"
 End If
 End Sub
 
+Private Sub Form_Unload(Cancel As Integer)
+Unload Me
+End Sub
+
 Private Sub WatchBIK_Click()
-Dim pathx As String: pathx = App.path & "\bin\jr.ini"
+Dim pathx As String: pathx = App.Path & "\bin\jr.ini"
 If always.Value = 1 Then
 INI.AddINI pathx, "BIKPlayer", "SFilter", bik_minimizeJR.Value
 INI.AddINI pathx, "BIKPlayer", "Filterx", Me.switches.Caption
@@ -376,5 +382,5 @@ INI.AddINI pathx, "BIKPlayer", "Always", always.Value
 If bik_minimizeJR.Value = 1 Then
 jrMain.WindowState = vbMinimized
 End If
-BIK.BIK_play path.Caption, switches.Caption
+BIK.BIK_play Path.Caption, switches.Caption
 End Sub

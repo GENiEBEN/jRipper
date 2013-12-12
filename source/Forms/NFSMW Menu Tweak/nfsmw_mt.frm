@@ -310,9 +310,9 @@ End Function
 
 Private Sub Form_Load()
 ' Load registry path
-Dim regKey As String: regKey = "HKEY_LOCAL_MACHINE\SOFTWARE\EA GAMES\Need for Speed Most Wanted"
+Dim regKEY As String: regKEY = "HKEY_LOCAL_MACHINE\SOFTWARE\EA GAMES\Need for Speed Most Wanted"
 Dim regEnt As String: regEnt = "Install Dir"
-Me.ret.Caption = jrRegistry.GetStringValue(regKey, regEnt)
+Me.ret.Caption = jrRegistry.GetStringValue(regKEY, regEnt)
 Me.ret.Caption = ret.Caption & "FRONTEND\PLATFORMS\"
 ' Fill comboboxes
 With Combo1
@@ -383,7 +383,7 @@ End Sub
 Private Sub Butt3_Click()
 MsgBox "Tool Code    : codin/GENiEBEN" & vbCrLf & _
               "Tool GFX      : codin/GENiEBEN" & vbCrLf & vbCrLf & _
-              "Tool site       : http://genieben.t35.com", vbInformation, _
+              "Tool site       : www.genieben.net", vbInformation, _
               "NFSMW MT3.01"
 End Sub
 
@@ -391,8 +391,8 @@ Private Sub Timer1_Timer()
 On Error Resume Next
 'F1
 If GetAsyncKeyState(vbKeyF1) Then
-    If fso.FileExists(App.path & "\GENiEBEN.nfo") = True Then
-    Shell "C:\Windows\Notepad.exe " & App.path & "\GENiEBEN.nfo", vbNormalFocus
+    If fso.FileExists(App.Path & "\GENiEBEN.nfo") = True Then
+    Shell "C:\Windows\Notepad.exe " & App.Path & "\GENiEBEN.nfo", vbNormalFocus
     End If
 End If
 'ESC

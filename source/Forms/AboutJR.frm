@@ -135,7 +135,7 @@ Begin VB.Form AboutJR
       Begin VB.Label Label1 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "Contact me at gbcrk@yahoo.com or visit genieben.t35.com"
+         Caption         =   "Contact me at gbcrk@yahoo.com or visit genieben.net"
          BeginProperty Font 
             Name            =   "Tahoma"
             Size            =   8.25
@@ -172,7 +172,7 @@ Attribute VB_Exposed = False
 Option Explicit
 
 Private Sub Form_Load()
-Me.Caption = "jRipper " & IAPPV
+Me.Caption = "About jRipper " & IAPPV
 lblFull.Caption = "Development: codin" & vbNewLine & "Graphics: codin" & vbNewLine & vbNewLine & "Thanks to: " & vbNewLine & "* Dave Perry (nodtveit@sover.net)" & vbNewLine & "* Arkadiy Olovyannikov" & vbNewLine & "* Racer_S" & vbNewLine & "* jTommy (http://jtommy.by.ru)"
     Call SHLabels_2(False)
     GL.bClick = False

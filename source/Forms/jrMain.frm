@@ -27,9 +27,9 @@ Begin VB.MDIForm jrMain
       Begin VB.Label FPath 
          Caption         =   "current file name"
          Height          =   435
-         Left            =   2505
+         Left            =   3975
          TabIndex        =   2
-         Top             =   105
+         Top             =   120
          Width           =   1470
       End
       Begin VB.Label path 
@@ -38,7 +38,7 @@ Begin VB.MDIForm jrMain
          Left            =   75
          TabIndex        =   1
          Top             =   105
-         Width           =   2160
+         Width           =   3630
       End
    End
    Begin HookMenu.ctxHookMenu ctxHookMenu1 
@@ -151,7 +151,7 @@ Begin VB.MDIForm jrMain
          Caption         =   "-"
       End
       Begin VB.Menu mnu_Tools_NiMP 
-         Caption         =   "N&iMP 2.8.11"
+         Caption         =   "NiMP No &Intros Mega Pack "
       End
    End
    Begin VB.Menu mnu_modding 
@@ -165,12 +165,16 @@ Begin VB.MDIForm jrMain
       Begin VB.Menu mnu_Modding_NFSMW 
          Caption         =   "NFS Most &Wanted"
          Begin VB.Menu mnu_Modding_NFSMW_MenuTweak 
-            Caption         =   "Menus &Tweak 3.00"
+            Caption         =   "Menus &Tweak 3.01"
+         End
+         Begin VB.Menu mnu_Modding_NFSMW_mwtex 
+            Caption         =   "Textures &Convertor 0.02"
          End
       End
    End
-   Begin VB.Menu mnu_ 
+   Begin VB.Menu mnu_Window 
       Caption         =   "&Window"
+      Enabled         =   0   'False
       WindowList      =   -1  'True
    End
    Begin VB.Menu mnu_Help 
@@ -202,14 +206,59 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+' TODO:
+' problems with resizing (loading settings)
+
+
+
+
 Option Explicit
+'==>Used for STARTIN code<=='
+Private Const GW_HWNDNEXT = 2
+Private Declare Function GetWindowThreadProcessId Lib "user32" (ByVal hwnd As Long, lpdwProcessId As Long) As Long
+Private Declare Function GetParent Lib "user32" (ByVal hwnd As Long) As Long
+Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As Long, ByVal lpWindowName As Long) As Long
+Private Declare Function GetWindow Lib "user32" (ByVal hwnd As Long, ByVal wCmd As Long) As Long
+Private Declare Function GetWindowText Lib "user32" Alias "GetWindowTextA" (ByVal hwnd As Long, ByVal lpString As String, ByVal cch As Long) As Long
+Private Declare Function SetParent Lib "user32" (ByVal hWndChild As Long, ByVal hWndNewParent As Long) As Long
+Private old_parent As Long
+Private child_hwnd As Long
+'==========================='
 
 Private Sub MDIForm_Load()
 Me.Caption = "jRipper " & IAPPV
+' set window position
+Dim inip As String: inip = App.path & "\bin\jr.ini"
+Dim px As String: px = Split(ReadINI(inip, "MainWindow", "PositionXY"), ",")(0)
+Dim py As String: py = Split(ReadINI(inip, "MainWindow", "PositionXY"), ",")(1)
+Dim rx As String: rx = Split(ReadINI(inip, "MainWindow", "ResolutionXY"), ",")(0)
+Dim ry As String: ry = Split(ReadINI(inip, "MainWindow", "ResolutionXY"), ",")(1)
+
+If ReadINI(inip, "MainWindow", "Fullscreen") = "True" Then
+Me.WindowState = vbMaximized
+Else
+    Me.Width = rx
+    Me.Height = ry
+    Me.Move px, py
+End If
+End Sub
+
+Private Sub MDIForm_Unload(Cancel As Integer)
+Dim inip As String: inip = App.path & "\bin\jr.ini"
+If Me.WindowState = vbMaximized Then
+AddINI inip, "MainWindow", "Fullscreen", "True"
+Else
+AddINI inip, "MainWindow", "PositionXY", Me.Left & "," & Me.Top
+AddINI inip, "MainWindow", "ResolutionXY", Me.Width & "," & Me.Height
+If Me.Width <> Screen.Width Or Me.Height <> Screen.Height Or Me.Top > 0 Or Me.Left > 0 Then
+AddINI inip, "MainWindow", "Fullscreen", "False"
+End If
+End If
 End Sub
 
 Private Sub mnu_File_Exit_Click()
 Unload Me
+End
 End Sub
 
 Public Function OpenFN()
@@ -241,7 +290,7 @@ myFilters = myFilters & vbNullChar & vbNullChar
 ' Show Dialog
 With OFN
    .nStructSize = Len(OFN)
-   .hWndOwner = jrMain.hWnd
+   .hWndOwner = jrMain.hwnd
    .sFilter = myFilters
    .nFilterIndex = 1
    .sFile = GetName(.sFileTitle) & Space$(1024) & vbNullChar & vbNullChar
@@ -258,7 +307,7 @@ With OFN
     End If
 ' LoadFile
 path.Caption = OFN.sFile
-fpath.Caption = buff
+FPath.Caption = buff
 a.LOADFILE (buff)
 End With
 End Function
@@ -277,12 +326,18 @@ End Sub
 
 Private Sub mnu_modding_blackmirror_config_Click()
 BlackMirrorConfig.Show
+Me.mnu_Window.Enabled = True
 End Sub
 
 Private Sub mnu_Modding_NFSMW_MenuTweak_Click()
 NFSMW_MT.Show
+Me.mnu_Window.Enabled = True
 End Sub
 
+
+Private Sub mnu_Modding_NFSMW_mwtex_Click()
+startin App.path & "\bin\mwtex.exe"
+End Sub
 
 Private Sub mnu_Tools_MSCalculator_Click()
 Shell (Environ("windir") & "\system32\calc.exe"), vbNormalFocus
@@ -301,9 +356,54 @@ Shell (Environ("windir") & "\regedit.exe"), vbNormalFocus
 End Sub
 
 Private Sub mnu_Tools_NiMP_Click()
-NIMP.Show
+Shell (App.path & "\bin\nimp.exe"), vbNormalFocus
 End Sub
 
 Private Sub mnu_Tools_VP6_Click()
 VP6_Playa.Show
 End Sub
+
+' Return the window handle for an instance handle.
+Private Function InstanceToWnd(ByVal target_pid As Long) As Long
+Dim test_hwnd As Long
+Dim test_pid As Long
+Dim test_thread_id As Long
+    ' Get the first window handle.
+    test_hwnd = FindWindow(ByVal 0&, ByVal 0&)
+
+    ' Loop until we find the target or we run out
+    ' of windows.
+    Do While test_hwnd <> 0
+        ' See if this window has a parent. If not,
+        ' it is a top-level window.
+        If GetParent(test_hwnd) = 0 Then
+            ' This is a top-level window. See if
+            ' it has the target instance handle.
+            test_thread_id = GetWindowThreadProcessId(test_hwnd, test_pid)
+
+            If test_pid = target_pid Then
+                ' This is the target.
+                InstanceToWnd = test_hwnd
+                Exit Do
+            End If
+        End If
+        ' Examine the next window.
+        test_hwnd = GetWindow(test_hwnd, GW_HWNDNEXT)
+    Loop
+End Function
+Function startin(EXEFilePath As String)
+Dim pid As Long
+Dim buf As String
+Dim buf_len As Long
+    ' Start the program.
+    pid = Shell(EXEFilePath, vbNormalFocus)
+    If pid = 0 Then
+        MsgBox "Error starting program"
+        Exit Function
+    End If
+    ' Get the window handle.
+    child_hwnd = InstanceToWnd(pid)
+    ' Reparent the program so it lies inside the PictureBox.
+    old_parent = SetParent(child_hwnd, Me.hwnd)
+
+End Function

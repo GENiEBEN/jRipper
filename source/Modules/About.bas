@@ -6,7 +6,7 @@ Private Type Globe
     xSli As Long
 
 
-    X As Single
+    x As Single
     Y As Single
     sOff As Single
 
@@ -22,7 +22,7 @@ Private Type Globe
 End Type
 
 Public GL As Globe
-Public Declare Function ShellExecute Lib "shell32" Alias "ShellExecuteA" (ByVal hWnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
+Public Declare Function ShellExecute Lib "shell32" Alias "ShellExecuteA" (ByVal hwnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
 Public Sub KeyChoice(k As Integer)
 
     Select Case k
@@ -40,11 +40,11 @@ Public Sub KeyChoice(k As Integer)
 
 End Sub
 
-Public Function Allow(c As Control, Button As Integer, X As Single, Y As Single) As Boolean
+Public Function Allow(c As Control, Button As Integer, x As Single, Y As Single) As Boolean
 
     On Error Resume Next
     If Button = 1 And GL.bClick Then
-     If X >= 0 And X <= c.Width And Y >= 0 And Y <= c.Height Then
+     If x >= 0 And x <= c.Width And Y >= 0 And Y <= c.Height Then
       Allow = True
      Else
       Allow = False
@@ -53,15 +53,6 @@ Public Function Allow(c As Control, Button As Integer, X As Single, Y As Single)
 
 End Function
 
-Public Sub SHLabels(Value As Boolean)
-
-    With NIMP
-     If Value Then .picPar.Top = 2880
-     .tmrSc.Enabled = CBool(True - Value)
-     .lblMAb.Visible = CBool(False - Value): .picPar.Visible = CBool(True - Value)
-    End With
-
-End Sub
 
 Public Sub SHLabels_2(Value As Boolean)
 

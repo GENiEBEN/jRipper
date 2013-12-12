@@ -123,13 +123,13 @@ Begin VB.Form BlackMirrorConfig
       End
       Begin jR_RC2.Butt Butt2 
          Height          =   420
-         Left            =   3795
+         Left            =   3675
          TabIndex        =   14
          Top             =   5595
-         Width           =   1035
-         _ExtentX        =   1826
+         Width           =   1155
+         _ExtentX        =   2037
          _ExtentY        =   741
-         Caption         =   "APPLY"
+         Caption         =   "CANCEL/EXIT"
          CapAlign        =   2
          BackStyle       =   3
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -190,7 +190,7 @@ Begin VB.Form BlackMirrorConfig
       End
       Begin VB.Label Label4 
          BackStyle       =   0  'Transparent
-         Caption         =   "Visit http://genieben.t35.com"
+         Caption         =   "Visit http://www.genieben.net"
          BeginProperty Font 
             Name            =   "Tahoma"
             Size            =   8.25
@@ -335,16 +335,14 @@ End Sub
 
 Private Sub Form_Terminate()
 FadeOut Me, 0, 4
-End
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
 FadeOut Me, 0, 4
-End
 End Sub
 
 Private Sub Label4_Click()
-OpenWWW "http://genieben.t35.com", Me
+OpenWWW "http://www.genieben.net", Me
 End Sub
 
 Private Sub Picture1_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
@@ -359,9 +357,9 @@ Private Sub Timer1_Timer()
     End If
     If GetAsyncKeyState(vbKeyEscape) Then
         FadeOut Me, 0, 4
-        End
+        Unload Me
     End If
     If GetAsyncKeyState(vbKeyF2) Then
-        OpenWWW "http://genieben.t35.com", Me
+        OpenWWW "http://www.genieben.net", Me
     End If
 End Sub

@@ -1,6 +1,7 @@
 Attribute VB_Name = "a"
 Option Explicit
 Dim fso As New FileSystemObject
+Global FolderPath As String
 
 Public Function LOADFILE(FilePath As String)
 Dim sEXT As String: sEXT = get_ExtensionFromFileName(FilePath)
@@ -9,9 +10,43 @@ Select Case sEXT
 
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Case "py" ' --> Blade of Darkness
+loadtxt FilePath
+Case "lvl" ' --> Blade of Darkness
+loadtxt FilePath
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Case "gdb" ' --> GTR2 Fia GT Official Game
+loadtxt FilePath
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Case "bfs" ' --> Flatout 1 / Flatout 2
+    If BFS.BFS_checkIfValid(FilePath) = True Then
+    MsgBox "This is a FlatOut 1 / FlatOut2 archive file." & vbNewLine & "No support for it right now.", vbCritical, "FlatOut 1/ FlatOut 2"
+    Exit Function
+    End If
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+'++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "gdp" ' --> Hard Truck Apocalypse
 wndGDP.Show
-wndGDP.Path.Caption = FilePath
+wndGDP.path.Caption = FilePath
+Exit Function
 '--------------------------------------------------------
 Case "cursor" ' --> Hard Truck Apocalypse
 loadtxt FilePath
@@ -66,20 +101,24 @@ loadtxt FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "big" ' --> ToCA Race Driver #Series
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '--------------------------------------------------------
 Case "jpk" ' --> ToCA Race Driver 3
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '--------------------------------------------------------
 Case "mr5" ' --> ToCA Race Driver 1
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '--------------------------------------------------------
 Case "lng" ' --> ToCa Race Driver #Series
 frmLNG.Show
-frmLNG.Path.Caption = jrMain.Path.Caption
+frmLNG.path.Caption = jrMain.path.Caption
 LNG.LNG_open FilePath, frmLNG.lngData
+Exit Function
 '--------------------------------------------------------
 Case "icz" ' --> ToCA Race Driver 3
 loadtxt FilePath
@@ -90,15 +129,19 @@ loadtxt FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "tbf" ' --> Colin McRae Rally 04
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '--------------------------------------------------------
 Case "bgx" ' --> Colin McRae Rally 04
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '--------------------------------------------------------
 Case "pfx" ' --> Colin McRae Rally 04
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
+Exit Function
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -106,7 +149,8 @@ ArchiveMan.Path.Text = jrMain.Path.Caption
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "slf" ' --> Jagged Alliance 2
 loadSLF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
+Exit Function
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -236,6 +280,18 @@ loadBSP FilePath
 '--------------------------------------------------------
 Case "h" ' --> Return to castle Wolfenstein SBWL
 loadtxt FilePath
+'--------------------------------------------------------
+Case "aas" ' --> Return to castle Wolfenstein SBWL
+    If AAS.AAS_checkIfValid(FilePath) = True Then
+    MsgBox "This is a Return to Castle Wolfenstein EAAS file." & vbNewLine & "No support for it right now.", vbCritical, "RTCW-SBWL"
+    Exit Function
+    End If
+'--------------------------------------------------------
+Case "glm" ' --> Return to castle Wolfenstein SBWL
+    If GLM.GLM_checkIfValid(FilePath) = True Then
+    MsgBox "This is a Return to Castle Wolfenstein 2LGM file." & vbNewLine & "No support for it right now.", vbCritical, "RTCW-SBWL"
+    Exit Function
+    End If
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -256,6 +312,12 @@ loadtxt FilePath
 '--------------------------------------------------------
 Case "skm" ' --> Driv3r
 loadtxt FilePath
+'--------------------------------------------------------
+Case "bo3" ' --> Driv3r
+    If BVO3.BO3_checkIfValid(FilePath) = True Then
+    MsgBox "This is a Driv3r BVO3 Vehicle Configuration File." & vbNewLine & "No support for it right now." & vbNewLine & "------" & vbNewLine & "First Chunck Offset: " & BVO3.BO3_get_FirstChunckPosition(FilePath), vbCritical, "BVO3"
+    Exit Function
+    End If
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -334,6 +396,15 @@ loadtxt FilePath
 '--------------------------------------------------------
 Case "tpg" ' --> NFS Porsche
 loadtxt FilePath
+'--------------------------------------------------------
+Case "loc" ' --> NFS Porsche
+    If LOC.LOC_validHeader(FilePath) = True Then
+    MsgBox "This is a Need For Speed 5 Locale File" & vbNewLine & "No support for it right now" & vbNewLine & "---------" & vbNewLine & "Chuncks: " & LOC.LOC_get_Chuncks(FilePath) & vbNewLine & "First Chunck Offset: " & LOC.LOC_get_FirstChunckOffset(FilePath), vbCritical, "LOCH"
+    Exit Function
+    Else
+    MsgBox "This is an unknown filetype" & vbNewLine & "-----" & vbNewLine & "Known .LOC filetypes:" & vbNewLine & vbNewLine & "Need For Speed Porsche"
+    Exit Function
+    End If
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -370,40 +441,40 @@ loadtxt FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "bmp" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "png" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "jpg" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "tga" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "jpeg" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "pcx" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "tif" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "dib" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "ico" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "cur" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "016" ' --> # picture
-'loadpic FilePath
+loadpic
 '--------------------------------------------------------
 Case "256" ' --> # picture
-'loadpic FilePath
+loadpic
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -420,6 +491,7 @@ frmmain.txtmain.SelColor = vbWhite
 frmmain.txtmain.SelFontName = "Terminal"
 frmmain.txtmain.SelFontSize = 9
 frmmain.txtmain.SelStart = 0
+Exit Function
 '--------------------------------------------------------
 Case "diz" ' --> generic text file
 loadtxt FilePath
@@ -429,6 +501,7 @@ frmmain.txtmain.SelColor = vbWhite
 frmmain.txtmain.SelFontName = "Terminal"
 frmmain.txtmain.SelFontSize = 9
 frmmain.txtmain.SelStart = 0
+Exit Function
 '--------------------------------------------------------
 Case "txt" ' --> generic text file
 loadtxt FilePath
@@ -450,9 +523,10 @@ loadtxt FilePath
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Case "vp6" ' --> EA movie (VP6 codec required)
-VP6_Playa.Path.Caption = jrMain.Path.Caption
+VP6_Playa.path.Caption = jrMain.path.Caption
 VP6_Playa.fname.Caption = jrMain.FPath.Caption
 VP6_Playa.Show
+Exit Function
 '--------------------------------------------------------
 Case "bik" ' --> BINK Video (.dll required)
 loadbink
@@ -467,7 +541,7 @@ loadbink
 Case "dat" ' --> # Various Games
 If BIG.BIGF_CheckIfValid(FilePath) = True Then
 loadBIGF FilePath
-ArchiveMan.Path.Text = jrMain.Path.Caption
+ArchiveMan.path.Text = jrMain.path.Caption
 ElseIf BIG.BIGF_CheckIfValidBIGC(FilePath) = True Then
     MsgBox "This is a BIGC Archive. jRipper supports only BIGF Archives", vbExclamation, "Not BIGF"
 Else
@@ -488,7 +562,7 @@ Dim dblEnd As Double
 Dim Dest As String
 Dim x
 Dim sEXT As String: sEXT = get_ExtensionFromFileName(FilePath)
-Dest = InputBox("Where to save?", "Extract Path", App.Path & "\Unpacked")
+Dest = InputBox("Where to save?", "Extract Path", App.path & "\Unpacked")
 If Right(Dest, 1) = "\" Then
 Dest = Strings.Left(Dest, Len(Dest) - 1)
 End If
@@ -503,7 +577,7 @@ Case "pck" ' Commandos II
     If ExtractAll = False Then
         MsgBox "You must extract all!", vbCritical, "jRipper " & IAPPV
     Else
-        Dim File As String: File = ArchiveMan.Path.Text
+        Dim File As String: File = ArchiveMan.path.Text
         Dim file2 As String: file2 = ArchiveMan.Label1.Caption
         ArchiveMan.pb1.Visible = True
         If file2 = "DATA2.PCK" Then
@@ -563,7 +637,7 @@ End Function
 
 Function loadArchive(ByVal FilePath As String)
 ArchiveMan.Show
-ArchiveMan.Path.Text = FilePath
+ArchiveMan.path.Text = FilePath
 DoEvents
 End Function
 
@@ -678,7 +752,7 @@ End Function
 Function BIGFextract(ExtractAll As Boolean, Dest As String)
 ' Dims
 Dim x
-Dim File As String: File = ArchiveMan.Path.Text
+Dim File As String: File = ArchiveMan.path.Text
 Dim dblStart As Double
 Dim dblEnd As Double
  ' Do it
@@ -709,7 +783,7 @@ End Function
 Function SLFextract(ExtractAll As Boolean, Dest As String)
 ' Dims
 Dim x
-Dim File As String: File = ArchiveMan.Path.Text
+Dim File As String: File = ArchiveMan.path.Text
 Dim dblStart As Double
 Dim dblEnd As Double
  ' Do it
@@ -738,19 +812,44 @@ Exit Function
 End Function
 
 Function loadbink()
-BIK_Playa.Path.Caption = jrMain.Path.Caption
-BIK_Playa.always.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "Always")
+BIK_Playa.path.Caption = jrMain.path.Caption
+BIK_Playa.always.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "Always")
+jrMain.mnu_Window.Enabled = True
 
 If BIK_Playa.always.Value = 1 Then
 BIK_Playa.Show
 DoEvents
-BIK_Playa.switches.Caption = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "Filterx")
-BIK_Playa.bik_minimizeJR.Value = ReadINI(App.Path & "\bin\jr.ini", "BIKPlayer", "SFilter")
+BIK_Playa.switches.Caption = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "Filterx")
+BIK_Playa.bik_minimizeJR.Value = ReadINI(App.path & "\bin\jr.ini", "BIKPlayer", "SFilter")
     If BIK_Playa.bik_minimizeJR.Value = 1 Then
     jrMain.WindowState = vbMinimized
     End If
-BIK.BIK_play jrMain.Path.Caption, BIK_Playa.switches.Caption
+BIK.BIK_play jrMain.path.Caption, BIK_Playa.switches.Caption
 Else
 BIK_Playa.Show
 End If
+End Function
+
+Function loadpic(Optional custompath As String)
+' Count "\" in FilePath
+Dim fn
+If Len(custompath) = 0 Then
+fn = jrMain.path
+Else
+fn = custompath
+End If
+Dim tmp1
+Dim tmp2
+Dim c
+Dim FilePath: FilePath = jrMain.path
+For tmp1 = 1 To Len(fn)
+    tmp2 = Strings.Mid(fn, tmp1, 1)
+    If tmp2 = "\" Then
+    c = Val(c) + 1
+    End If
+Next tmp1
+fn = Split(FilePath, "\")(c)
+fn = Replace(FilePath, "\" & fn, "")
+FolderPath = fn & "\"
+fMAIN.Show
 End Function
