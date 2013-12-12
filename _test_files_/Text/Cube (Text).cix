@@ -1,0 +1,37 @@
+<Interface>
+
+	<Render>
+	</Render>
+
+	<CameraGUI>
+	</CameraGUI>
+
+	<Pictures>
+	</Pictures>
+
+	<Actions>
+		<ScenePush>Map/Atlantica/Splash.clx</ScenePush>
+		<ScenePush>Map/Common/MSCheckAndSave.cix</ScenePush>
+		<ScenePush>Map/Common/TryAutoSaveBetweenLevel.cix</ScenePush>
+	</Actions>
+
+	<Components>
+
+		<ErrorDialog>
+			<Error>10000008</Error>
+			<ConfirmActID>1</ConfirmActID>
+			<CancelActID>2</CancelActID>
+			<ComponentID>1</ComponentID>
+			<IsFocused>True</IsFocused>
+		</ErrorDialog>
+
+		<ErrorDialog>
+			<Error>10000009</Error>
+			<ConfirmActID>0</ConfirmActID>
+			<CancelActID>-1</CancelActID>
+			<IsFocused>False</IsFocused>
+		</ErrorDialog>
+
+	</Components>
+
+</Interface>

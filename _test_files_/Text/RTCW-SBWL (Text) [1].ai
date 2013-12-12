@@ -1,0 +1,2329 @@
+player
+{
+ spawn
+ {
+         accum 0 set 3 //CONTROLS DOOR
+         accum 1 set 0 //CONTROLS BITSET OR NOT_BITSET
+         accum 2 set 0 //CONTROLS INST (AI)
+         accum 3 set 0 //CONTROLS SOUND (AI)
+         accum 4 set 0
+ }
+ playerstart
+  {
+//         giveinventory key_binocs
+ //        giveweapon weapon_knife
+  //       giveweapon weapon_luger
+   //      giveweapon weapon_silencer
+   //      setammo ammo_9mm 50
+    //     selectweapon weapon_knife
+         alertentity soldat4
+         alertentity officer4
+         trigger radist1 inst
+         trigger officer2 anim
+         trigger officer1 anim
+         trigger officer4 anim
+alertentity soldat5
+              trigger soldat5 go
+
+
+ }
+
+         trigger go_etaj1
+ {
+         trigger lift go1
+  }
+         trigger go_etaj2
+  {
+         trigger lift go2
+  }
+         trigger offsecyr
+ {
+	 accum 1 bitreset 0
+	 trigger player test_1
+	 accum 1 abort_if_bitset 0
+       	 alertentity t100_1
+	 accum 0 bitreset 2
+ }
+
+
+ trigger test_1
+ {
+	 accum 0 abort_if_bitset 2
+         alertentity t100_1
+	 accum 0 bitset 2
+	 accum 1 bitset 0
+ }
+ trigger gidro
+ {
+         accum 0 bitset 3
+ }
+ trigger open_v3
+ {
+	 trigger player test_sekyr
+	 accum 0 abort_if_not_bitset 3
+	 alertentity vor3
+         alertentity ss1
+         alertentity ss2
+         alertentity ss3
+         alertentity ss4
+         alertentity ss5
+ }
+trigger plt
+{
+teleport kill_beg0
+}
+ trigger test_sekyr
+ {
+	 accum 0 abort_if_bitset 2
+accum 0 bitset 2
+         trigger player test_closse_door
+         alertentity ss1
+         alertentity ss2
+         alertentity ss3
+         alertentity ss4
+         alertentity ss5
+         mu_start sound/world/klaxon1.wav 1
+         startcam killamerika
+         trigger ss1 go_kill
+         trigger ss2 go_kill
+         trigger ss3 go_kill
+         trigger ss4 go_kill
+         trigger ss5 go_kill
+ }
+ trigger test_closse_door
+ {
+          accum 1 abort_if_bitset 1
+          alertentity startkill
+          accum 1 bitset 1
+ }
+
+ trigger test
+ {
+          trigger zek_baka two
+          alertentity kill_baka 
+          trigger zek_baka_1 inst
+ }
+ trigger r1
+{
+startcam rus1
+}
+ trigger r2
+{
+startcam rus2
+}
+ trigger b1
+{
+startcam baka1
+}
+ trigger b2
+{
+startcam baka2
+}
+trigger endmap
+{
+		changelevel 77 persistent
+}
+
+}
+//-----------------------------SS IZ KAZARM---------------------
+ss1
+{
+ attributes
+ {
+             	aim_accuracy 0.7
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 36000
+		fov 240
+                aggression 0.9
+ }
+
+ trigger go_kill
+	{
+                explicit_routing off
+                nosight 10000
+                runtomarker kill_beg1 nostop 
+		facetargetangles kill_beg1
+		runtomarker kill_beg2 nostop
+		facetargetangles kill_beg2
+                runtomarker kill_pos1 nostop
+		facetargetangles kill_pos1
+	}
+}
+ss2
+{
+ attributes
+ {
+     	        aim_accuracy 0.7
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 36000
+		fov 240
+ }
+
+	trigger go_kill
+	{
+                explicit_routing off
+                nosight 10000
+		runtomarker kill_beg0 nostop
+		facetargetangles kill_beg0
+		runtomarker kill_beg1 nostop
+		facetargetangles kill_beg1
+		runtomarker kill_beg2 nostop
+		facetargetangles kill_beg2
+		runtomarker kill_pos2 nostop
+		facetargetangles kill_pos2
+	}
+}
+ss3
+{
+ attributes
+ {
+     	        aim_accuracy 0.7
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 36000
+		fov 240
+ }
+ trigger go_kill
+ {
+                explicit_routing off
+                nosight 10000
+		runtomarker kill_beg0 nostop
+		facetargetangles kill_beg0
+		runtomarker kill_beg1 nostop
+		facetargetangles kill_beg1
+		runtomarker kill_beg2 nostop
+		facetargetangles kill_beg2
+		runtomarker kill_pos3 nostop
+		facetargetangles kill_pos3
+ }
+}
+
+ss4
+{
+ attributes
+ {
+             	aim_accuracy 0.7
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 36000
+		fov 240
+ }
+ trigger go_kill
+	{
+                explicit_routing off
+                nosight 10000
+		runtomarker kill_beg0 nostop
+		facetargetangles kill_beg0
+		runtomarker kill_beg1 nostop
+		facetargetangles kill_beg1
+		runtomarker kill_beg2 nostop
+		facetargetangles kill_beg2
+		runtomarker kill_pos4 nostop
+		facetargetangles kill_pos4
+	}
+}
+ss5
+{
+ attributes
+ {
+     	        aim_accuracy 0.7
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 36000
+		fov 240
+ }
+ trigger go_kill
+	{
+                explicit_routing off
+                nosight 10000
+		runtomarker kill_beg0 nostop
+		facetargetangles kill_beg0
+		runtomarker kill_beg1 nostop
+		facetargetangles kill_beg1
+		runtomarker kill_beg2 nostop
+		facetargetangles kill_beg2
+		runtomarker kill_pos5 nostop
+		facetargetangles kill_pos5
+	}
+}
+//---------------------END SS IZ KAZARM--------------
+//-------------------OHRANA NA VISHKAH---------------
+ohrana6
+{
+ attributes
+  {
+        	aim_accuracy 0.7
+		starting_health 20
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 16000
+		fov 180
+ }
+ spawn
+  {
+                takeweapon weapon_mp40
+                setammo ammo_792mm 999
+                giveweapon weapon_mauserRifle
+                selectweapon weapon_mauserRifle
+  }
+ trigger waken7
+    {
+                gotomarker pos14 nostop
+                wait forever 0
+                attack
+    }
+ statechange relaxed alert
+	{
+		trigger ohrana6 waken6
+	}
+ statechange relaxed combat
+	{
+		trigger ohrana6 waken6
+	}
+ statechange query alert
+	{
+		trigger ohrana6 waken6
+	}
+ statechange query combat
+	{
+		trigger ohrana6 waken6
+	}
+ inspectsoundstart
+        {
+		trigger ohrana7 waken6
+        }
+ inspectsoundend
+        {
+		trigger ohrana7 waken6
+        }
+}
+ohrana7
+{
+ attributes
+  {
+        	aim_accuracy 0.7
+		starting_health 20
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 16000
+		fov 180
+  }
+ spawn
+  {
+                takeweapon weapon_mp40
+                setammo ammo_792mm 999
+                giveweapon weapon_mauserRifle
+                selectweapon weapon_mauserRifle
+  }
+  trigger waken7
+    {
+                gotomarker pos13 nostop
+                wait forever 0
+                attack
+    }
+ statechange relaxed alert
+	{
+		trigger ohrana7 waken7
+	}
+ statechange relaxed combat
+	{
+		trigger ohrana7 waken7
+	}
+ statechange query alert
+	{
+		trigger ohrana7 waken7
+	}
+ statechange query combat
+	{
+		trigger ohrana7 waken7
+	}
+
+ inspectsoundstart
+        {
+		trigger ohrana7 waken7                
+        }
+ inspectsoundend
+        {
+		trigger ohrana7 waken7
+        }
+}
+//----------------------------------END OHRANA NA VISHKAH-----------------	
+//---------------------------------OHRANA NA PULEMETE------------------
+ohrana8
+{
+ attributes
+ {
+         	aim_accuracy 0.7
+		starting_health 20
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 16000
+		fov 180
+ }
+ inspectsoundstart
+  {
+                deny
+  }
+ inspectsoundend
+  {
+                deny
+  }
+}
+ohrana3
+{
+ attributes
+ {
+        	aim_accuracy 0.7
+		starting_health 20
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 10000
+		fov 180
+ }
+ inspectsoundstart
+  {
+                deny
+  }
+ inspectsoundend
+  {
+                deny
+  }
+}
+ohrana9
+{
+ attributes
+ {
+        	aim_accuracy 0.7
+		starting_health 20
+		reaction_time 0.1
+		idle_crouch 0.0
+		attack_crouch 0.0
+		alertness 16000
+		fov 180
+ }
+ inspectsoundstart
+  {
+                deny
+  }
+ inspectsoundend
+  {
+                deny
+  }
+}
+//-----------------------END OHRANA NA PULEMETE--------------------
+//----------------------------RADIST-------------------------------
+radist1
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+ }
+ trigger anim
+ {
+               backupscript
+	        wait 100
+		gotomarker pos12
+		facetargetangles pos12
+		playanim tunning_radio_in both
+                wait 900
+                playanim tunning_radio both
+                wait 700
+               restorescript
+ }
+ trigger inst
+ {
+                alertentity radist1
+                trigger radist1 anim
+ }
+ trigger radist_alert
+ {
+        	resetscript
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+ }                
+ statechange relaxed alert
+ {
+	        trigger radist1 radist_alert
+ }
+ statechange relaxed combat
+ {
+	        trigger radist1 radist_alert
+ }
+ statechange query alert
+ {
+	        trigger radist1 radist_alert
+ }
+ statechange query combat
+ {
+	        trigger radist1 radist_alert
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+}
+radist2
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+ }
+	spawn
+	{
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+        }
+ trigger anim
+ {
+               backupscript
+                playanim tunning_radio_in both
+	        wait 900
+		playanim tunning_radio both
+                wait 700
+               restorescript
+ }
+ trigger inst
+ {
+                accum 2 abort_if_bitset 0
+                alertentity radist2
+                accum 2 bitset 0
+                trigger radist2 anim
+ }
+ trigger radist_alert
+ {
+        	resetscript
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+ }                
+ statechange relaxed alert
+ {
+	        trigger radist2 radist_alert
+ }
+ statechange relaxed combat
+ {
+	        trigger radist2 radist_alert
+ }
+ statechange query alert
+ {
+	        trigger radist2 radist_alert
+ }
+ statechange query combat
+ {
+	        trigger radist2 radist_alert
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+}
+radist3
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+		wait 100
+		gotomarker pos10
+		facetargetangles pos10
+		playanim tunning_radio both
+ }
+ trigger inst
+ {
+                trigger soldat1 inst
+ }
+ trigger alarm
+ {
+                runtomarker pos9 nostop
+                facetargetangles pos9
+                playanim switch_alarm both        
+                alertentity radioalarm
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+ }
+ statechange relaxed alert
+ {
+		trigger radist3 alarm
+ }
+ statechange relaxed combat
+ {
+		trigger radist3 alarm
+ }
+ statechange query alert
+ {
+		trigger radist3 alarm
+ }
+ statechange query combat
+ {
+		trigger radist3 alarm
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ death
+ {
+                trigger soldat1 go
+ }   
+}
+
+//---------------------------END RADIST------------------
+//--------------------------OHRANA-----------------------
+ohrana1
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.9
+        	alertness 1000
+	
+ }
+ spawn
+ {
+                trigger ohrana1 go
+ }
+ trigger go
+ {
+                walktomarker pos8
+		facetargetangles pos8
+                walktomarker pos7
+		facetargetangles pos7
+		trigger ohrana1 go
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+}
+ohrana2
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.9
+	        alertness 1000
+ }
+ spawn
+ {
+                trigger ohrana2 go
+ }
+ trigger go
+ {
+                walktomarker pos6 nostop
+		facetargetangles pos6
+                walktomarker pos5 nostop
+		facetargetangles pos5
+		trigger ohrana2 go
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+}
+
+
+ohrana3
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ statechange relaxed alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange relaxed combat
+ {
+                clearanim
+                resetscript
+ }
+ statechange query alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange query combat
+ {
+                clearanim
+                resetscript
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ death
+ {
+                resetscript
+                clearanim
+ }
+}
+ohrana4
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 0.8
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.4
+                alertness 5000
+                yaw_speed 100
+ }
+ spawn
+ {
+                trigger ohrana4 go
+ }
+ trigger go
+ {
+                walktomarker pos2
+		facetargetangles pos2
+                walktomarker pos1
+		facetargetangles pos1
+		trigger ohrana4 go
+ }
+ inspectsoundstart
+ {
+                deny
+ } 
+ inspectsoundend
+ {
+                deny
+ }
+}
+ohrana5
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 0.8
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 800
+                yaw_speed 100
+ }
+ spawn
+ {
+               trigger ohrana5 go
+ }
+ trigger go
+ {
+                walktomarker pos4
+		facetargetangles pos4
+                walktomarker pos3
+		facetargetangles pos3
+		trigger ohrana5 go
+ }
+ statechange relaxed alert
+ {
+                attrib alertness 4000
+ }
+ statechange relaxed combat
+ {
+                attrib alertness 4000
+ }
+ statechange query alert
+ {
+                attrib alertness 4000	
+ }
+ statechange query combat
+ {
+                attrib alertness 4000
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+}
+ohrana10
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger inst
+ {
+                trigger startin inst_podval
+ }
+ statechange relaxed alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange relaxed combat
+ {
+                clearanim
+                resetscript
+ }
+ statechange query alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange query combat
+ {
+                clearanim
+                resetscript
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ death
+ {
+                resetscript
+                clearanim
+ }
+}
+//----------------------END OHRANA---------------------------
+//-----------------------OFFICER-----------------------------
+officer1
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+                hearing_scale 0.2
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+ }
+ trigger anim
+ {
+               backupscript
+                playanim giving_orders both 
+                wait 3000
+                playanim coughing_1h both
+                wait 1000
+                playanim talking_1h both
+                wait 500    
+                trigger officer1 anim
+               restorescript
+ }
+ trigger alarm
+ {
+                clearanim
+                resetscript
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+ }
+ statechange relaxed alert
+ {
+                trigger officer1 alarm
+ }
+
+ statechange relaxed combat
+ {
+                trigger officer1 alarm
+ }
+ statechange query alert
+ {
+                trigger officer1 alarm
+ }
+ statechange query combat
+ {
+                trigger officer1 alarm
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+}
+officer2
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+                hearing_scale 0.2
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+ }
+ trigger alarm
+ {
+                clearanim
+                resetscript
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+ }
+ trigger anim
+ {
+                playanim looking_over_table both forever       
+ }
+ statechange relaxed alert
+ {
+                trigger officer2 alarm
+ }
+
+ statechange relaxed combat
+ {
+                trigger officer2 alarm
+ }
+ statechange query alert
+ {
+                trigger officer2 alarm
+ }
+ statechange query combat
+ {
+                trigger officer2 alarm
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+}
+officer3
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 90
+                trigger officer2 anim
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+ }
+trigger inst 
+{
+                alertentity officer3
+                cigarette on
+}
+ trigger alarm
+ {
+   cigarette off
+   giveweapon weapon_luger
+   setammo ammo_9mm 50
+   selectweapon weapon_luger
+   trigger radist2 inst
+ }
+ statechange relaxed alert
+ {
+                trigger officer3 alarm
+ }
+
+ statechange relaxed combat
+ {
+                trigger officer3 alarm
+ }
+ statechange query alert
+ {
+                trigger officer3 alarm
+ }
+ statechange query combat
+ {
+                trigger officer3 alarm
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+}
+
+officer4
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		reaction_time 0.3
+		fov 30
+ }
+ spawn
+ {
+		setammo ammo_grenades 0
+		takeweapon weapon_mp40
+ }
+ trigger anim
+ {
+                accum 3 abort_if_bitset 2 
+                playsound officer4a2
+                wait 1000
+                trigger soldat4 yes
+                wait 1000       
+                playsound officer4a1
+                wait 2000
+                trigger soldat4 yes1
+                wait 1000       
+ }
+ trigger alarm
+ {
+                giveweapon weapon_luger
+                setammo ammo_9mm 50
+                selectweapon weapon_luger
+                clearanim
+                resetscript
+
+ }
+ statechange relaxed alert
+ {
+                trigger officer4 alarm
+ }
+
+ statechange relaxed combat
+ {
+                trigger officer4 alarm
+ }
+ statechange query alert
+ {
+                trigger officer4 alarm
+ }
+ statechange query combat
+ {
+                trigger officer4 alarm
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ death
+ {
+                resetscript
+                clearanim
+//                accum 3 bitset 2
+ }  
+}
+
+//------------------END OFFICER-----------------------		
+//------------------SOLDATI---------------------------
+soldat1
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 220
+		aggression 0.9
+ }
+ trigger inst
+ {
+                accum 2 abort_if_bitset 1 
+                accum 2 bitset 1
+                alertentity soldat1
+                alertentity radist3
+                trigger soldat1 sou
+ }
+ trigger sou
+ {
+               accum 3 abort_if_bitset 0  
+               playsound soldat1_1
+ }
+ trigger go
+ {
+                clearanim
+                resetscript
+                accum 3 bitset 0 
+                gotomarker pos13 nostop
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ statechange relaxed alert
+ {
+                trigger soldat1 go
+ }
+ statechange relaxed combat
+ {
+                trigger soldat1 go
+ }
+ statechange query alert
+ {
+                trigger soldat1 go
+ }
+ statechange query combat
+ {
+                trigger soldat1 go
+ }
+ death
+ {
+                accum 3 bitset 0
+                resetscript
+                clearanim
+ }
+}
+
+soldat2
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger sou
+ {
+                accum 3 abort_if_bitset 1
+                playsound soldat2_1a
+ }
+
+ trigger inst
+ {
+                alertentity soldat3
+                alertentity soldat2
+                trigger dialog sou2_3
+                trigger startin gou2_3
+ }
+ trigger go
+ {
+                walktomarker pos16
+		facetargetangles pos16
+                walktomarker pos17
+ }
+ inspectsoundstart
+ {
+                 deny
+ }
+ inspectsoundend
+ {
+                 deny
+ }
+ trigger res
+ {
+                 accum 3 bitset 1
+                 resetscript 
+                 clearanim
+ }
+ death
+ {
+                 accum 3 bitset 1
+                trigger soldat3 res
+                 resetscript 
+                 clearanim
+ }
+}
+
+soldat3
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger go
+ {
+                walktomarker pos15
+		facetargetangles pos15
+ }
+ trigger inst
+ {
+                trigger soldat2 inst
+ }
+ trigger sou
+ {
+                accum 3 abort_if_bitset 1
+                playsound soldat3_1a
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ trigger res
+ {
+                 accum 3 bitset 1
+                 resetscript 
+                 clearanim
+ }
+
+ death
+ {
+                accum 3 bitset 1
+                trigger soldat2 res
+                resetscript
+                clearanim
+ }
+}
+soldat4
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.9
+        	alertness 5000
+ }
+ trigger yes
+ {
+                accum 3 abort_if_bitset 3
+        	playsound soldat1yes
+                playanim nazi_salute both  
+ }
+ trigger yes1
+ {
+                accum 3 abort_if_bitset 3
+                playsound i_no
+ }
+ trigger alarm
+ {
+                accum 3 bitset 3
+                trigger soldat5 inst
+                clearanim
+                resetscript
+
+ }
+ statechange relaxed alert
+ {
+                trigger soldat4 alarm
+ }
+ statechange relaxed combat
+ {
+                trigger soldat4 alarm
+ }
+ statechange query alert
+ {
+                trigger soldat4 alarm
+ }
+ statechange query combat
+ {
+                trigger soldat4 alarm
+ }
+ inspectsoundstart
+ {
+                trigger soldat4 alarm
+                deny
+ }
+ inspectsoundend
+ {
+                trigger soldat4 alarm
+ }
+ death
+ {
+                accum 3 bitset 3
+                resetscript
+                clearanim
+ }
+}
+soldat5
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.9
+        	alertness 5000
+ }
+ spawn
+ {
+                trigger soldat5 go
+ }
+ trigger inst
+ {
+//                accum 2 abort_if_bitset 2
+ //              accum 2 bitset 2         
+  //              trigger startin soldat5_star
+//              trigger soldat5 go
+ alertentity soldat5
+              trigger soldat5 go
+
+ }
+ trigger go
+ {
+                walktomarker pos14
+		facetargetangles pos14
+                walktomarker pos13
+		facetargetangles pos13
+		trigger soldat5 go
+ }
+ trigger alarm
+ {
+                trigger radist3 inst
+//                clearanim
+ //               resetscript
+ }
+ statechange relaxed alert
+ {
+                trigger soldat5 alarm
+ }
+ statechange relaxed combat
+ {
+                trigger soldat5 alarm
+ }
+ statechange query alert
+ {
+                trigger soldat5 alarm
+ }
+ statechange query combat
+ {
+                trigger soldat5 alarm
+ }
+ inspectsoundstart
+ {
+//                resetscript
+//                clearanim
+ }
+ inspectsoundend
+ {
+//                resetscript
+//                clearanim
+ }
+ death
+ {
+                resetscript
+                clearanim
+ }
+}
+soldat6
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.9
+        	alertness 5000
+ }
+ trigger inst
+ {
+                trigger soldat6 anim
+ }
+ trigger anim
+ {
+                alertentity soldat6
+                playanim tools both forever                
+ }
+ trigger alarm
+ {
+              clearanim
+              resetscript
+              giveweapon weapon_luger
+              setammo ammo_9mm 50
+              selectweapon weapon_luger
+ }
+ statechange relaxed alert
+ {
+              trigger soldat6 alarm
+ }
+ statechange relaxed combat
+ {
+              trigger soldat6 alarm
+ }
+ statechange query alert
+ {
+              trigger soldat6 alarm
+ }
+ statechange query combat
+ {
+              trigger soldat6 alarm
+ }
+ inspectsoundstart
+ {
+              trigger soldat6 alarm
+ }
+ inspectsoundend
+ {
+              trigger soldat6 alarm
+ }
+ death
+ {
+               resetscript
+               clearanim
+ }
+}
+soldat7
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger go
+ {
+                walktomarker pos28
+		facetargetangles pos28
+                walktomarker pos27
+		facetargetangles pos27
+                trigger soldat7 go
+ }
+ statechange relaxed alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange relaxed combat
+ {
+                clearanim
+                resetscript
+ }
+
+ statechange query alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange query combat
+ {
+                 clearanim
+                 resetscript
+ }
+ inspectsoundstart
+ {
+                 deny
+ }
+ inspectsoundend
+ {
+                 deny
+ }
+ death
+ {
+                 resetscript
+                 clearanim
+ }
+}
+soldat8
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger go
+ {
+                walktomarker pos23
+		facetargetangles pos23
+                walktomarker pos22
+		facetargetangles pos22
+                trigger soldat8 go
+ }
+ statechange relaxed alert
+ {
+                 clearanim
+                 resetscript
+ }
+ statechange relaxed combat
+ {
+                 clearanim
+                 resetscript
+ }
+ statechange query alert
+ {
+                 clearanim
+                 resetscript
+ }
+ statechange query combat
+ {
+                 clearanim
+                 resetscript 
+ }
+ inspectsoundstart
+ {
+                 deny
+ }
+ inspectsoundend
+ {
+                 deny
+ }
+ death
+ {
+                 resetscript
+                 clearanim
+ }
+}
+soldat9
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ death
+ {
+                resetscript
+                clearanim
+ }
+}
+
+soldat10
+{
+ attributes
+ {
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger go
+ {
+                walktomarker pos25
+		facetargetangles pos25
+                walktomarker pos24
+		facetargetangles pos24
+                trigger soldat10 go
+ }
+ statechange relaxed alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange relaxed combat
+ {
+                clearanim
+                resetscript
+ }
+ statechange query alert
+ {
+                clearanim
+                resetscript
+ }
+ statechange query combat
+ {
+                clearanim
+                resetscript
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+ death
+ {
+               resetscript
+               clearanim
+ }
+}
+soldat11
+{
+ attributes
+ {
+                accum 3 set 0
+		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger speeker1
+ {
+                accum 3 abort_if_bitset 4
+                playsound soldat11_1
+ }
+ trigger speeker2
+ {
+                accum 3 abort_if_bitset 4
+                playsound soldat11_2
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ trigger res
+ {
+                accum 3 bitset 4
+                resetscript
+                clearanim
+ }
+
+ death
+ {
+                accum 3 bitset 4
+                trigger soldat12 res  
+                resetscript
+                clearanim
+ }
+ inspectsoundend
+ {
+                deny
+ }
+}
+soldat12
+{
+attributes
+ {
+                accum 3 set 0
+ 		aim_accuracy 0.2
+		starting_health 30
+		attack_crouch 0.2
+		hearing_scale 1.2
+		hearing_scale_not_pvs 2.0
+		fov 120
+		aggression 0.3
+                alertness 2500
+ }
+ trigger inst
+ {
+                trigger startin instal_mikro
+ }
+ trigger speeker1
+ {
+                accum 3 abort_if_bitset 4
+                playsound soldat12_1
+ }
+ trigger speeker2
+ {
+                accum 3 abort_if_bitset 4
+                playsound soldat12_2
+ }
+ trigger res
+ {
+                accum 3 bitset 4
+                resetscript
+                clearanim
+ }
+ death
+ {
+                accum 3 bitset 4
+                trigger soldat11 res
+                resetscript
+                clearanim
+ }
+ inspectsoundstart
+ {
+                deny
+ }
+ inspectsoundend
+ {
+                deny
+ }
+}
+//----------------------ZEKI----------------------
+zek_1
+{
+attributes
+	{
+inner_detection_radius 0
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 40
+		aggression 0.0
+                alertness 0
+	}
+spawn
+{
+trigger zek_1 go
+}
+trigger go
+{
+nosight 9999
+statetype relaxed
+                walktomarker pos18
+		facetargetangles pos18
+                walktomarker pos19
+		facetargetangles pos19
+                walktomarker pos20
+		facetargetangles pos20
+                walktomarker pos21
+		facetargetangles pos21
+trigger zek_1 go
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+//
+}
+
+}
+zek_2
+{
+attributes
+	{
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 40
+		aggression 0.0
+                alertness 0
+inner_detection_radius 0
+	}
+spawn
+{
+trigger zek_2 go
+}
+trigger go
+{
+nosight 9999
+statetype relaxed
+                walktomarker pos19
+		facetargetangles pos19
+                walktomarker pos20
+		facetargetangles pos20
+                walktomarker pos21
+		facetargetangles pos21
+                walktomarker pos18
+		facetargetangles pos18
+               
+trigger zek_2 go
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+//
+}
+
+} 
+zek_3
+{
+attributes
+	{
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 1
+		aggression 0.0
+                alertness 0
+inner_detection_radius 0
+	}
+spawn
+{
+trigger zek_3 go
+}
+trigger go
+{
+nosight 9999
+statetype relaxed
+                walktomarker pos20
+		facetargetangles pos20
+                walktomarker pos21
+		facetargetangles pos21
+                walktomarker pos18
+		facetargetangles pos18
+                walktomarker pos19
+		facetargetangles pos19
+trigger zek_3 go
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+//
+}
+
+} 
+zek_4
+{
+attributes
+	{
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 1
+		aggression 0.0
+                alertness 0
+inner_detection_radius 0
+	}
+spawn
+{
+trigger zek_4 go
+}
+trigger go
+{
+                walktomarker pos21
+		facetargetangles pos21
+                walktomarker pos18
+		facetargetangles pos18
+                walktomarker pos19
+		facetargetangles pos19
+                walktomarker pos20
+		facetargetangles pos20
+nosight 9999
+statetype relaxed
+trigger zek_4 go
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+//
+}
+
+}
+
+
+
+
+zek_dima
+{
+attributes
+	{
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 1
+		aggression 0.0
+                alertness 0
+inner_detection_radius 0
+
+	}
+spawn
+{
+trigger zek_dima go
+}
+trigger go
+{
+playanim tools torso forever
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+//
+}
+
+}
+zek_modest
+{
+attributes
+	{
+		aim_accuracy 0.0
+		starting_health 5
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 0
+		aggression 0.0
+                alertness 0
+inner_detection_radius 0
+	}
+spawn
+{
+trigger zek_modest go
+}
+trigger go
+{
+playanim tunning_radio both forever
+}
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+death player
+{
+missionfailed 0 6
+resetscript
+clearanim
+}
+
+}
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ANIMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>
+zek_baka
+{
+attributes
+	{
+accum 4 set 0
+		aim_accuracy 0.0
+		starting_health 30
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 40
+		aggression 0.0
+                alertness 200
+	}
+trigger inst
+{
+accum 4 abort_if_bitset 4
+alertentity zek_baka
+}
+trigger two
+{
+accum 4 bitset 4
+}
+
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+sight player
+{
+clearanim
+playsound baka_pleez
+}
+
+death
+{
+accum 4 abort_if_bitset 4
+missionfailed 0
+resetscript
+clearanim
+}
+}
+zek_baka_1
+{
+attributes
+	{
+accum 5 set 0
+                aim_accuracy 0.0
+		starting_health 30
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 360
+		aggression 0.0
+                alertness 200000
+	}
+trigger inst
+{
+ alertentity zek_baka_1
+}
+ trigger go
+ {
+ trigger rus go1
+trigger player r1
+ wait 25000
+ trigger player b1
+ playsound baka1
+ wait 5200
+ trigger player r2
+ trigger rus sou1
+ wait 2500
+ trigger player b2
+ facetargetangles baka_pos1
+ playsound baka2
+ walktomarker baka_pos2 nostop 
+ facetargetangles baka_pos2
+ trigger rus go2
+ walktomarker baka_pos3 nostop 
+ alertentity start_cinema
+ facetargetangles baka_pos3
+ walktomarker baka_pos5 nostop 
+ walktomarker baka_pos4 nostop 
+trigger player endmap
+ }
+
+sight
+{
+accum 5 abort_if_bitset 1
+accum 5 bitset 1
+statetype relaxed
+trigger player plt
+ alertentity rus
+ trigger stena go
+ trigger zek_baka_1 go
+}
+//	activate player
+//	{
+//		denyactivate
+//	}
+
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+
+death
+{
+missionfailed 0 6
+resetscript
+clearanim
+}
+}
+rus
+{
+attributes
+	{
+                aim_accuracy 0.0
+		starting_health 30
+		attack_crouch 0.0
+                idle_crouch 0.0 
+		hearing_scale 0.0
+		hearing_scale_not_pvs 0.0
+		fov 40
+		aggression 0.0
+                alertness 200
+	}
+spawn
+{
+		setammo ammo_grenades 0
+                giveweapon weapon_mp40
+                setammo ammo_9mm 50
+                selectweapon weapon_mp40
+}
+
+
+ trigger go1
+ {
+ walktomarker rus_pos2 nostop
+ walktomarker rus_pos1 nostop
+
+ }
+ trigger go2
+ {
+ walktomarker baka_pos1 //nostop
+wait 2000 
+trigger rus sou2
+ walktomarker baka_pos2 nostop
+  facetargetangles baka_pos2
+ walktomarker baka_pos3 nostop
+ facetargetangles baka_pos3
+ walktomarker baka_pos5 nostop
+ walktomarker baka_pos6 nostop
+}
+
+ trigger sou1
+ {
+ playsound rus1
+ }
+ trigger sou2
+ {
+ playsound rus2
+ }
+
+statechange relaxed alert
+	{
+deny
+	}
+
+	statechange relaxed combat
+	{
+deny
+	}
+
+	statechange query alert
+	{
+deny
+	}
+
+	statechange query combat
+	{
+deny
+	}
+
+
+death
+{
+}
+}
+
+
+
+
+
+

@@ -1,0 +1,336 @@
+
+// Switch to screen FeMainMenu.fng
+ACTION:  48  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_RIGHT
+ACTION:  48  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_RIGHT
+ACTION:  48  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_RIGHT
+ACTION:  51  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_RIGHT
+ACTION:  51  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_RIGHT
+ACTION:  74  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_RIGHT
+ACTION:  74  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_RIGHT
+ACTION:  74  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_RIGHT
+ACTION:  79  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_RIGHT
+ACTION:  79  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_RIGHT
+ACTION: 122  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_RIGHT
+ACTION: 122  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_RIGHT
+ACTION: 122  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_RIGHT
+ACTION: 126  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_RIGHT
+ACTION: 126  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_RIGHT
+ACTION: 162  "FeMainMenu.fng"                "FEng"               0.227 FRONTENDACTION_ACCEPT
+ACTION: 162  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION: 162  "FeMainMenu.fng"                "FeGarageMain"       0.227 FRONTENDACTION_ACCEPT
+ACTION: 163  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION: 163  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_ACCEPT
+ACTION: 166  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION: 166  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen None
+
+// Switch to screen WorldMapMain.fng
+
+// Switch to screen FeWorldMapQuickList.fng
+ACTION:  62  "FeWorldMapQuickList.fng"       "FEng"               0.290 FRONTENDACTION_ACCEPT
+ACTION:  62  "FeWorldMapQuickList.fng"       "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION:  62  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.290 FRONTENDACTION_ACCEPT
+ACTION:  62  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.290 FRONTENDACTION_ACCEPT
+ACTION:  63  "FeWorldMapQuickList.fng"       "FEng"               0.384 FRONTENDACTION_ACCEPT
+ACTION:  63  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.384 FRONTENDACTION_ACCEPT
+ACTION:  63  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.384 FRONTENDACTION_ACCEPT
+ACTION:  64  "FeWorldMapQuickList.fng"       "FEng"               0.267 FRONTENDACTION_ACCEPT
+ACTION:  64  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.267 FRONTENDACTION_ACCEPT
+ACTION:  64  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.267 FRONTENDACTION_ACCEPT
+ACTION:  65  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION:  65  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_ACCEPT
+ACTION:  65  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_ACCEPT
+ACTION: 118  "FeWorldMapQuickList.fng"       "FEng"               0.973 FRONTENDACTION_ACCEPT
+ACTION: 118  "FeWorldMapQuickList.fng"       "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION: 118  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.973 FRONTENDACTION_ACCEPT
+ACTION: 118  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.973 FRONTENDACTION_ACCEPT
+ACTION: 119  "FeWorldMapQuickList.fng"       "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION: 119  "FeWorldMapQuickList.fng"       "FeGarageMain"       1.000 FRONTENDACTION_ACCEPT
+ACTION: 119  "FeWorldMapQuickList.fng"       "WorldMapMain"       1.000 FRONTENDACTION_ACCEPT
+ACTION: 121  "FeWorldMapQuickList.fng"       "FEng"               0.675 FRONTENDACTION_ACCEPT
+ACTION: 121  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.675 FRONTENDACTION_ACCEPT
+ACTION: 121  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.675 FRONTENDACTION_ACCEPT
+ACTION: 122  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION: 122  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_ACCEPT
+ACTION: 122  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen WorldMapMain.fng
+
+// Switch to screen None
+
+// Switch to screen FeQuickRaceOptions.fng
+ACTION:  43  "FeQuickRaceOptions.fng"        "FEng"               0.776 FRONTENDACTION_ACCEPT
+ACTION:  43  "FeQuickRaceOptions.fng"        "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION:  43  "FeQuickRaceOptions.fng"        "FeGarageMain"       0.776 FRONTENDACTION_ACCEPT
+ACTION:  44  "FeQuickRaceOptions.fng"        "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION:  44  "FeQuickRaceOptions.fng"        "FeGarageMain"       1.000 FRONTENDACTION_ACCEPT
+ACTION:  45  "FeQuickRaceOptions.fng"        "FEng"               0.925 FRONTENDACTION_ACCEPT
+ACTION:  45  "FeQuickRaceOptions.fng"        "FeGarageMain"       0.925 FRONTENDACTION_ACCEPT
+ACTION:  46  "FeQuickRaceOptions.fng"        "FEng"               0.376 FRONTENDACTION_ACCEPT
+ACTION:  46  "FeQuickRaceOptions.fng"        "FeGarageMain"       0.376 FRONTENDACTION_ACCEPT
+ACTION:  47  "FeQuickRaceOptions.fng"        "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION:  47  "FeQuickRaceOptions.fng"        "FeGarageMain"       0.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen None
+
+// Switch to screen FeCarSelect.fng
+ACTION:  55  "FeCarSelect.fng"               "FEng"               0.533 FRONTENDACTION_ACCEPT
+ACTION:  55  "FeCarSelect.fng"               "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION:  55  "FeCarSelect.fng"               "FeGarageMain"       0.533 FRONTENDACTION_ACCEPT
+ACTION:  56  "FeCarSelect.fng"               "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION:  56  "FeCarSelect.fng"               "FeGarageMain"       1.000 FRONTENDACTION_ACCEPT
+ACTION:  58  "FeCarSelect.fng"               "FEng"               0.847 FRONTENDACTION_ACCEPT
+ACTION:  58  "FeCarSelect.fng"               "FeGarageMain"       0.847 FRONTENDACTION_ACCEPT
+ACTION:  59  "FeCarSelect.fng"               "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION:  59  "FeCarSelect.fng"               "FeGarageMain"       0.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen None
+
+// Switch to screen FeDialog.fng
+ACTION: 114  "FeDialog.fng"                  "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION: 114  "FeDialog.fng"                  "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION: 114  "FeDialog.fng"                  "FeGarageMain"       1.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen None
+Unloading front end...
+Loading region L5RA...
+WARNING:  There are holes (67676 bytes) in memory.  bCountFreeMemory() = 2551192 bytes, bLargestFreeBlock() = 2483516 bytes
+
+// Switch to screen Loading_Controller.fng
+Simulation Initializing::  Fast Free 634K  Heap Free 312K
+WARNING:  We wont have enough FastMem to continue safely
+Enabling auto trigger - effect not created
+Enabling auto trigger - effect not created
+Enabling auto trigger - effect not created
+Enabling auto trigger - effect not created
+Enabling auto trigger - effect not created
+Picked NIS: INTRO16CG Track: 0
+GTrigger:: Creating trigger
+WARNING:  item 0 missing device id, in controller.class hud @ HUDACTION_VOIPACTIVATION
+Free memory entering game = 181K
+
+// Switch to screen FESubtitler.fng
+ACTION:  68  "FESubtitler.fng"               "FEng"               0.886 FRONTENDACTION_ACCEPT
+ACTION:  68  "FESubtitler.fng"               "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION:  68  "FESubtitler.fng"               "FEngHud"            1.000 HUDACTION_SKIPNIS
+ACTION:  68  "FESubtitler.fng"               "AICopManager"       0.810 DEBUGACTION_MOVE_D_BACK
+ACTION:  68  "FESubtitler.fng"               "FEngHud"            1.000 HUDACTION_SKIPNIS
+
+// Switch to screen None
+ACTION:   1  "None"                          "AICopManager"       0.314 DEBUGACTION_MOVE_D_BACK
+**************  Game_StartRace: mu.1.3  *****************
+ACTION:   2  "None"                          "AICopManager"       0.000 DEBUGACTION_MOVE_D_BACK
+ACTION: 122  "None"                          "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION: 122  "None"                          "InputPlayer"        1.000 GAMEACTION_GAS
+ACTION: 123  "None"                          "FEngHud"            1.000 HUDACTION_SKIPNIS
+ACTION: 123  "None"                          "AICopManager"       0.850 DEBUGACTION_MOVE_D_BACK
+ACTION: 124  "None"                          "AICopManager"       1.000 DEBUGACTION_MOVE_D_BACK
+ACTION: 140  "None"                          "InputPlayer"        0.163 GAMEACTION_STEERRIGHT
+ACTION: 141  "None"                          "tedebugmenu"        0.070 FRONTENDACTION_UP
+ACTION: 141  "None"                          "tedebugmenu"        1.000 FRONTENDACTION_RIGHT
+ACTION: 141  "None"                          "InputPlayer"        0.617 GAMEACTION_STEERRIGHT
+ACTION: 141  "None"                          "InputPlayer"        1.000 GAMEACTION_TURNRIGHT
+ACTION: 141  "None"                          "AICopManager"       0.070 DEBUGACTION_LOOK_UP
+ACTION: 141  "None"                          "AICopManager"       0.507 DEBUGACTION_LOOK_RIGHT
+ACTION: 142  "None"                          "tedebugmenu"        0.361 FRONTENDACTION_UP
+ACTION: 142  "None"                          "InputPlayer"        1.000 GAMEACTION_STEERRIGHT
+ACTION: 142  "None"                          "AICopManager"       0.361 DEBUGACTION_LOOK_UP
+ACTION: 142  "None"                          "AICopManager"       1.000 DEBUGACTION_LOOK_RIGHT
+ACTION: 143  "None"                          "tedebugmenu"        0.384 FRONTENDACTION_UP
+ACTION: 143  "None"                          "AICopManager"       0.384 DEBUGACTION_LOOK_UP
+ACTION: 147  "None"                          "tedebugmenu"        0.395 FRONTENDACTION_UP
+ACTION: 147  "None"                          "AICopManager"       0.395 DEBUGACTION_LOOK_UP
+ACTION: 152  "None"                          "tedebugmenu"        0.384 FRONTENDACTION_UP
+ACTION: 152  "None"                          "AICopManager"       0.384 DEBUGACTION_LOOK_UP
+ACTION: 153  "None"                          "tedebugmenu"        0.283 FRONTENDACTION_UP
+ACTION: 153  "None"                          "InputPlayer"        0.861 GAMEACTION_STEERRIGHT
+ACTION: 153  "None"                          "AICopManager"       0.283 DEBUGACTION_LOOK_UP
+ACTION: 153  "None"                          "AICopManager"       0.821 DEBUGACTION_LOOK_RIGHT
+ACTION: 154  "None"                          "tedebugmenu"        0.000 FRONTENDACTION_UP
+ACTION: 154  "None"                          "InputPlayer"        0.233 GAMEACTION_STEERRIGHT
+ACTION: 154  "None"                          "AICopManager"       0.000 DEBUGACTION_LOOK_UP
+ACTION: 154  "None"                          "AICopManager"       0.014 DEBUGACTION_LOOK_RIGHT
+ACTION: 155  "None"                          "InputPlayer"        0.024 GAMEACTION_STEERRIGHT
+ACTION: 155  "None"                          "AICopManager"       0.000 DEBUGACTION_LOOK_RIGHT
+ACTION: 156  "None"                          "InputPlayer"        0.033 GAMEACTION_STEERRIGHT
+ACTION: 161  "None"                          "InputPlayer"        0.000 GAMEACTION_STEERRIGHT
+ACTION: 162  "None"                          "InputPlayer"        0.015 GAMEACTION_STEERLEFT
+ACTION: 163  "None"                          "tedebugmenu"        1.000 FRONTENDACTION_LEFT
+ACTION: 163  "None"                          "InputPlayer"        0.712 GAMEACTION_STEERLEFT
+ACTION: 163  "None"                          "InputPlayer"        1.000 GAMEACTION_TURNLEFT
+ACTION: 163  "None"                          "AICopManager"       0.630 DEBUGACTION_LOOK_LEFT
+ACTION: 164  "None"                          "InputPlayer"        1.000 GAMEACTION_STEERLEFT
+ACTION: 164  "None"                          "AICopManager"       1.000 DEBUGACTION_LOOK_LEFT
+ACTION: 184  "None"                          "tedebugmenu"        0.148 FRONTENDACTION_DOWN
+ACTION: 184  "None"                          "AICopManager"       0.148 DEBUGACTION_LOOK_DOWN
+ACTION: 187  "None"                          "AICopManager"       0.196 DEBUGACTION_MOVE_D_BACK
+ACTION: 188  "None"                          "InputPlayer"        0.000 GAMEACTION_GAS
+ACTION: 188  "None"                          "AICopManager"       0.000 DEBUGACTION_MOVE_D_BACK
+ACTION: 205  "None"                          "tedebugmenu"        0.000 FRONTENDACTION_DOWN
+ACTION: 205  "None"                          "InputPlayer"        0.355 GAMEACTION_STEERLEFT
+ACTION: 205  "None"                          "AICopManager"       0.000 DEBUGACTION_LOOK_DOWN
+ACTION: 205  "None"                          "AICopManager"       0.171 DEBUGACTION_LOOK_LEFT
+ACTION: 206  "None"                          "InputPlayer"        0.000 GAMEACTION_STEERLEFT
+ACTION: 206  "None"                          "AICopManager"       0.000 DEBUGACTION_LOOK_LEFT
+ACTION: 225  "None"                          "tedebugmenu"        1.000 FRONTENDACTION_START
+ACTION: 225  "None"                          "FEngHud"            1.000 HUDACTION_PAUSEREQUEST
+ACTION: 225  "None"                          "AICopManager"       1.000 DEBUGACTION_DROPCAR
+
+// Switch to screen FePauseMain.fng
+ACTION:  39  "FePauseMain.fng"               "FEng"               1.000 FRONTENDACTION_RIGHT
+ACTION:  39  "FePauseMain.fng"               "tedebugmenu"        1.000 FRONTENDACTION_RIGHT
+ACTION:  39  "FePauseMain.fng"               "AICopManager"       0.392 DEBUGACTION_LOOK_D_RIGHT
+ACTION:  40  "FePauseMain.fng"               "AICopManager"       0.824 DEBUGACTION_LOOK_D_RIGHT
+ACTION:  41  "FePauseMain.fng"               "AICopManager"       0.549 DEBUGACTION_LOOK_D_RIGHT
+ACTION:  42  "FePauseMain.fng"               "AICopManager"       0.000 DEBUGACTION_LOOK_D_RIGHT
+ACTION:  43  "FePauseMain.fng"               "FEng"               0.000 FRONTENDACTION_RIGHT
+ACTION: 103  "FePauseMain.fng"               "FEng"               0.902 FRONTENDACTION_ACCEPT
+ACTION: 103  "FePauseMain.fng"               "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION: 103  "FePauseMain.fng"               "AICopManager"       0.837 DEBUGACTION_MOVE_D_BACK
+
+// Switch to screen FeDialog.fng
+ACTION:   1  "FeDialog.fng"                  "FEng"               0.408 FRONTENDACTION_ACCEPT
+ACTION:   1  "FeDialog.fng"                  "AICopManager"       0.013 DEBUGACTION_MOVE_D_BACK
+ACTION:   2  "FeDialog.fng"                  "FEng"               0.322 FRONTENDACTION_ACCEPT
+ACTION:   2  "FeDialog.fng"                  "AICopManager"       0.000 DEBUGACTION_MOVE_D_BACK
+ACTION:   3  "FeDialog.fng"                  "FEng"               0.000 FRONTENDACTION_ACCEPT
+ACTION:  25  "FeDialog.fng"                  "FEng"               1.000 FRONTENDACTION_DOWN
+ACTION:  25  "FeDialog.fng"                  "tedebugmenu"        0.525 FRONTENDACTION_DOWN
+ACTION:  25  "FeDialog.fng"                  "AICopManager"       0.288 DEBUGACTION_LOOK_D_DOWN
+ACTION:  25  "FeDialog.fng"                  "AICopManager"       1.000 DEBUGACTION_SIMSTEP
+ACTION:  26  "FeDialog.fng"                  "tedebugmenu"        0.333 FRONTENDACTION_DOWN
+ACTION:  26  "FeDialog.fng"                  "AICopManager"       0.000 DEBUGACTION_LOOK_D_DOWN
+ACTION:  27  "FeDialog.fng"                  "tedebugmenu"        0.133 FRONTENDACTION_DOWN
+ACTION:  28  "FeDialog.fng"                  "FEng"               0.000 FRONTENDACTION_DOWN
+ACTION:  28  "FeDialog.fng"                  "tedebugmenu"        0.000 FRONTENDACTION_DOWN
+ACTION:  57  "FeDialog.fng"                  "FEng"               1.000 FRONTENDACTION_ACCEPT
+ACTION:  57  "FeDialog.fng"                  "tedebugmenu"        1.000 FRONTENDACTION_ACCEPT
+ACTION:  57  "FeDialog.fng"                  "AICopManager"       1.000 DEBUGACTION_MOVE_D_BACK
+ACTION:  58  "FeDialog.fng"                  "FEng"               0.337 FRONTENDACTION_ACCEPT
+ACTION:  58  "FeDialog.fng"                  "AICopManager"       0.000 DEBUGACTION_MOVE_D_BACK
+ACTION:  59  "FeDialog.fng"                  "FEng"               0.000 FRONTENDACTION_ACCEPT
+
+// Switch to screen FePauseMain.fng
+
+// Switch to screen None
+Loading front end...
+
+// Switch to screen Loading.fng
+WARNING:  Duplicate texture BONUSCARD_VISUALVINYL in packs Global\GlobalTextures.tpk and Global\FrontEndTextures.tpk
+ERROR:  Out of VRAM.  Needed=263168  Free=237568  eFrmCnt=2379  Tex=MAIN_FLOOR_A
+
+// Switch to screen WorldMapMain.fng
+
+// Switch to screen FeWorldMapQuickList.fng
+ACTION:  68  "FeWorldMapQuickList.fng"       "FEng"               0.400 FRONTENDACTION_CANCEL
+ACTION:  68  "FeWorldMapQuickList.fng"       "FEng"               0.400 FRONTENDACTION_CANCEL_ALT
+ACTION:  68  "FeWorldMapQuickList.fng"       "tedebugmenu"        1.000 FRONTENDACTION_CANCEL
+ACTION:  68  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.400 FRONTENDACTION_CANCEL
+ACTION:  68  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.400 FRONTENDACTION_CANCEL_ALT
+ACTION:  68  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.400 FRONTENDACTION_CANCEL
+ACTION:  68  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.400 FRONTENDACTION_CANCEL_ALT
+ACTION:  69  "FeWorldMapQuickList.fng"       "FEng"               0.322 FRONTENDACTION_CANCEL
+ACTION:  69  "FeWorldMapQuickList.fng"       "FEng"               0.322 FRONTENDACTION_CANCEL_ALT
+ACTION:  69  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.322 FRONTENDACTION_CANCEL
+ACTION:  69  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.322 FRONTENDACTION_CANCEL_ALT
+ACTION:  69  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.322 FRONTENDACTION_CANCEL
+ACTION:  69  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.322 FRONTENDACTION_CANCEL_ALT
+ACTION:  70  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_CANCEL
+ACTION:  70  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_CANCEL_ALT
+ACTION:  70  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_CANCEL
+ACTION:  70  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_CANCEL_ALT
+ACTION:  70  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_CANCEL
+ACTION:  70  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 117  "FeWorldMapQuickList.fng"       "FEng"               0.322 FRONTENDACTION_BUTTON5
+ACTION: 117  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.322 FRONTENDACTION_BUTTON5
+ACTION: 117  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.322 FRONTENDACTION_BUTTON5
+ACTION: 118  "FeWorldMapQuickList.fng"       "FEng"               0.722 FRONTENDACTION_BUTTON5
+ACTION: 118  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.722 FRONTENDACTION_BUTTON5
+ACTION: 118  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.722 FRONTENDACTION_BUTTON5
+ACTION: 119  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_BUTTON5
+ACTION: 119  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 119  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 164  "FeWorldMapQuickList.fng"       "FEng"               0.118 FRONTENDACTION_BUTTON5
+ACTION: 164  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.118 FRONTENDACTION_BUTTON5
+ACTION: 164  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.118 FRONTENDACTION_BUTTON5
+ACTION: 165  "FeWorldMapQuickList.fng"       "FEng"               1.000 FRONTENDACTION_BUTTON5
+ACTION: 165  "FeWorldMapQuickList.fng"       "FeGarageMain"       1.000 FRONTENDACTION_BUTTON5
+ACTION: 165  "FeWorldMapQuickList.fng"       "WorldMapMain"       1.000 FRONTENDACTION_BUTTON5
+ACTION: 166  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_BUTTON5
+ACTION: 166  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 166  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 188  "FeWorldMapQuickList.fng"       "FEng"               0.455 FRONTENDACTION_BUTTON5
+ACTION: 188  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.455 FRONTENDACTION_BUTTON5
+ACTION: 188  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.455 FRONTENDACTION_BUTTON5
+ACTION: 189  "FeWorldMapQuickList.fng"       "FEng"               0.831 FRONTENDACTION_BUTTON5
+ACTION: 189  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.831 FRONTENDACTION_BUTTON5
+ACTION: 189  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.831 FRONTENDACTION_BUTTON5
+ACTION: 190  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_BUTTON5
+ACTION: 190  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 190  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_BUTTON5
+ACTION: 229  "FeWorldMapQuickList.fng"       "FEng"               0.675 FRONTENDACTION_CANCEL
+ACTION: 229  "FeWorldMapQuickList.fng"       "FEng"               0.675 FRONTENDACTION_CANCEL_ALT
+ACTION: 229  "FeWorldMapQuickList.fng"       "tedebugmenu"        1.000 FRONTENDACTION_CANCEL
+ACTION: 229  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.675 FRONTENDACTION_CANCEL
+ACTION: 229  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.675 FRONTENDACTION_CANCEL_ALT
+ACTION: 229  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.675 FRONTENDACTION_CANCEL
+ACTION: 229  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.675 FRONTENDACTION_CANCEL_ALT
+ACTION: 230  "FeWorldMapQuickList.fng"       "FEng"               1.000 FRONTENDACTION_CANCEL
+ACTION: 230  "FeWorldMapQuickList.fng"       "FEng"               1.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 230  "FeWorldMapQuickList.fng"       "FeGarageMain"       1.000 FRONTENDACTION_CANCEL
+ACTION: 230  "FeWorldMapQuickList.fng"       "FeGarageMain"       1.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 230  "FeWorldMapQuickList.fng"       "WorldMapMain"       1.000 FRONTENDACTION_CANCEL
+ACTION: 230  "FeWorldMapQuickList.fng"       "WorldMapMain"       1.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 232  "FeWorldMapQuickList.fng"       "FEng"               0.706 FRONTENDACTION_CANCEL
+ACTION: 232  "FeWorldMapQuickList.fng"       "FEng"               0.706 FRONTENDACTION_CANCEL_ALT
+ACTION: 232  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.706 FRONTENDACTION_CANCEL
+ACTION: 232  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.706 FRONTENDACTION_CANCEL_ALT
+ACTION: 232  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.706 FRONTENDACTION_CANCEL
+ACTION: 232  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.706 FRONTENDACTION_CANCEL_ALT
+ACTION: 233  "FeWorldMapQuickList.fng"       "FEng"               0.196 FRONTENDACTION_CANCEL
+ACTION: 233  "FeWorldMapQuickList.fng"       "FEng"               0.196 FRONTENDACTION_CANCEL_ALT
+ACTION: 233  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.196 FRONTENDACTION_CANCEL
+ACTION: 233  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.196 FRONTENDACTION_CANCEL_ALT
+ACTION: 233  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.196 FRONTENDACTION_CANCEL
+ACTION: 233  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.196 FRONTENDACTION_CANCEL_ALT
+ACTION: 234  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_CANCEL
+ACTION: 234  "FeWorldMapQuickList.fng"       "FEng"               0.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 234  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_CANCEL
+ACTION: 234  "FeWorldMapQuickList.fng"       "FeGarageMain"       0.000 FRONTENDACTION_CANCEL_ALT
+ACTION: 234  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_CANCEL
+ACTION: 234  "FeWorldMapQuickList.fng"       "WorldMapMain"       0.000 FRONTENDACTION_CANCEL_ALT
+
+// Switch to screen WorldMapMain.fng
+
+// Switch to screen None
+
+// Switch to screen FeMainMenu.fng
+ACTION:  39  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_LEFT
+ACTION:  39  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_LEFT
+ACTION:  39  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_LEFT
+ACTION:  39  "FeMainMenu.fng"                "movie q"            1.000 FRONTENDACTION_LEFT
+ACTION:  42  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_LEFT
+ACTION:  42  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_LEFT
+ACTION:  42  "FeMainMenu.fng"                "movie q"            0.000 FRONTENDACTION_LEFT
+ACTION:  64  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_LEFT
+ACTION:  64  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_LEFT
+ACTION:  64  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_LEFT
+ACTION:  64  "FeMainMenu.fng"                "movie q"            1.000 FRONTENDACTION_LEFT
+ACTION:  67  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_LEFT
+ACTION:  67  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_LEFT
+ACTION:  67  "FeMainMenu.fng"                "movie q"            0.000 FRONTENDACTION_LEFT
+ACTION:  91  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_LEFT
+ACTION:  91  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_LEFT
+ACTION:  91  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_LEFT
+ACTION:  91  "FeMainMenu.fng"                "movie q"            1.000 FRONTENDACTION_LEFT
+ACTION:  93  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_LEFT
+ACTION:  93  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_LEFT
+ACTION:  93  "FeMainMenu.fng"                "movie q"            0.000 FRONTENDACTION_LEFT
+ACTION: 117  "FeMainMenu.fng"                "FEng"               1.000 FRONTENDACTION_LEFT
+ACTION: 117  "FeMainMenu.fng"                "tedebugmenu"        1.000 FRONTENDACTION_LEFT
+ACTION: 117  "FeMainMenu.fng"                "FeGarageMain"       1.000 FRONTENDACTION_LEFT
+ACTION: 117  "FeMainMenu.fng"                "movie q"            1.000 FRONTENDACTION_LEFT
+ACTION: 119  "FeMainMenu.fng"                "FEng"               0.000 FRONTENDACTION_LEFT
+ACTION: 119  "FeMainMenu.fng"                "FeGarageMain"       0.000 FRONTENDACTION_LEFT
+ACTION: 119  "FeMainMenu.fng"                "movie q"            0.000 FRONTENDACTION_LEFT

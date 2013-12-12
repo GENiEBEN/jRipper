@@ -1,0 +1,1800 @@
+<unused>
+Cancel
+Retry
+OK
+Yes
+No
+Continue
+Chat Area
+Unknown Device
+Esc
+Print Scrn
+Scroll Lock
+Pause
+Backspace
+Insert
+Home
+Page Up
+Num Lock
+Tab
+Return
+Delete
+End
+Page Down
+Caps Lock
+Left Shift
+Right Shift
+Up
+Left
+Right
+Down
+NumPad
+Left Ctrl
+Alt
+Alt Gr
+Right Ctrl
+Space
+Enter
+Name
+%s was kicked.
+%s timed out.
+Continue
+Restart
+View Replay
+RETURN\ESC
+F1
+F2
+Player 1
+Player 2
+Player 3
+Player 4
+Tyres
+Suspension
+Engine
+Gears
+Steering
+Seconds
+Press Handbrake To Abort Pitstop.
+Damp
+Wet
+Storm
+Sunset
+Very Hot
+Sunny
+Night
+Rain
+Ghost Car 
+GET READY!
+PIT BETWEEN LAPS %d AND %d
+whispers
+Loading
+Ghost Car
+Retire From Championship
+Player name
+Back
+Xbox Controller
+Xbox Controller S
+Wheel
+Arcade Stick
+Digital Arcade Stick
+Flight Stick
+Snowboard
+Simulator Modes
+Free Race
+Time Trial
+Multi-Player
+Network
+Normal
+Hard
+Custom
+Select Difficulty
+Select Mode
+Select Championship
+Continue Career
+Options
+Bonus
+Activate Bonus
+Credits
+Enter Bonus Code
+For Bonus Code information, inc. unlocking cars and tracks, see back of manual or www.codemasters.com/bonuscodes.
+Done
+Exit
+Graphics
+On screen display
+Map
+Position Screen
+Screen
+Split Screen
+Horizontal
+Vertical
+Language
+English
+Français
+Deutsch
+Italiano
+Español
+English
+Français
+Español
+Reset
+Save and Exit
+Sound
+Environmental Audio
+Soundstage
+Mono
+Off
+Stereo
+Surround
+Volume
+Effects
+Engine
+Speech
+Speed
+Km/h
+Mph
+The setup of this controller is not complete, or it may conflict with other controllers. Do you want to go back and fix this problem now?
+controller port
+Controller Options
+Accelerator
+Advanced
+Brake
+Look Behind
+Change Camera
+Clutch
+Conflict
+Button
+Y Rotation Axis
+Z Rotation Axis
+Slider
+Other
+X Axis
+Y Axis
+Z Axis
+Control Assignments
+Controller Type
+deadzone
+Done
+High
+Low
+Medium
+Force Feedback
+Force Level
+Gear Down
+Gear Up
+Handbrake
+Look Left
+Look Right
+Pause
+The controller is not set-up properly. Do you want to continue, resetting to default controls?
+saturation
+Steering
+Steering Left
+Steering Right
+Vibration
+controller port 1
+controller port 2
+controller port 3
+controller port 4
+Legal
+Music
+Handling Options
+ABS
+Traction control
+Steering Mode
+Gearbox
+Automatic
+Manual
+Manual with Clutch
+Player Name
+On
+Off
+Press START
+Select Car
+Model
+Team
+Driver
+Opposition Select
+Default
+Clear
+Done
+Template
+Multiplayer
+Network Options
+Session Password
+Players
+Status
+Series
+Ping
+Join Session
+Chat
+Sort List
+Refresh
+Lobby
+Racing.
+Max Players
+Allow Vehicle Setups
+IP
+Select Car
+Car Setup
+End Session
+Specify IP Address
+Searching for Sessions
+Ready
+Vehicle
+Track
+Handling
+None
+Sort Servers By...
+Port
+pts
+AI Driver Difficulty
+Grid Order
+Random
+Last Results
+Reverse Last Results
+Return to Lobby
+st
+Session List
+Invalid IP Address
+Invalid Port
+Invalid IP Address and Port
+Simulation
+AI Opposition
+Lobby
+Pro-simulation
+Waiting
+Damage
+Join
+Create
+Race
+Series Options
+Full Events
+Race Length
+Qualifying
+Grid Position
+Random
+Front
+Middle
+Back
+Pit Stops
+Opposition
+Default
+Custom
+Driver Name
+Profile
+Driver
+Vehicle Setups
+Player One
+Player Two
+Fuel
+Fuel for
+laps /
+laps to go
+Rally Corner Indicators
+Dials
+Race Information
+Wheel
+Pad / Keyboard
+Driving
+Profile
+Unlocking Information
+estimated series length
+h
+m
+s
+On
+Off
+No. Laps
+st
+st
+nd
+rd
+th
+Caps
+Accents
+Are you sure?
+Select Profile
+Complete
+Story Scenes
+Trailers
+Back
+Movies
+RF Online
+LMA Manager 2006
+<unused>
+<unused>
+Fastest Lap
+Vehicle Setup
+Gears
+Suspension
+Anti-roll
+Tyres
+Brake Bias
+Load
+Save
+Continue
+Downforce
+1st Gear
+2nd Gear
+3rd Gear
+4th Gear
+5th Gear
+6th Gear 
+7th Gear
+8th Gear
+9th Gear 
+10th Gear
+Reset
+Accept
+Adjust
+Front
+Rear
+Ride Height
+Adjust All
+Soft
+Medium
+Hard
+New
+Load
+Delete
+Profile
+Empty
+Damaged
+Unable to load [CONTENT] content.
+Unable to load [CONTENT] content.
+Unable to save [CONTENT] content.
+Unable to save [CONTENT] content.
+Saving [CONTENT]
+Saving [CONTENT]
+Do you want to overwrite this [CONTENT] save?
+Do you want to overwrite this [CONTENT] save?
+This [CONTENT] is damaged, do you want to overwrite it?
+This [CONTENT] is damaged, do you want to overwrite it?
+Deleting
+Deleting
+Unable to delete [CONTENT] content.
+Unable to delete [CONTENT] content.
+Are you sure you want to delete this [CONTENT] save?
+Are you sure you want to delete this [CONTENT] save?
+This [CONTENT] is damaged, are you sure you want to delete it?
+This [CONTENT] is damaged, are you sure you want to delete it?
+Begin
+Do you want to continue and disable saving for [CONTENT] content?
+Do you want to continue and disable saving for [CONTENT] content?
+Your Xbox doesn't have enough free blocks to save games. An additional [ADDITIONAL] blocks are recommended. Do you want to launch the Xbox Dashboard to free [ADDITIONAL] blocks?
+Session Type
+Private
+Public
+Session Name
+Start Session
+Session Settings
+Lobby
+Friends
+Select Player
+Appear Offline
+Nationality
+Voice Output
+Xbox Communicator
+Speakers
+Are you sure? This will end the session for all players.
+Are you sure you want to leave the current session?
+New Account
+Select Account
+Gamertags
+User Accounts
+Account Name
+Password
+Email Address
+Confirm Password
+The GameSpy Passwords you have entered are different! Please re-enter your GameSpy Password.
+Log Out
+To create a new Xbox Live account, you must return to the Xbox Dashboard.  Do you want to continue?
+Statistics
+Play Online
+Logging into account
+Enter Passcode
+Enter Session Password
+Quick Match
+OptiMatch
+create match
+Quick Game
+Browse Sessions
+Enter IP
+Series
+Speed
+No Pl
+High
+Medium
+Low
+Hard
+Medium
+Soft
+High
+Medium
+Low
+Hard
+Medium
+Soft
+Slot
+Damaged
+Empty
+Delete
+Test Drive
+Championship
+Search
+All
+Current Session
+Mine
+Leaderboard
+Driver Rating
+Best Ever Driver Rating
+Lap Times
+Driver Ratings
+Best Ever Driver Ratings
+Page
+Track Length
+Miles
+Km
+Select Track
+To Remove Track
+[Delete]
+Paused
+Continue
+Grid Positions
+Race Positions
+Race Results
+End Race
+Restart
+Retire From Race
+Retire From Championship
+End Session
+Ghost Car 
+Retire From Qualifying
+Network Menu
+Sound
+Music
+Effects
+Engine
+Speech
+Objective
+Reset
+Objectives
+Championship Objective
+Championship Standings
+Quit
+Pos
+Driver
+Team
+Points
+Race Fixtures
+Retire To Lobby
+End Championship
+OptiMatch Results
+Quick Game Results
+Invite to current session
+Cancel Invite
+Accept Invite
+Decline and Remove From Friends List
+Remove From Friends List
+Accept friend request
+Decline friend request
+Decline and Block Further Requests
+Join Game
+Send friend request
+Add to Mute List
+Remove from Mute List
+Send Feedback
+View Player Stats
+Kick Player from Session
+Decline Invite
+OptiMatch Criteria
+Minimum Players
+Maximum Players
+Championship
+Rated Session
+AI Cars
+Use Vehicle Setups
+Damage
+Handling
+Search
+Don't Care
+Power
+Weight
+bhp
+kg
+Engine
+Gears
+Speed
+Win each race in this championship
+on normal or hard difficulty to unlock this car
+Track
+Adding User
+User Added
+The Passcode you entered was incorrect.
+You can manage your account at GameSpyID.com.
+Add
+New User
+Existing User
+Done
+Please enter the name you wish to use in-game.
+Please enter your email address.
+Please enter your GameSpy Password.
+Please re-enter your GameSpy Password.
+Do you wish to add a New or Existing user?
+Select Done when you are ready to add the user.
+This game session is no longer available.
+Your Xbox console cannot connect to Xbox Live.  Do you want to start the network troubleshooter?
+One or more Xbox Live services are unavailable.  Please try again later.
+You have been signed out of Xbox Live because another person signed in using your account.
+This account is not current.  Do you want to update the account in Account Recovery?
+The Xbox Live service is very busy.  Please try again later.
+You have an important message from Xbox Live.  You cannot connect to Xbox Live until you read the message.  Do you want to read the message now?
+Your Xbox console cannot connect to Xbox Live.  Do you want to start the network troubleshooter?
+A required update is available for the Xbox Live service.  You cannot connect to Xbox Live until the update is installed.  Do you want to install it now?
+Your Xbox console cannot connect to Xbox Live.  Do you want to start the network troubleshooter?
+No game sessions were found.  Would you like to create a session?
+Your Xbox console cannot connect to Xbox Live.  Do you want to start the network troubleshooter?
+Your Xbox console cannot connect to Xbox Live.  Do you want to start the network troubleshooter?
+Your PC cannot connect to GameSpy. Please check your Internet Connection Settings.
+Your Console cannot connect to GameSpy. Please check your Internet Connection Settings.
+Your PC cannot connect to GameSpy. Please check your Network Cable and Connection Settings.
+Your Console cannot connect to GameSpy. Please check your Network Cable and Connection Settings.
+Your PC cannot access the GameSpy Service. Please check your Internet Settings.
+Your Console cannot access the GameSpy Service. Please check your Internet Settings.
+This GameSpy account is invalid. You can manage your account at GameSpyID.com
+The GameSpy Service is currently very busy and could not be accessed. Please try again later.
+You have lost your connection to the GameSpy Service. Please check your connection and try again.
+You have been logged out of GameSpy because of a duplicate login with this account.
+Statistics List - Driver Ratings
+Statistics List - Lap Times
+Quit Game
+Watch previously seen cut-scenes and trailers
+Free Race, Time Trial, Multi-Player and Network games
+Continue through the career game
+Edit the volume, controller and on-screen display settings
+End current game
+drivers in race
+driver in race
+Select All
+Reset
+Sunny
+Night
+Damp
+Wet
+Storm
+Sunset
+Very Hot
+Rain
+Miles
+Kilometres
+Weather
+Length
+Money needed
+Championship points
+Championship position
+Time
+GO!
+Average Rating
+Session Found.
+Sessions Found.
+<unused>
+<unused>
+<unused>
+Next Track
+Current Track
+of
+laps
+Championship Race
+Settings
+Track
+Options
+Player
+Rating
+Pos
+Checking connection quality, please wait
+Network conditions may affect this game session.  Do you want to continue?
+Laps
+Highest Finish Position
+Are you sure you want to remove %s from your friends list?
+Are you sure you want to decline the invite from %s and remove them from your friends list?
+Are you sure you want to accept the invite from %s?
+Are you sure you want to decline the friend request from %s and block any further requests?
+Are you sure you want to join %s in the %s session?
+Please insert the disc for %s or press cancel.
+Network conditions may affect this game session.  Do you want to continue?
+Are you sure you want to kick %s from this session?
+Are you sure you want to join %s in the %s session? This will end the session for all players.
+Feedback
+Complaints
+Cheating
+Bad Name
+Screaming
+Threats or Harassment
+Cursing or Lewdness 
+Good Attitude
+Good Game
+Sending Feedback...
+Your friends list is empty
+Nationality
+Rival Indicators
+American
+Australian
+New Zealand
+English
+Welsh
+Scottish
+Northern Irish
+Irish
+German
+French
+Italian
+Spanish
+Portuguese
+Danish
+Austrian
+Swiss
+Belgian
+Dutch
+Norwegian
+Swedish
+Finnish
+Japanese
+User Details
+You have received an invite from %s to play %s.
+Friends Request Received.
+%s has sent you a Friends Request.
+Do you want to sign in to Xbox Live to join your friend's session?
+Do you want to join your friend's game session now?
+You have a new Xbox Live message.  Would you like to view the message now?
+Qualifying
+Waiting for all players to select ready.
+Select 'ready' when you are ready to begin.
+Select 'Start' to start the countdown timer.
+Waiting for more players to join.
+Offline.
+Available In
+Playing
+Friend Request Sent.
+Invite Sent.
+Wants to be your friend.
+Wants to play
+Voice: On
+Voice: Off
+Voice: Muted
+Your friends list is empty
+Chat Lobby
+Exit Chat
+Feedback Sent.
+Game Invite Sent.
+Game Invite Cancelled.
+Game Invite Accepted.
+Game Invite Declined.
+Game Invite Declined. Friend Removed.
+Friend Request Sent.
+Friend Request Accepted.
+Friend Request Declined.
+Friend Request Declined. User Blocked.
+Friend Removed.
+Joining Game Session.
+Could not join game.
+Player Muted.
+Player Un-Muted.
+Creating Game Session
+Could Not Create Game Session
+Could Not Delete Game Session
+Incorrect GameSpy Password
+Unable to test the connection quality of this session. Network conditions may affect this game. Do you want to continue?
+Exiting Game Session
+The Championship has changed. Please Choose a new car.
+Disconnected from game. Connection timed out.
+Disconnected from game. You were kicked by the host.
+Disconnected from game. Server closed the connection.
+Disconnected from game. Communication error.
+Disconnected from game. Unknown reason.
+Session join failed. Host refused connection.
+Session join failed. No reply from Host.
+Waiting for players
+You have lost your connection to the game session
+This game session could not be joined.
+Player 1 Please Wait
+Press START on Player 2's Controller
+Please reconnect the controller to controller port %u and press START to continue
+Please reconnect the controllers to controller ports %1 and %2 and press START to continue
+Please reconnect the controller to controller port %u
+Please reconnect the controllers to controller ports %1 and %2
+Soundtrack
+Ghost Car Select
+Recorded by:
+The GameSpy master server could not access this session. Please check your Proxy or Router settings. This session will not be available to other GameSpy users.
+Xbox Live
+System Link
+Get into a game session quickly!
+Search for suitable game sessions.
+Create a new game session.
+View your friends list.
+View players you have recently played with.
+View your online options.
+View statistics about you or your friends!
+Log out and go back to the simulator.
+Recent Players
+None
+All
+Torque
+Speed
+Chat Window
+Rated Game
+Setup
+Advanced Session Settings
+Advanced
+<unused>
+Brazilian
+Cameroonian
+Canadian
+Chilean
+Chinese
+Czech
+Egyptian
+Greek
+Icelandic
+Indian
+Polish
+Romanian
+South Korean
+Saudi
+Turkish
+Handling mode
+Simulation
+Pro-simulation
+Select Profile
+<unused>
+Select a different profile or create a new one
+Retired
+Race In Progress
+Avg.
+Diff.
+Searching
+Rank
+Races Played
+Races Completed
+Gamertag
+Date
+There are no Recent Players
+Countdown in progress. Select 'Ready' to join the race.
+All players are ready. Press 'Start' to start the race.
+Waiting for the host to start the race.
+The race is about to begin.
+All cars are on the grid and ready to race.
+Race time %02d:%02d.
+The race was won by %s. Time %s.
+Waiting for all players to return to the lobby.
+The race is about to begin. Press ready to join.
+%s is the host.  Wait for them to start a race.
+Racing is in progress.  Wait here to join the next race.
+%s has retired from the race.
+The host has changed the session settings.
+%s has joined the session.
+%s has left the session.
+56k
+128k
+Cable Modem
+DSL
+1 Mbps
+LAN
+Custom
+Connection
+Upstream (kbps)
+Downstream (kbps)
+kbps
+64k
+Terminal Damage
+Your vehicle is too damaged to continue.
+Your unique bonus access code is XXXX. You must quote this number to obtain the bonuses. Warning: This bonus access code will become invalid if all player profiles are deleted.
+Trailer
+Player %s Select Car
+Race starts in
+Full
+Forward Only
+None
+Collision Mode
+Leave Session
+You must enter a GameSpy Password
+Log In
+Create New GameSpy Account
+Create New Ghost Car
+Load Existing Ghost Car
+Delete Existing Ghost Car
+Continue Without Saving
+Are you sure you wish to continue without saving the ghost car for this time trial session?
+Statistics Search
+Statistics Results
+Statistics Details
+Time Trial Records
+Are you sure you wish to quit the game?
+dsq
+You have been deducted %d points from your Driver Rating for disconnecting during an online race.
+You have not completed the current series.  If you change the series now, all championship points will be reset.  Are you sure you want to continue?
+Entries
+Lowest Rating First
+Race Driver 3 Online Services are temporarily unavailable. Please try again later
+Race Driver 3 Online Services are no longer available.
+You are the host. Wait for players to join.
+Warning. You are the host of this session. You cannot leave a rated race until it has finished or you are the only player left.
+Warning. You are the host of this session. If you leave the race now then all players will be returned to the lobby. Are you sure? 
+Leaving the game now will end the championship for all players. Are you sure?
+Please re-insert the network cable within %d seconds...
+Warning. This is a rated session. If you leave the race now then you will lose %d points. Are you sure?
+Are you sure you wish to retire from the race?
+Session join failed. The game session is full.
+Session join failed. Incorrect Session Password.
+Session join failed. Communication protocol does not match.
+Feedback Sent.
+There's a problem with the disc you're using.  It may be dirty or damaged.
+Final Race Results
+Enter Name
+top
+WARNING - 'Pro-simulation'  handling is far harder than the default handling and is intended for players who have access to a steering wheel and who are used to playing hardcore racing simulations. This is not saved to your player profile.
+Press B or Handbrake to abort pit stop
+Press A or Accelerate to confirm
+Abort
+Press ENTER or Accelerate to confirm
+Banned
+Xbox Live Message Received.
+Please select new tracks or a new championship.
+Waiting for the host to select new tracks.
+You cannot join this session as it is an older version.
+You cannot join this session as it is a newer version.
+LAN Sessions
+System Link Sessions
+OptiMatch Results
+Search Results
+Find Next
+Are you sure you want to join %s in their session? This will end the session for all players.
+Are you sure you want to join %s in their voice chat session in the Xbox Dashboard? This will end the session for all players.
+Are you sure you want to join %s in their session?
+Are you sure you want to join %s in their voice chat session in the Xbox Dashboard?
+To join the voice chat session, please remove the game disc and restart your Xbox
+You have received an invite to a voice chat session from %s.
+Wants to chat in the Xbox Dashboard.
+P1
+P2
+Available race points
+Available race prize money
+Kicked
+Race Finishing in %d seconds
+Session join failed. You cannot join a LAN session while in Online mode
+Session join failed. You cannot join an Online session while in LAN mode
+Updating player ratings
+Player 1 Driving Setup
+Player 2 Driving Setup
+Driving Setup
+Xbox Live Options
+System Link Options
+Congratulations! You have completed this championship
+You have unlocked the following championship
+Incorrect Bonus Code
+To Reset Championship
+If you reset the series now, all players' championship points will return to zero. Are you sure you want to continue?
+Are you sure you wish to go back? Any unsaved vehicle settings will be lost
+Are you sure you wish to go back? Any unsaved session settings will be lost
+Your Xbox console cannot connect to Xbox Live
+Your Xbox does not have enough free blocks to save [CONTENT] content
+Retire
+F3
+Lap
+Best Lap
+You did not complete the last lap properly and it has been deducted.
+%s did not complete the last lap properly and it has been deducted.
+Recommended maximum players is %d
+Exceeding this value may degrade game play.
+Pit Stop Aborted
+SHOOTOUT
+SUPER-POLE
+lap
+laps
+Qualify
+Press F10 to Reset Championship
+Are you sure you want to sign out of Xbox Live?
+Are you sure you want to send negative feedback about this player?
+Press ENTER
+A saved Free Race Championship exists in this profile. Would you like to continue this saved Free Race Championship, or create a new championship? Warning: Creating a new championship will delete the saved one.
+Are you sure you want to log out?
+Kicked from session. Data files do not match.
+%s was kicked as their data files do not match.
+E-Mail address in use or invalid. Please enter a valid unique e-mail address.
+Username is in use. Please enter a unique username.
+Error creating account. This may be due to an invalid username, GameSpy Password or e-mail address.
+Error adding account. Invalid GameSpy Password.
+Error adding account. Invalid username.
+Error adding account. Please re-check your details and try again.
+CHAT ERROR: Player does not exist!
+Chat spam attempt detected! You will have to wait %d seconds before you can chat again.
+Default not beaten
+<unused>
+Could not create game session. Error while advertising on the GameSpy master server.
+Autosave is now enabled for [CONTENT]. When you see the icon [ICON] do not remove memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1, reset, or switch off the console.
+Load Successful
+Load Failed! Check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and please try again.
+Do you wish to retry or disable the autosave feature, [CONTENT] data will not be saved.
+Are you sure you wish to disable the Autosave feature? [CONTENT] will not be saved
+Checking memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off the console
+No memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1.
+Save failed! The memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 has changed.
+Memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 is unformatted. Format memory card (8MB) (for PlayStation®2)?
+Are you sure you wish to format memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1?
+Formatting memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off console.
+Format Successful
+Format failed! Please check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and try again.
+Data has changed. Overwrite previous [CONTENT] data?
+Are you sure you wish to overwrite the previous [CONTENT] data?
+Saving data. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off the console.
+<unused>
+Save successful
+Save failed! Check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and please try again.
+Create failed!
+The memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 contains corrupt data.
+Insufficient free space on memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1. Insert a memory card (8MB) (for PlayStation®2) with at least [REQUIRED]KB of free space, or create some space using the console's internal browser.
+Load failed! Memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 error!
+Load/Save
+Are you sure you wish to delete this [CONTENT] save?
+[CONTENT] is damaged. Are you sure you wish to delete it?
+Deleting data. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off console.
+Delete failed! Please check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and try again.
+Delete Successful
+Insufficient free space on memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1. [GAMENAME] requires [REQUIRED]KB of free space to save data.
+Memory card (8MB) (for PlayStation®2) error! Please check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and try again.
+Overwriting data. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off console.
+Overwrite Successful
+Overwrite failed! Please check memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 and try again.
+analog controller (DUALSHOCK®)
+analog controller (DUALSHOCK®2)
+NeGcon
+Logitech GT Force
+Logitech Driving Force
+controller
+analog controller
+Please reconnect the following:
+Please reconnect the following:
+%c in %p
+Replay
+Replays
+Save Replay
+Delete Existing Replay
+This replay is too long to be saved fully. The end of the replay may be missing. Do you wish to continue with the save?
+network configurations
+Select network configuration
+DNAS EULA
+Accept
+Edit network configurations
+Opposition
+None
+Code M
+Why should you join Code M?
+Great discounts on Codemasters' games in our e-shop.
+Take on the best - add your %s time to our Hall of Fame.
+Tailored news about your favourite Codemasters' games direct to your inbox.
+Access to our bustling forums - chat to other racing fans from around the world.
+Plus loads more.
+Register Now for Code M - www.codemasters.com
+This Software uses "DNAS" (Dynamic Network Authentication System), a proprietary authentication system created by Sony Computer Entertainment Inc. ("SCEI"). "DNAS" retrieves information about a user's hardware and software for authentication, copy protection, account blocking, system, rules, or game management and other purposes. The information collected does not identify the user personally and will not be shared with any non-SCE company. A PUBLISHER CAN COMBINE THIS INFORMATION WITH PERSONALLY IDENTIFYING INFORMATION FROM THE PUBLISHER'S RECORDS IF THE USER PROVIDES THE PERSONALLY IDENTIFYING INFORMATION. BEFORE PROVIDING ANY PERSONAL INFORMATION TO A PUBLISHER, PLEASE BE SURE TO REVIEW THE PUBLISHER'S PRIVACY POLICY AND TERMS AND CONDITIONS OF USE. DO NOT PROVIDE PERSONALLY IDENTIFYING INFORMATION TO A PUBLISHER UNLESS YOU ACCEPT THE CONDITIONS OF USE AND TERMS OF THEIR PRIVACY POLICY. SCEI, Sony Computer Entertainment America ("SCEA") and their affiliates cannot guarantee the continuous operation of the "DNAS" servers. SCEA shall not be liable for any delay or failure of the "DNAS" servers to perform. If you receive a message during login identifying a "DNAS" authentication error, please contact SCEA Consumer Services at 1-866-466-5333. For additional information concerning "DNAS", visit www.us.playstation.com/DNAS. In the event of a systems incompatibility or inoperability with DNAS, the sole liability of SCEI, SCEA and their affiliates shall be limited to the repair or replacement of the user's affected game software, console or peripherals at the option of SCEA. SCEA, its parents, affiliates, or licensed Publishers shall not be liable for any delays, system failures, authentication failures, or system outages, which may, from time to time, affect online game play or access thereto. DNAS logotype is a trademark of Sony Computer Entertainment Inc.
+This Software uses "DNAS" (Dynamic Network Authentication System), a proprietary%authentication system created by Sony Computer Entertainment Inc. ("SCEI"). "DNAS" retrieves%information about a user's hardware and software for authentication, copy protection, account%blocking, system, rules, or game management and other purposes. SCEI, Sony Computer%Entertainment Europe ("SCEE") and their affiliates cannot guarantee the continuous operation of%the "DNAS" servers. SCEE shall not be liable for any delay or failure of the "DNAS" servers to%perform. If you receive a message during login identifying a "DNAS" authentication error, please%contact your local PlayStation Customer Care line on the number provided in the software%manual. For additional information concerning "DNAS", refer to PlayStation.com. In the event of a%systems incompatibility or inoperability with DNAS, the sole liability of SCEI, SCEE and their%affiliates shall be limited to the repair or replacement of the user's affected, game software,%console or peripherals at the option of SCEE. SCEE, its parents, affiliates, or licensed Publishers%shall not be liable for any delays, system failures, authentication failures, or system outages,%which may, from time to time, affect online game play or access thereto.%DNAS logotype is a trademark of Sony Computer Entertainment Inc.
+Error while connecting to the network
+Connecting to Network
+Disconnecting from Network
+Are you sure you want to disconnect from the network?
+Network configuration %d
+Set Bandwidth
+As this is your first time playing online with this profile, you need to set up your bandwidth settings for optimal network performance. Choose a value for 'connection' that most closely represents your Internet connection, or select 'custom' to set the upstream and downstream bandwidths individually.
+DNAS Error (-101) The network authentication server is busy. Please try again later.
+DNAS Error (-102) This software title is not in service.
+DNAS Error (-103) This software title is not in service.
+DNAS Error (-104) The network authentication server is not in service.
+DNAS Error (-105) Connection to the network authentication server has timed out. Please try again later.
+DNAS Error (-106) A network authentication system error has occurred.
+DNAS Error (-107) A network authentication system error has occurred.
+DNAS Error (-108) A network authentication system error has occurred.
+DNAS Error (-401) A PlayStation®2 hardware information error has occurred.
+DNAS Error (-402) A PlayStation®2 disc information error has occurred.
+DNAS Error (-403) A PlayStation®2 disc information error has occurred.
+DNAS Error (-404) A PlayStation®2 hardware information error has occurred.
+Network Error (-601) Network connection has been aborted.
+Network Error (-602) Error in proxy setting.
+Network Error (-603) Connection timed out. Please try connecting again at a later time.
+Network Error (-610) Connection to the DNAS server failed.
+Network Error (-611) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-612) There was no response from the DNS server. Please check your network configuration.
+Network Error (-613) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-614) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-615) There was a DNS error. Please check your network configuration.
+Network Error (-616) Connection to the DNAS server failed.
+Network Error (-617) Connection timed out. Please try connecting again at a later time.
+Network Error (-618) Connection to the DNAS server failed.
+Network Error (-619) Connection to the DNAS server failed.
+Network Error (-620) Connection to the DNAS server failed.
+Network Error (-621) There was a connection error.
+Network Error (-622) There was a connection error.
+Network Error (-623) There was a connection error.
+Network Error (-624) There was a connection error.
+Network Error (-625) There was a connection error.
+Network Error (-626) Connection to the DNAS server failed.
+DNAS Error (-701) The title does not use the unique ID feature.
+DNAS Error (-703) The title does not belong to the specified *category* ID.
+DNAS Error (%d) An authentication error has occurred.
+Please write down the error code number, and contact SCEA at 1-866-466-5333 or via SCEA's website, www.us.playstation.com.
+DNAS Error (-101) The network authentication server is busy. Please try again later.
+DNAS Error (-102) This software title is not in service.
+DNAS Error (-103) This software title is not in service.
+DNAS Error (-104) The network authentication server is not in service.
+DNAS Error (-105) Connection to the network authentication server has timed out. Please try again later.
+DNAS Error (-106) A network authentication system error has occurred.
+DNAS Error (-107) A network authentication system error has occurred.
+DNAS Error (-108) A network authentication system error has occurred.
+DNAS Error (-401) A PlayStation®2 hardware information error has occurred.
+DNAS Error (-402) A PlayStation®2 disc information error has occurred.
+DNAS Error (-403) A PlayStation®2 disc information error has occurred.
+DNAS Error (-404) A PlayStation®2 hardware information error has occurred.
+Network Error (-601) Network connection has been aborted.
+Network Error (-602) Error in proxy setting.
+Network Error (-603) Connection timed out. Please try connecting again at a later time.
+Network Error (-610) Connection to the DNAS server failed.
+Network Error (-611) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-612) There was no response from the DNS server. Please check your network configuration.
+Network Error (-613) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-614) There was an error in the response from the DNS server. Please check your network configuration.
+Network Error (-615) There was a DNS error. Please check your network configuration.
+Network Error (-616) Connection to the DNAS server failed.
+Network Error (-617) Connection timed out. Please try connecting again at a later time.
+Network Error (-618) Connection to the DNAS server failed.
+Network Error (-619) Connection to the DNAS server failed.
+Network Error (-620) Connection to the DNAS server failed.
+Network Error (-621) There was a connection error.
+Network Error (-622) There was a connection error.
+Network Error (-623) There was a connection error.
+Network Error (-624) There was a connection error.
+Network Error (-625) There was a connection error.
+Network Error (-626) Connection to the DNAS server failed.
+DNAS Error (-701) The title does not use the unique ID feature.
+DNAS Error (-703) The title does not belong to the specified *category* ID.
+DNAS Error (%d) An authentication error has occurred.
+Please check the start and end dates for this online title at PlayStation.com.
+Please go to PlayStation.com for more information.
+If you continue to experience the same problem please contact your local PlayStation Customer Care line on the number provided in the software manual.
+Try cleaning the disc using an approved method as detailed on PlayStation.com. If the problem continues to occur please contact your local PlayStation Customer Care line on the number provided in the software manual.
+Please contact your local PlayStation Customer Care line on the number provided in the software manual for assistance.
+No memory card (8MB) (for PlayStation®2) inserted in MEMORY CARD slot 1. Insert a memory card (8MB) (for PlayStation®2) with at least [REQUIRED]KB of free space. [GAMENAME] uses an Autosave feature. Insertion of a memory card (8MB) (for PlayStation®2) beyond this point may cause data to be overwritten. Do you want to start?
+Insufficient free space on memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1. Insert a memory card (8MB) (for PlayStation®2) with at least [REQUIRED]KB of free space, or create some space using the console's internal browser. 94KB of free space is needed to manage Your Network Configuration file. Do you want to start?
+Save Progress
+End of race time out
+30 Seconds
+1 Minute
+2 Minutes
+5 Minutes
+Use the right analog stick to scroll the EULA.
+hardware settings
+Empty
+Memory card (8MB) (for PlayStation®2)  removed! Please re-insert Memory card (8MB) (for PlayStation®2).
+DNAS logotype is a trademark of Sony Computer Entertainment Inc.
+Voice
+Kick and Ban Player from Session
+Are you sure you want to kick and ban %s from this session?
+You have been banned from this session
+Code
+Results
+Reverse Results
+Authenticating DNAS Data
+Loading data. Do not remove memory card (8MB) (for PlayStation®2), controller, or reset/switch off the console.
+No network adaptor (Ethernet) (for PlayStation®2) detected. You will not be able to access the online features of this title.
+Headset
+Voice Volume
+Could not access the external network device. Please check all connections and reconnect.
+You can change these settings in future by selecting 'Options' from the Online Menu.
+This Your Network Configuration file was created on another console and cannot be used. Delete?
+This Your Network Configuration file is corrupt and cannot be used. Delete?
+Please wait
+Enable Multi-turn
+Logitech GT Force Wheel detected, Do you want to use it?
+Headphones
+New personal best %s.
+DNAS Error (-704) Unique ID acquisition internal error.
+DNAS Error (-704) Unique ID acquisition internal error.
+Are you sure you want to create or edit a network configuration?
+Delete Account
+Are you sure you want to remove the account "%s"?
+You may protect this account by entering a 4-Button Passcode. You will be asked for this code each time you log in. If you do not enter a 4-Button Passcode, you will be logged in automatically. Do you want to enter a 4-Button Passcode?
+Please enter your 4-Button Passcode
+Save your existing profile here
+Select a slot to save your profile
+Select a different profile, create a new one or save current profile
+Press O or Handbrake to abort pit stop
+Press X or Accelerate to confirm
+This network configuration contains PPPoE settings which cannot be used for LAN play, please select or create a new network configuration.
+This network configuration contains PPP settings which cannot be used for LAN play, please select or create a new network configuration.
+Save successful. Autosave is now enabled for [CONTENT]. When you see the icon [ICON] do not remove memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1, reset, or switch off the console.
+Load Successful. Autosave is now enabled for [CONTENT]. When you see the icon [ICON] do not remove memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1, reset, or switch off the console.
+USB connector
+Overwrite Successful. Autosave is now enabled for [CONTENT]. When you see the icon [ICON] do not remove memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1, reset, or switch off the console.
+Updating player ratings
+Use the right analogue stick to scroll
+GameSpy account names must be at least three letters long and may not begin with the characters '@', '+', ':' or '#'.
+Error Reading Disc
+Press START button
+The memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 does not contain a Your Network Configuration file. To create, edit and delete a Your Network Configuration file please select the "%s" option from the network menu. 
+The memory card (8MB) (for PlayStation®2) in MEMORY CARD slot 1 does not contain any valid network configurations
+Disconnected from game. You were kicked and banned by the host.
+%s was kicked and banned.
+Practice Sessions
+Warning! You are about to send this information over the network. Are you sure?
+Classics
+GT
+Oval
+Touring Car
+Off-Road
+Open Wheel
+Rally
+Accept
+Back
+Tier %d
+CHAMPIONSHIP DETAILS
+LAPS
+VEHICLES
+TRACKS
+OBJECTIVES
+RACE RULES
+GRID SIZE
+QUALIFYING
+ON
+OFF
+RESTART POINTS
+Quit
+New
+You are about to select a new championship, this will lose your current resume points!
+Details
+Qualifying
+Race Start
+Flags
+Points
+Rolling
+Grid
+<unused>
+Commonly referred to as the passing flag and indicates that a driver should be aware of a faster car attempting to lap them
+Displayed as a warning to a driver for unsportsmanlike behaviour on the track
+Shown to drivers whose vehicles have mechanical problems that are likely to endanger himself or others. Drivers shown this flag must return to the pits as soon as possible
+Indicates that the driver has received a penalty and must return to the pits to clear it
+Indicates that the race has been stopped
+Displayed as a warning of an accident ahead.
+Signals the end of a caution period.
+Indicates that there is a much slower vehicle on the sector of track controlled by that flag post
+Signals that the drivers have commenced their last lap of the race
+Officials have ceased scoring the car until further notice.  (Can also mean a car has been disqualified)
+Use the right analog stick to scroll through information.
+Use Page Up & Page Down to scroll through information.
+Use L1 & R1 to scroll through information.
+This is a Temporary Objective string and should NOT be available in the final game.  Used for testing only, oh yeh, and by the way, your objective is to not die in this next race.  All the best!
+No overtaking!
+LAP
+LAP
+TIME
+SPLIT
+BEST
+PITS
+Game Type
+Full Events
+Rules
+Bonuses
+Password Protected
+Server Status
+Normal
+Realistic
+Pro-Sim
+Practice
+Practice and Qualifying
+Qualifying
+Elimination
+Practice
+Open Qualifying
+Closed Qualifying
+%d%% Complete
+Full Calendar
+Delete
+Use right thumbstick to change weather.
+You have received a warning for driving the wrong way.
+You have been warned for ignoring the blue flag.
+You have been cautioned for ignoring the yellow flag.
+Caution received for going off track and gaining advantage.
+You have been cautioned for careless driving.
+<unused>
+<unused>
+<unused>
+<unused>
+<unused>
+You have received a black flag for %s.
+You have been disqualified for %s.
+You have been given a penalty for %s.
+%s has received a black flag for %s.
+%s has been disqualified for %s.
+%s has been given a penalty for %s.
+driving the wrong way
+ignoring the blue flag
+ignoring the caution period
+gaining an advantage by driving off track
+careless driving
+failing to make a mandatory pit stop
+failing to serve a pit penalty
+%s has made a false start.
+%s has been caught speeding in the pits.
+You are experiencing mechanical problems. Return to the pits.
+%s is experiencing mechanical problems.
+You will have %d seconds added to your finish time.
+You will be penalised %d grid positions for the next race.
+You will have %d points deducted from your championship total.
+You have been disqualified from the race.
+Return to the pits for your drive-through penalty.
+Return to the pits for your stop-go penalty.
+Ghost Car
+Car Used
+Cut Scenes.
+Motorsports.
+The Making of Race Driver 3.
+Forthcoming Codemasters Releases.
+Cut Scenes
+Motorsports
+Making Of
+Trailers
+Turbo
+Transmission
+Toe And Camber
+Ride Height
+Select
+Caps Lock
+Penalty
+Ret
+Continue
+Replay
+Retire
+Retry
+Restart
+Are you sure you want to restart the current championship?
+Are you sure you want to retire from the current championship?
+You can no longer complete the Championship objective!
+CLASS
+False start:
+Ignoring the blue flag:
+Ignoring the yellow flag:
+Speeding in the pits:
+Corner cutting:
+Careless driving:
+Secs.
+QUALIFYING RESULTS
+TESTING SESSION RESULTS
+RACE RESULTS
+EVENT RESULTS
+CHAMPIONSHIP STANDINGS
+CHAMPIONSHIP RESULTS
+PENALTIES
+POS
+PTS
+DRIVER
+Dsq
+NO
+TEAM
+TIME
+Honda
+Num Players
+Average Server Rating
+Average Championship Rating
+Kick Ahead Rating
+Kick Behind Rating
+Aerofoil
+Repair Total:
+Pit Stop
+Repairs
+Stop-Go Penalty
+Mandatory
+Friend Actions
+%s %s in %.1f %s
+Reset
+DIFFICULTY
+NORMAL
+HARD
+CUSTOM
+PRACTICE
+QUALIFYING
+GRID POSITION
+RANDOM
+FRONT
+MIDDLE
+BACK
+PIT STOPS
+MANDATORY
+OPTIONAL
+FULL EVENTS
+RACE LENGTH
+OPPOSITION
+DEFAULT
+DRIVER NAME
+PROFILE
+MAX
+LAP
+MIN
+MINS
+CHAMPIONSHIP SETUP
+This will reset all the options to their default values, are you sure?
+Default
+Clear
+This will reset your driver selection to the default values, are you sure?
+This will clear all opposition drivers, are you sure?
+DRIVERS
+MODEL
+WRONG WAY
+CORNER CUTTING
+CARELESS DRIVING
+Select whether drivers deliberately driving the wrong way around the track will be given a disqualification.
+Select whether penalties are given to drivers who gain an advantage by driving off the track.
+Select whether drivers will receive penalties for either careless or dangerous driving.
+FLAGS
+BLUE
+BLACK & ORANGE
+YELLOW
+Turn blue overtaking flags on or off.
+Determine whether you will receive a penalty for failing to repair damage.
+Turn caution periods on or off.
+Unlocked Bonuses
+Unlock championships
+Unlock bonus championships
+Boost for all cars
+Turbo boost
+Unlock toy cars
+Unlock slot racer
+Invincible cars
+Unlock cutscenes
+Unlock off road
+Unlock Honda 2006
+Unlock Honda
+Boost
+Gravel Traps
+Handling
+Damage
+Keyboard Layout
+Reassign
+Please select the difficulty level you would like to use for World Tour.
+MAIN MENU
+WORLD TOUR
+SIMULATION MODES
+OPTIONS
+MOVIES
+SELECT PROFILE
+QUIT
+SELECT MODE
+PRO CAREER
+FREE RACE
+TIME TRIAL
+MULTIPLAYER
+NETWORK
+SYSTEM LINK
+PLAY ONLINE
+XBOX LIVE
+LOAD REPLAY
+Main Menu
+Sign In
+Sign Out
+SKIP SESSION
+FIX RESULTS
+Loading [CONTENT]
+Loading [CONTENT]
+Are you sure you wish to load a [CONTENT] save, your current progress will be lost?
+Are you sure you wish to create a new [CONTENT] save, your current progress will be lost?
+Time
+Date
+UK English
+US English
+German
+Spanish
+French
+Italian
+Italian 142
+Dutch
+Norwegian
+Finnish
+Portuguese
+<unused>
+<unused>
+<unused>
+<unused>
+TUNING
+UPGRADES
+Induction Kits
+Brake Kits
+Brake Hoses
+Cams
+Clutches
+Dump Valves
+Electronics
+Engine Tuning
+Engine Hoses
+Exhausts
+Flywheels
+Ignition Kits
+Intercoolers
+Oil Coolers
+Roll Cages
+Seats
+Strut Braces
+Suspension Kits
+Transmission Kits
+Turbochargers
+Tyres
+Wheels
+CHOOSE COMPONENT
+Slots Required
+Installed
+Install
+Remove
+AVAILABLE SLOTS
+Spectator Mode
+Camera
+Show
+Hide
+Spectate
+%s has been eliminated.
+You have been eliminated.
+Game Mode
+Elimination
+Standard
+Normal
+Off
+Pro-Sim
+Number Of Warnings
+Cheat Prevention Level
+Lenient
+Normal
+Severe
+Telemetry
+Distance
+Speed(kph)
+Speed(mph)
+Revs(rpm)
+Gear
+Fuel Consumption
+Grip Bias
+Skidding
+Throttle
+Brake
+Steer
+No Data Available
+Compare
+Telemetry History
+Zoom
+Max
+Average
+Min
+Attempt
+Lap Time
+Apply
+Do you wish to apply the car tuning from this attempt?
+V8 Quick Start
+DTM Quick Start
+Obtain %d stars to unlock this championship.
+Complete this championship in world tour or pro career to unlock it here.
+Complete the previous championships in the discipline to unlock this one.
+To unlock this championship visit www.honda.co.uk/racedriver for an unlock code.
+Toy Cars
+This championship is unlocked using bonus codes.
+STAGE
+SLOTS
+SLOT
+SLOTS USED
+You are about to start the next session and have not selected any upgrades.  Would you like the engineer to choose some upgrades for you?
+Skipping qualifying will mean that you will start the race from the back of the grid.  Are you sure?
+NEXT SESSION
+TESTING
+PLAYER 1 TUNING
+PLAYER 2 TUNING
+PLAYER 1 UPGRADES
+PLAYER 2 UPGRADES
+Player 1 has not selected any upgrades.  Would you like the engineer to choose some upgrades for you?
+Player 2 has not selected any upgrades.  Would you like the engineer to choose some upgrades for you?
+Info
+Low
+High
+Front Profile
+Rear Profile
+Compound
+Front Toe
+Rear Toe
+Front Camber
+Rear Camber
+Front Strength
+Rear Strength
+Front Damping
+Rear Damping
+Soft
+Hard
+Soft
+Hard
+Final Drive
+Undo
+Custom Difficulty
+LAP RECORDS
+SHOOTOUT
+Congratulations! You have set the fastest lap on all tracks in this championship!
+Set the fastest lap on all tracks to win a cup.
+NO CODE
+TIME TO BEAT
+VOICE RECORDING AND PLAYBACK
+Voice Message
+To:
+From:
+Start
+Stop
+Send
+Play
+Sending Voice Message
+Would you like to send %s a voice message?
+Listen to voice
+Swear Filter
+virtual mirror
+cockpit mirrors
+Send
+Cups
+<unused>
+<unused>
+Pro Career (Normal)
+Pro Career (Hard)
+Fastest Lap On All Tracks
+To win cups: Complete the Pro Career objectives or set the fastest lap on all tracks in Time Trial mode.
+Cup Info
+Cup Total
+Select Tracks
+Sorry, this option is not available in the demo!
+Championship Rating
+Discipline Rating
+Preview
+End
+You have not sent the recorded message! Really exit?
+Failed retrieving user statistics
+You have unlocked the following championship:
+You have unlocked the following championships:
+You have unlocked the following vehicle:
+You have unlocked the following vehicles:
+You have unlocked the following track:
+You have unlocked the following tracks:
+Selecting Full Calendar will overwrite your current set-up. Are you sure?
+Finish the championship within %d places of %s.
+Earn %d in this championship.
+Finish %d%s or above in this championship.
+Finish the championship above at least one of the following drivers:
+Finish each race in the top %d.
+Finish each race ahead of %s.
+Beat a time of %s in testing.
+Beat a time of %s in testing without sustaining damage.
+Finish each qualifying round in the top %d.
+Finish each qualifying round ahead of %s.
+Championship Objective
+Testing Session Objective:
+Qualifying Objective
+Select Discipline
+Games Hosted
+Kick Rating
+Accelerate
+Brake
+Steer
+Pause
+Gear Up
+Gear Down
+Handbrake
+Look Back
+Change View
+Accelerate / Brake
+Press ENTER to test sensitivity.
+Press START button to test sensitivity.
+Press START to test sensitivity.
+Press ENTER when finished.
+Press START button when finished.
+Press START when finished.
+Move Screen with directional buttons.  Press %s to accept changes or %s to cancel.
+Edit
+Sign In
+Sign Out
+Eliminated
+DISQUALIFIED
+A saved Pro Career championship exists for this discipline. Would you like to continue this saved championship, or create a new one? Warning: Creating a new championship will delete the saved one.
+From the 1930s championship winning Mercedes W25 to the powerful muscle cars of the '70s, the Classic discipline contains a host of equally prestigious vehicles from the last 80 years of motorsport.
+Race some of the world's most prestigious and exotic sportscars in the GT Discipline. Take part in multi-class races, and get to grips with some of the most powerful racing cars in the world of motorsport.
+From dirt ovals to the world famous Indianapolis Motor Speedway, experience the excitement of the world's fastest professional motorsport.
+The Touring Car discipline is about aggressive, high-octane pack racing. Master both front and rear wheel drive vehicles, before earning a place in either the DTM or V8 Supercars championships, the world's most prestigious Touring Car events.
+From Rally to Baja, Nissan Dakar to Rally Cross, experience every level of Off Road racing in the Off Road discipline. The challenge in this thrilling style of racing is to not only master your vehicle, but also the environment.
+Experience every element of Open Wheel racing and earn a place driving for the BMW/Williams F1 Team. The secret to success is in mastering the racing line, and taking great care to avoid contact in these powerful, but fragile machines.
+This discipline features a wide range of very unique and challenging championships putting players in a wealth of very different Honda vehicles. To unlock the Honda Discipline please visit www.honda.co.uk/racedriver or complete World Tour mode.
+Welcome to the Bonus Toy & Slot Car mode. This is a chance to race miniaturised versions of famous racecars. With no rules to worry about the emphasis is purely on having fun and throwing these little cars around the tracks as quickly as possible.
+Completed:
+[CUPS] more cups needed to unlock
+1 more cup needed to unlock
+To find out how to unlock this car, please visit www.honda.co.uk/racedriver
+Extras
+Sim
+Pro Sim
+View the Race Driver legal information.
+View the list of people who made and helped to make this game.
+Find out how to get more from Codemasters.
+Palmer Motorsport Sensation
+Compete in a series of time trial events at the 400-acre Bedford Autodrome complex. Each event takes place in a different car and circuit at the site. With no opposition on track, it's all about getting to grips with the very different cars on offer.
+The Palmer Motorsport Sensation features a number of time trial events at Britain's largest purpose-built corporate race track. With no barriers or concrete walls to worry about drivers can concentrate on getting the maximum power from the different cars on offer. When you consider that these cars include the Palmer Jaguar JP1 and the Formula Palmer Audi you will be aiming for some seriously quick lap times. This Championship is unique in that there are no other cars on the track with you so the emphasis is purely on getting around the circuit as quickly as possible.
+All Classes
+Championship In Progress
+Add Track
+AutoSaving
+No streamed car sound
+Not Ready
+Button 3
+Button 4
+Are these mappings acceptable?
+Scroll Up
+Scroll Down
+Scroll Left
+Scroll Right
+Cycle Left
+Cycle Right
+Assign Menu Controls
+Signed in
+Not signed in.
+Signing into Xbox Live
+Save
+Locked
+Number of drivers
+Connection to the network using the selected device is not allowed.  Please select another.
+Go to %s to obtain a bonus code, which you can enter in the Options menu to unlock additional Honda vehicles.
+Welcome to the Toca Race Driver 3 Honda Civic 2006 demo; additional Honda cars can be unlocked by visiting %s
+www.honda.co.uk/racedriver
+Disconnected from game. Host ended the session.
+Fixed car and track
+Unlock Honda
+<unused>
+<unused>
+Unfortunately you are unable to complete the championship objective. Please pick a track within the championship you would like to restart from.
+Press TAB to change weather.
+Pre-Race
+<unused>
+<unused>
+Introduction
+Finish 1st in this championship.
+Qualifying Standings
+Qualifying consists of two timed laps. Of the two timed laps, the faster one is used to determine a drivers' grid position.
+Qualifying is in two parts with the top ten fastest drivers of the first round of qualifying being eligible to take part in the Super Pole. During which each of the ten drivers completes a single timed lap to determine the top ten places on the grid.
+Qualifying is in two parts with the top ten drivers from the first round of qualifying being eligible to take part in a Shootout. During this each driver completes a single timed lap and it is this which determines the top ten places on the grid.
+Qualifying consists of a single timed session which takes place prior to the first race.
+Qualifying consists of three timed laps with the fastest lap recorded determining grid position.
+Qualifying consists of three laps, the fastest of which is used to determine grid position.
+Qualifying consists of a single timed lap and it is this which determines the overall grid positions.
+Free practice sessions are allowed before each event. Drivers then compete in a timed qualifying session with their fastest time during this determining overall grid position.
+Qualifying consists of three timed laps with the fastest of these laps being used to determine grid position.
+Each driver should complete three timed qualifying laps and the best of these is used to determine their grid position.
+Qualifying consists of two timed laps, the fastest of which determines grid position.
+Each driver completes a single timed qualifying session, with their quickest lap time recorded during this session being used to determine grid position.
+Qualifying consists of an initial free practice session followed by a timed qualifying session to determine grid position.
+Meet Rick
+Renault Clio Feedback
+Go-Kart Feedback
+Global GT Light Feedback
+MG ZR
+Mitsubishi Lancer Evolution IV
+WSC Sprint Car
+Baja Showcase
+Honda NSX Showcase
+Thunder Mountain Truck 
+Chevy Silverado Showcase
+Palmer Audi Showcase
+Renault Alpine A110
+Morgan Aero 8
+Renault Clio V6
+Mercedes-Benz W196
+Formula BMW Showcase
+Lotus 49 Showcase
+Mosler MT900R
+STR_ANIM_SEQ_36
+STR_ANIM_SEQ_37
+Corvette C5R Showcase
+Formula 3 Showcase
+Mitsubishi Lancer Evolution VI
+Koenig GT-D Showcase
+STR_ANIM_SEQ_52
+Gemballa Showcase
+Koenig GT Showcase
+Williams Showcase
+Victory
+First podium finish
+Finish in Lower Half of Field 1
+Finish in Lower Half of Field 2
+Angry Driver 1
+High Player Car Damage
+No Damage
+Angry Driver 2
+Player Beats Streatham
+Set New Lap Record
+Qualify in Pole Position
+Finish in First Place
+Finish in Second Place
+Finish in Third Place
+Finish in Top Half of Field 1
+Finish in Top Half of Field 2
+Cancel Friend Request
+Are you sure you want to cancel your request for %s to be your friend?
+Uploading lap time to Xbox Live
+Not signed in: passcode needed.
+Sign-in Failed.
+Out Of Fuel
+Lobby Options
+Total Cups
+Cups To Unlock
+Two free cheats
+Return to the Pits - Your car is suffering mechanical problems
+Move over - A faster car is trying to overtake
+Accident ahead! Stay in formation
+Caution period is over - Resume at race speed
+This is your last lap
+Caution - Slow vehicle ahead
+Wheel Multiturn
+Please select a Your Network Configuration
+Tap left or right to start and stop real time telemetry playback.
+Discipline
+Championship Completed
+Congratulations you are the of winner the 2005 V8 Supercar Series. You are the newly crowned champion of the pinnacle of motorsport in Australia. Well Done!
+Congratulations you have won the 2005 DTM Championship.  You are the newly crowned champion of the premier German Touring Car Series. Well Done!
+You have unlocked...
+Press %s to reset to default.
+Cur
+This will undo all changes you have made; are you sure?
+Leave Championship
+Failed retrieving voice message.
+Downloading voice message.
+You have unlocked the bonus...
+Progress:
+Press up and down to change graph data.
+More than one driver required to start an elimination race.
+Vehicle Information
+Symbols
+You have unlocked the following championship for use in Free Race, Time Trial and multiplayer modes:
+Create a profile save to obtain your bonus code.
+Change Championship
+Voice Banned
+Average Driver Rating
+Start
+Use the right thumbstick to scroll through information.
+Your bonus access code is :
+The maximum number of drivers for this race has been reached, please ask the host to change championship or wait for another player to leave.
+Race Driver 2 save was detected. The following championship has been unlocked in the simulation modes:
+rear-view mirror
+The settings you have changed will cause the championship points to be reset.  Are you sure you want to continue?
+Use right analog stick to change weather.
+offensive message
+You have failed to qualify for the Shootout. You will skip the next session.
+You have failed to qualify for the Super-Pole. You will skip the next session.
+DNAS Error (-110) The network authentication server is busy. Please try again later.
+DNAS Error (-110) The network authentication server is busy. Please try again later.
+DNF
+Skipping this session will mean that you will start the race from 10th on the grid.  Are you sure?
+Passed
+Are you sure you want to skip the Practice Session?
+There are currently %s players in the session.
+%s has requested to join a game that a friend is playing! Do you want to join the game now?
+%s has accepted a game invitation from a friend! Do you want to join the game now?
+Telemetry is recorded in the following session types: Qualifying, Time Trial & Practice Sessions
+Use L1 & R1 to change weather.
+Driving Controller Set-up Wizard
+The controller you have selected is unrecognised. This wizard will help you configure the game to your device. Press 'ESC' on the keyboard to abort the wizard at any time.
+The final step is to set-up the controls to navigate the menus, Press the action on the controller when prompted. You may re-use the buttons assigned for driving.
+If you make a mistake press the 'BACK' button to go back to the previous step.
+If you do not wish to assign a button to an action at this time press the 'SELECT' button to skip to the next step.
+Press 'SELECT' to confirm these settings or 'BACK' to go back.
+Menu Controller Set-up Wizard
+The first step is to assign the controls to drive the vehicles with. Press the action on the controller when prompted.
+If you make a mistake press 'BRAKE' to go back to the previous step.
+If you do not wish to assign a button to an action at this time press 'ACCELERATE' to skip to the next step.
+Press 'ACCELERATE' to confirm these settings or 'BRAKE' to go back.
+Invert Force Direction
+Force Feedback Tightness
+Wheel Linearity
+Controller Set-up Wizard
+Are you sure you wish to restart the controller wizard, your current controller settings will be lost?
+Press a button on the controller you wish to use.
+Please select the type of your controller by pressing 'STEERING LEFT' or 'STEERING RIGHT' then press 'ACCELERATE' to confirm.
+You may tune your controller, driving and force-feedback settings or re-run the wizard from the Options menu.
+Press 'ESC' on the keyboard if you do not wish to assign menu controls to your device.

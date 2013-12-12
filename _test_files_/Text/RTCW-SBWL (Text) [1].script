@@ -1,0 +1,157 @@
+kill
+lift
+{
+ trigger go1
+  {
+  trigger lift close_dver2
+  wait 3000
+  playsound sound/world/gen_tram_loop1.wav LOOPING
+  gotomarker etaj1 60 wait
+  stopsound
+  trigger lift open_dver1
+  }
+ trigger go2
+  {
+   trigger lift close_dver1
+   wait 3000
+   playsound sound/world/gen_tram_loop1.wav LOOPING
+   gotomarker etaj2 60 wait
+   stopsound
+   trigger lift open_dver2
+  }
+ trigger close_dver1
+  {
+   accum 0 abort_if_not_bitset 0
+   accum 0 bitreset 0
+   alertentity dver1
+  }
+ trigger close_dver2
+  {
+   accum 0 abort_if_not_bitset 1
+   accum 0 bitreset 1
+   alertentity dver2
+  }
+ trigger open_dver1
+  {
+   accum 0 abort_if_bitset 0
+   accum 0 bitset 0
+   alertentity dver1
+  }
+ trigger open_dver2
+  {
+   accum 0 abort_if_bitset 1
+   accum 0 bitset 1
+   alertentity dver2
+  }
+}
+
+ventel
+{
+spawn
+{
+accum 6 set 0
+}
+trigger rotate2
+{
+accum 6 abort_if_bitset 1
+accum 6 bitset 1
+trigger player pr
+playsound ventel_1 
+trigger ventel door
+trigger player dds
+faceangles -90 0 0 6000
+faceangles -180 0 0 5000
+faceangles -270 0 0 4000
+faceangles -360 0 0 3000
+faceangles -90 0 0 2500
+faceangles -180 0 0 2200
+faceangles -270 0 0 2000
+faceangles -360 0 0 1800
+faceangles -90 0 0 1600
+faceangles -180 0 0 1400
+faceangles -270 0 0 1200
+faceangles -360 0 0 1000
+faceangles -90 0 0 980
+faceangles -180 0 0 960
+faceangles -270 0 0 940
+faceangles -360 0 0 920
+
+faceangles -90 0 0 880
+faceangles -180 0 0 840
+faceangles -270 0 0 820
+faceangles -360 0 0 800
+faceangles -90 0 0 750
+faceangles -180 0 0 750
+faceangles -270 0 0 700
+faceangles -360 0 0 700
+faceangles -90 0 0 650
+faceangles -180 0 0 650
+faceangles -270 0 0 600
+faceangles -360 0 0 600
+faceangles -90 0 0 550
+faceangles -180 0 0 550
+faceangles -270 0 0 500
+faceangles -360 0 0 500
+faceangles -90 0 0 450
+faceangles -180 0 0 450
+faceangles -270 0 0 400
+faceangles -360 0 0 400
+
+faceangles -90 0 0 350
+faceangles -180 0 0 350
+faceangles -270 0 0 300
+faceangles -360 0 0 300
+faceangles -90 0 0 250
+faceangles -180 0 0 250
+faceangles -270 0 0 200
+faceangles -360 0 0 200
+faceangles -90 0 0 100
+faceangles -180 0 0 100
+faceangles -270 0 0 100
+faceangles -360 0 0 100
+
+
+trigger kill go
+trigger ventel rotate1
+}
+trigger end
+{
+accum 6 bitset 1
+}
+
+trigger door
+{
+accum 6 abort_if_bitset 3
+accum 6 bitset 3
+alertentity d_end1
+}
+
+trigger rotate1
+{
+faceangles -90 0 0 80
+faceangles -180 0 0 80
+faceangles -270 0 0 80
+faceangles -360 0 0 80
+
+trigger ventel rotate1
+}
+
+trigger rotate
+{
+faceangles -90 0 0 6000
+faceangles -180 0 0 6000
+faceangles -270 0 0 6000
+faceangles -360 0 0 6000
+
+trigger ventel rotate
+}
+
+}
+kill
+{
+trigger go
+{
+playsound ventel looping
+gotomarker p_kill 60 accel
+}
+}

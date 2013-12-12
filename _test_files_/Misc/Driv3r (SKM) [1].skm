@@ -1,0 +1,20 @@
+SLOW_FORWARDS_ANIM male_walk 
+SLOW_BACKWARDS_ANIM male_walk_backwards
+SLOW_LEFT_ANIM male_walk_strafe_left
+SLOW_RIGHT_ANIM male_walk_strafe_right
+FAST_FORWARDS_ANIM male_run
+FAST_BACKWARDS_ANIM male_run_backwards
+FAST_LEFT_ANIM male_run_strafe_left
+FAST_RIGHT_ANIM male_run_strafe_right
+JOG_FORWARDS_ANIM male_jog
+JOG_BACKWARDS_ANIM male_jog_backwards
+JOG_LEFT_ANIM male_jog_strafe_left
+JOG_RIGHT_ANIM male_jog_strafe_right
+IDLE_ANIM male_idle_breathing_tanner
+MIN_BLEND_FORWARDS_SPEED 0.009
+MAX_BLEND_FORWARDS_SPEED 0.054
+MIN_BLEND_JOG_SPEED 0.0
+MAX_BLEND_JOG_SPEED 0.0
+MIN_BASE_BLEND_SPEED 0.0001
+MAX_BASE_BLEND_SPEED 0.009
+END

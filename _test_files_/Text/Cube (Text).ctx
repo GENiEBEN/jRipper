@@ -1,0 +1,499 @@
+<Entities>
+
+	<Pictures>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/00spark.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/01swirl.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/02bubbles.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/barrier.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/bomb.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/colleff.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/fan.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/jump.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/jump_sunk.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/plaglo1.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/plaglo2.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/power.gim</File> 
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Particle/shockwave.gim</File> 
+		</Picture>
+
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/1awesome.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/2excellent.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/3cool.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/4timedout.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/5sunk.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/6bombed.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/7trapped.gim</File>
+		</Picture>
+		<Picture>
+			<File>Map/Pacifica/Picture/Rating/8shot.gim</File>
+		</Picture>
+	</Pictures>
+
+
+    <BarrierButtonBase>
+        <ReactSFXID>0</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/barrier_button_react.vag</ReactSFX>
+    </BarrierButtonBase>
+
+    <Barrier>
+        <ReactSFXID>1</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/barrier_react.vag</ReactSFX>
+    </Barrier>
+
+    <StaticBomb>
+        <ReactSFXID>2</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/bomb_die.vag</ReactSFX>
+    </StaticBomb>
+
+    <Breakable>
+        <ReactSFXID>3</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/breakable_react.vag</ReactSFX>
+    </Breakable>
+
+    <Breakaway>
+        <ReactSFXID>4</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/breakaway_react.vag</ReactSFX>
+    </Breakaway>
+
+    <Clone>
+        <DieSFXID>5</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/clone_react.vag</DieSFX>
+    </Clone>
+
+    <Collectable>
+        <ReactSFXID>6</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/coll_react.vag</ReactSFX>
+    </Collectable>
+
+    <DynamicBomb>
+        <ReactSFXID>7</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/dbomb_die.vag</ReactSFX>
+    </DynamicBomb>
+
+    <Direct>
+        <ReactSFXID>8</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/direct_react.vag</ReactSFX>
+    </Direct>
+
+    <Fader>
+        <IdleSFXID>9</IdleSFXID>
+        <IdleSFX>Map/Pacifica/Voice/fading_idle.vag</IdleSFX>
+    </Fader>
+
+    <Guider>
+        <ReactSFXID>10</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/guider_react.vag</ReactSFX>
+    </Guider>
+
+    <Holder>
+        <ReactSFXID>11</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/holder_react.vag</ReactSFX>
+    </Holder>
+
+    <Holo>
+        <ReactSFXID>12</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/holographic_react.vag</ReactSFX>
+    </Holo>
+
+    <Exit>
+        <ReactSFXID>13</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/level_exit.vag</ReactSFX>
+    </Exit>
+
+    <Multi>
+        <ReactSFXID>14</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/multi_react.vag</ReactSFX>
+    </Multi>
+
+    <Power>
+        <AttackSFXID>15</AttackSFXID>
+        <IdleSFXID>16</IdleSFXID>
+        <AttackSFX>Map/Pacifica/Voice/power_attack.vag</AttackSFX>
+        <IdleSFX>Map/Pacifica/Voice/power_idle.vag</IdleSFX>
+    </Power>
+
+    <PusherButtonBase>
+        <ReactSFXID>17</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/pusher_button_react.vag</ReactSFX>
+    </PusherButtonBase>
+
+    <Pusher>
+        <IdleSFXID>18</IdleSFXID>
+        <IdleSFX>Map/Pacifica/Voice/pusher_idle.vag</IdleSFX>
+    </Pusher>
+
+    <Push>
+        <ReactSFXID>19</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/push_react.vag</ReactSFX>
+    </Push>
+
+    <Restrictor>
+        <ReactSFXID>20</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/restrictor_react.vag</ReactSFX>
+    </Restrictor>
+
+    <Rotor>
+        <ReactSFXID>21</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/rotor_react.vag</ReactSFX>
+    </Rotor>
+
+    <Bullet>
+        <AttackSFXID>22</AttackSFXID>
+        <AttackSFX>Map/Pacifica/Voice/shooter_attack.vag</AttackSFX>
+    </Bullet>
+
+    <Sinker>
+        <ReactSFXID>23</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/sinker_react.vag</ReactSFX>
+    </Sinker>
+
+    <SpinTrigger>
+        <ReactSFXID>24</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/spin_react.vag</ReactSFX>
+    </SpinTrigger>
+
+    <StickyGuider>
+        <ReactSFXID>25</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/sticky_react.vag</ReactSFX>
+    </StickyGuider>
+
+    <TimeStop>
+        <IdleSFXID>26</IdleSFXID>
+        <IdleSFX>Map/Pacifica/Voice/timer_react.vag</IdleSFX>
+    </TimeStop>
+
+    <VatorButton>
+        <ReactSFXID>27</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/vator_button_react.vag</ReactSFX>
+    </VatorButton>
+
+    <Player>
+        <ReactSFXID>28</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/z01_player_step.vag</ReactSFX>
+    </Player>
+
+    <Player2>
+        <ReactSFXID>28</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/z01_player_step.vag</ReactSFX>
+    </Player2>
+
+    <Power>
+        <ReactSFXID>29</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/z02_power_react.vag</ReactSFX>
+    </Power>
+
+    <Bullet>
+        <DieSFXID>30</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z03_shooter_die.vag</DieSFX>
+    </Bullet>
+
+    <Clone>
+        <ReactSFXID>31</ReactSFXID>
+        <ReactSFX>Map/Pacifica/Voice/z04_clone_step.vag</ReactSFX>
+    </Clone>
+
+    <Player>
+        <AttackSFXID>32</AttackSFXID>
+        <AttackSFX>Map/Pacifica/Voice/z05_holo_step.vag</AttackSFX>
+        <DieSFXID>33</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z06_player_trap.vag</DieSFX>
+    </Player>
+
+    <Player2>
+        <AttackSFXID>32</AttackSFXID>
+        <AttackSFX>Map/Pacifica/Voice/z05_holo_step.vag</AttackSFX>
+        <DieSFXID>33</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z06_player_trap.vag</DieSFX>
+    </Player2>
+
+    <Vator>
+        <DieSFXID>33</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z06_player_trap.vag</DieSFX>
+    </Vator>
+
+    <AI>
+        <DieSFXID>33</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z06_player_trap.vag</DieSFX>
+    </AI>
+
+    <Breakaway>
+        <DieSFXID>34</DieSFXID>
+        <DieSFX>Map/Pacifica/Voice/z07_breakaway_trap.vag</DieSFX>
+    </Breakaway>
+
+
+
+    <AI>
+        <MeshID>0</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_ai.gmo</Mesh>
+    </AI>
+
+    <Guider>
+        <MeshID>1</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_arrow.gmo</Mesh>
+    </Guider>
+
+    <StaticBomb>
+        <MeshID>2</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_bomb.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_bomeff.xml</VisualEffect>
+    </StaticBomb>
+
+    <Breakable>
+        <MeshID>3</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_brkable.gmo</Mesh>
+    </Breakable>
+
+    <Breakaway>
+        <MeshID>4</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_brkawa.gmo</Mesh>
+    </Breakaway>
+
+    <BarrierButtonBase>
+        <MeshID>5</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_butbase1.gmo</Mesh>
+    </BarrierButtonBase>
+
+    <PusherButtonBase>
+        <MeshID>6</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_butbase2.gmo</Mesh>
+    </PusherButtonBase>
+
+    <BarrierButton>
+        <MeshID>7</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_buton1.gmo</Mesh>
+    </BarrierButton>
+
+    <PusherButton>
+        <MeshID>8</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_buton2.gmo</Mesh>
+    </PusherButton>
+
+    <Clone>
+        <MeshID>9</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_clone.gmo</Mesh>
+    </Clone>
+
+    <Collectable>
+        <MeshID>10</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_col.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_colleff.xml</VisualEffect>
+    </Collectable>
+
+    <DynamicBomb>
+        <MeshID>11</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_dbomb.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_dbomeff.xml</VisualEffect>
+    </DynamicBomb>
+
+    <Direct>
+        <MeshID>12</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_direct.gmo</Mesh>
+    </Direct>
+
+    <Exit>
+        <MeshID>13</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_exit.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/CUB_exit2.xml</VisualEffect>
+    </Exit>
+
+    <Pusher>
+        <MeshID>14</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_fan.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/CUB_fan.xml</VisualEffect>
+    </Pusher>
+
+    <PusherBase>
+        <MeshID>15</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_fanb.gmo</Mesh>
+    </PusherBase>
+
+    <Holder>
+        <MeshID>16</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_hold.gmo</Mesh>
+    </Holder>
+
+    <Holo>
+        <MeshID>17</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_holo.gmo</Mesh>
+    </Holo>
+
+    <HoloBase>
+        <MeshID>18</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_holobase.gmo</Mesh>
+    </HoloBase>
+
+    <HoloPlayer>
+        <MeshID>19</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_holoplay.gmo</Mesh>
+    </HoloPlayer>
+
+    <MultiPlatform>
+        <MeshID>20</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_multi.gmo</Mesh>
+    </MultiPlatform>
+
+    <Multi>
+        <MeshID>21</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_multi2.gmo</Mesh>
+    </Multi>
+
+    <PlainCube>
+        <MeshID>22</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </PlainCube>
+
+    <Spin>
+        <MeshID>22</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </Spin>
+
+    <Fader>
+        <MeshID>22</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </Fader>
+
+    <Rotor>
+        <MeshID>22</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </Rotor>
+
+    <ClonePlayer>
+        <MeshID>22</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </ClonePlayer>
+
+    <ScaledPlatform>
+        <MeshID>23</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_plain.gmo</Mesh>
+    </ScaledPlatform>
+    
+    <Player>
+        <MeshID>24</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_player.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_plaglo1.xml</VisualEffect>
+    </Player>
+
+    <Player2>
+        <MeshID>25</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_player2.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_plaglo1.xml</VisualEffect>
+    </Player2>
+
+    <Power>
+        <MeshID>26</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_power.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/CUB_power.xml</VisualEffect>
+    </Power>
+
+    <Push>
+        <MeshID>27</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_push.gmo</Mesh>
+    </Push>
+
+    <Restrictor>
+        <MeshID>28</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_restrict.gmo</Mesh>
+    </Restrictor>
+
+    <Shooter>
+        <MeshID>29</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_scube.gmo</Mesh>
+    </Shooter>
+
+    <Bullet>
+        <MeshID>30</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_shooter.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_bomeff.xml</VisualEffect>
+    </Bullet>
+
+    <Sinker>
+        <MeshID>31</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_sinker.gmo</Mesh>
+    </Sinker>
+
+    <SkyBox>
+        <MeshID>32</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_sky.gmo</Mesh>
+    </SkyBox>
+
+    <Slippery>
+        <MeshID>33</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_slip.gmo</Mesh>
+    </Slippery>
+
+    <SpinTrigger>
+        <MeshID>34</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_spin.gmo</Mesh>
+    </SpinTrigger>
+
+    <StickyGuider>
+        <MeshID>35</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_sticky.gmo</Mesh>
+    </StickyGuider>
+
+    <TimeStop>
+        <MeshID>36</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_timer.gmo</Mesh>
+    </TimeStop>
+
+    <Vator>
+        <MeshID>37</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_vator.gmo</Mesh>
+    </Vator>
+    
+    <VatorButton>
+        <MeshID>38</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_vator2.gmo</Mesh>
+    </VatorButton>
+
+    <Barrier>
+        <MeshID>39</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_wall_1.gmo</Mesh>
+        <VisualEffect>VisualEffectScript/PAC_barr2.xml</VisualEffect>
+    </Barrier>
+
+    <ScaledBarrier>
+        <MeshID>40</MeshID>
+        <Mesh>Map/Pacifica/Mesh/PAC_wall_1.gmo</Mesh>
+    </ScaledBarrier>
+
+</Entities>

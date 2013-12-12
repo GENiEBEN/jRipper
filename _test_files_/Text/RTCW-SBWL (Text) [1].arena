@@ -1,0 +1,8 @@
+{
+map			"1024_nw"
+longname		"Ultimate Tech"
+type			"wolfmp wolfsw"
+timelimit		5
+axisRespawnTime		10
+alliedRespawnTime	10
+}
